@@ -31,5 +31,6 @@ Support, DPS) and 16 playable races, with a race×class permission matrix.
 3. `python tools/validate.py` — must pass with 0 errors
 4. Commit
 
-See [CLAUDE.md](CLAUDE.md) for the load-bearing project decisions and
-[design/vision.md](design/vision.md) for the full design philosophy.
+See [CLAUDE.md](CLAUDE.md) for the load-bearing project decisions,
+[design/vision.md](design/vision.md) for the full design philosophy, and
+[design/roadmap.md](design/roadmap.md) for the phase-by-phase roadmap.
