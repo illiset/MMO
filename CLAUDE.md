@@ -23,11 +23,15 @@ point to second-guess.
 
 ## Tech Decisions
 
-- **Engine: Unreal Engine 5** (5.7.4 installed). Free until $1M/yr revenue;
-  Quixel + MetaHumans + Iris replication earn their keep for a 2-person team.
-- The UE5 project should live **outside OneDrive** (e.g. `C:\dev\`) — OneDrive
-  sync fights with engine binaries and derived-data caches. This repo (design
-  data, docs, tools) is fine in OneDrive.
+- **Engine: Unreal Engine 5.8** (final UE5.x release; mesh terrain suits
+  dungeon-heavy PvE). Free until $1M/yr revenue; Quixel + MetaHumans + Iris
+  replication earn their keep for a 2-person team.
+- **Engine project: `C:\dev\ThreeRealms`** (own git repo) — deliberately
+  outside OneDrive; sync fights engine binaries and derived-data caches.
+  This design repo is fine in OneDrive. Build via VS 2022 toolchain;
+  UE's bundled .NET 10 (use `Build.bat`, not UnrealBuildTool.exe directly).
+- Dedicated-server builds will eventually need the source-built engine from
+  Epic's GitHub (launcher builds can't compile Server targets).
 
 ## Data Flow — Single Source of Truth
 

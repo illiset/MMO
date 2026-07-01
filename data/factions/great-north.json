@@ -317,85 +317,85 @@
         {
           "id": "draoi",
           "name": "Draoi",
-          "statMinimums": {},
-          "keyStats": [
-            "spirit",
-            "elements",
-            "survival",
-            "impulse",
-            "wisdom"
-          ]
+          "statMinimums": {
+            "spirit": 10,
+            "elements": 9,
+            "survival": 10,
+            "impulse": 10,
+            "wisdom": 7
+          },
+          "keyStats": []
         },
         {
           "id": "pankrator",
           "name": "Pankrator",
-          "statMinimums": {},
-          "keyStats": [
-            "strength",
-            "athleticism",
-            "knowledge",
-            "conditioning",
-            "finesse"
-          ]
+          "statMinimums": {
+            "strength": 8,
+            "athleticism": 10,
+            "knowledge": 9,
+            "conditioning": 10,
+            "finesse": 8
+          },
+          "keyStats": []
         },
         {
           "id": "frontiersman",
           "name": "Frontiersman",
-          "statMinimums": {},
-          "keyStats": [
-            "athleticism",
-            "knowledge",
-            "conditioning",
-            "calmness"
-          ]
+          "statMinimums": {
+            "athleticism": 10,
+            "knowledge": 9,
+            "conditioning": 10,
+            "calmness": 10
+          },
+          "keyStats": []
         },
         {
           "id": "ranger",
           "name": "Ranger",
-          "statMinimums": {},
-          "keyStats": [
-            "athleticism",
-            "conditioning",
-            "elements",
-            "survival",
-            "awareness"
-          ]
+          "statMinimums": {
+            "athleticism": 10,
+            "conditioning": 10,
+            "elements": 9,
+            "survival": 10,
+            "awareness": 6
+          },
+          "keyStats": []
         },
         {
           "id": "relic-master",
           "name": "Relic Master",
-          "statMinimums": {},
-          "keyStats": [
-            "knowledge",
-            "spirit",
-            "elements",
-            "detail",
-            "wisdom"
-          ]
+          "statMinimums": {
+            "knowledge": 9,
+            "spirit": 10,
+            "elements": 9,
+            "detail": 7,
+            "wisdom": 7
+          },
+          "keyStats": []
         },
         {
           "id": "whisper",
           "name": "Whisper",
-          "statMinimums": {},
-          "keyStats": [
-            "athleticism",
-            "spirit",
-            "elements",
-            "survival",
-            "finesse"
-          ]
+          "statMinimums": {
+            "athleticism": 10,
+            "spirit": 10,
+            "elements": 9,
+            "survival": 10,
+            "finesse": 8
+          },
+          "keyStats": []
         },
         {
           "id": "veil-tamer",
           "name": "Veil Tamer",
-          "statMinimums": {},
-          "keyStats": [
-            "logic",
-            "spirit",
-            "elements",
-            "survival",
-            "impulse"
-          ]
+          "statMinimums": {
+            "logic": 9,
+            "spirit": 10,
+            "elements": 9,
+            "survival": 10,
+            "impulse": 10
+          },
+          "keyStats": []
         }
       ]
     }

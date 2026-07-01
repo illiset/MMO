@@ -43,18 +43,19 @@ Solo dev + Claude. Field of dreams.
 ## Current state (2026-07)
 
 - Design data: three faction sheets fully extracted to `data/` — factions,
-  culture groups, races, classes, archetype stat minimums, race×class matrix.
-- **Great North is the reference faction**: it has numeric per-class stat
-  minimums. Mystic Lands and Honorguard have key-stat markers (`keyStats`)
-  where numbers aren't assigned yet — filling those in is open design work.
-- Engine: UE5 5.7.4 installed, project not yet created.
+  culture groups, races, classes, stat minimums, race×class matrix. **All 75
+  classes fully numbered** (stat proposal accepted 2026-07-01; see
+  `stat-minimums-proposal.md`). Stat system: floors sum to 100 per archetype
+  (checksum), class minimums are floor+2 formulas, caster-DPS Logic uses the
+  Volva cross-reference idiom.
+- Engine: **UE 5.8**, C++ project scaffolded and building at
+  `C:\dev\ThreeRealms` (own git repo, outside OneDrive).
 
 ## Open design work (short list)
 
-- [ ] Assign numeric class stat minimums for Mystic Lands + Honorguard
-      (Great North pattern: each class gets minimums on ~4–6 of its key stats)
 - [ ] Decide what the 100-point budget buys at character creation (point-buy
       mechanics, racial modifiers?)
 - [ ] Name the game (repo name `three-realms` is a placeholder)
-- [ ] First playable slice definition: which faction, which zone, which
-      handful of classes
+- [ ] First playable slice definition: which zone; proposed classes
+      Knight / Squire / Bard / Ranger (one per archetype, Great North)
+- [ ] Signature-stat spikes beyond Volva — revisit during playtesting

@@ -28,50 +28,50 @@
         {
           "id": "samurai",
           "name": "Samurai",
-          "statMinimums": {},
-          "keyStats": [
-            "athleticism",
-            "finesse",
-            "calmness",
-            "discipline",
-            "constitution"
-          ]
+          "statMinimums": {
+            "athleticism": 9,
+            "finesse": 9,
+            "calmness": 7,
+            "discipline": 10,
+            "constitution": 7
+          },
+          "keyStats": []
         },
         {
           "id": "dishonored",
           "name": "Dishonored",
-          "statMinimums": {},
-          "keyStats": [
-            "strength",
-            "athleticism",
-            "conditioning",
-            "survival",
-            "impulse"
-          ]
+          "statMinimums": {
+            "strength": 9,
+            "athleticism": 9,
+            "conditioning": 9,
+            "survival": 8,
+            "impulse": 7
+          },
+          "keyStats": []
         },
         {
           "id": "realm-warden",
           "name": "Realm Warden",
-          "statMinimums": {},
-          "keyStats": [
-            "strength",
-            "athleticism",
-            "knowledge",
-            "logic",
-            "elements"
-          ]
+          "statMinimums": {
+            "strength": 9,
+            "athleticism": 9,
+            "knowledge": 10,
+            "logic": 9,
+            "elements": 7
+          },
+          "keyStats": []
         },
         {
           "id": "rajak",
           "name": "Rajak",
-          "statMinimums": {},
-          "keyStats": [
-            "strength",
-            "athleticism",
-            "spirit",
-            "wisdom",
-            "discipline"
-          ]
+          "statMinimums": {
+            "strength": 9,
+            "athleticism": 9,
+            "spirit": 8,
+            "wisdom": 7,
+            "discipline": 10
+          },
+          "keyStats": []
         }
       ]
     },
@@ -100,50 +100,50 @@
         {
           "id": "cloud-priest",
           "name": "Cloud Priest",
-          "statMinimums": {},
-          "keyStats": [
-            "spirit",
-            "calmness",
-            "wisdom",
-            "discipline",
-            "constitution"
-          ]
+          "statMinimums": {
+            "spirit": 10,
+            "calmness": 8,
+            "wisdom": 9,
+            "discipline": 9,
+            "constitution": 8
+          },
+          "keyStats": []
         },
         {
           "id": "oracle",
           "name": "Oracle",
-          "statMinimums": {},
-          "keyStats": [
-            "spirit",
-            "detail",
-            "awareness",
-            "calmness",
-            "wisdom"
-          ]
+          "statMinimums": {
+            "spirit": 10,
+            "detail": 10,
+            "awareness": 5,
+            "calmness": 8,
+            "wisdom": 9
+          },
+          "keyStats": []
         },
         {
           "id": "visioneer",
           "name": "Visioneer",
-          "statMinimums": {},
-          "keyStats": [
-            "knowledge",
-            "logic",
-            "survival",
-            "detail",
-            "wisdom"
-          ]
+          "statMinimums": {
+            "knowledge": 10,
+            "logic": 10,
+            "survival": 10,
+            "detail": 10,
+            "wisdom": 9
+          },
+          "keyStats": []
         },
         {
           "id": "courtesan",
           "name": "Courtesan",
-          "statMinimums": {},
-          "keyStats": [
-            "athleticism",
-            "spirit",
-            "survival",
-            "finesse",
-            "detail"
-          ]
+          "statMinimums": {
+            "athleticism": 9,
+            "spirit": 10,
+            "survival": 10,
+            "finesse": 5,
+            "detail": 10
+          },
+          "keyStats": []
         }
       ]
     },
@@ -172,74 +172,74 @@
         {
           "id": "night-walker",
           "name": "Night Walker",
-          "statMinimums": {},
-          "keyStats": [
-            "athleticism",
-            "survival",
-            "finesse",
-            "detail",
-            "wisdom"
-          ]
+          "statMinimums": {
+            "athleticism": 7,
+            "survival": 8,
+            "finesse": 9,
+            "detail": 9,
+            "wisdom": 10
+          },
+          "keyStats": []
         },
         {
           "id": "mentor",
           "name": "Mentor",
-          "statMinimums": {},
-          "keyStats": [
-            "logic",
-            "detail",
-            "awareness",
-            "calmness",
-            "wisdom"
-          ]
+          "statMinimums": {
+            "logic": 9,
+            "detail": 9,
+            "awareness": 9,
+            "calmness": 9,
+            "wisdom": 10
+          },
+          "keyStats": []
         },
         {
           "id": "monk",
           "name": "Monk",
-          "statMinimums": {},
-          "keyStats": [
-            "logic",
-            "spirit",
-            "calmness",
-            "discipline",
-            "constitution"
-          ]
+          "statMinimums": {
+            "logic": 9,
+            "spirit": 8,
+            "calmness": 9,
+            "discipline": 8,
+            "constitution": 8
+          },
+          "keyStats": []
         },
         {
           "id": "blackmarketeer",
           "name": "Blackmarketeer",
-          "statMinimums": {},
-          "keyStats": [
-            "conditioning",
-            "logic",
-            "survival",
-            "finesse",
-            "detail"
-          ]
+          "statMinimums": {
+            "conditioning": 7,
+            "logic": 9,
+            "survival": 8,
+            "finesse": 9,
+            "detail": 9
+          },
+          "keyStats": []
         },
         {
           "id": "first-mate",
           "name": "First Mate",
-          "statMinimums": {},
-          "keyStats": [
-            "strength",
-            "athleticism",
-            "conditioning",
-            "awareness",
-            "impulse"
-          ]
+          "statMinimums": {
+            "strength": 7,
+            "athleticism": 7,
+            "conditioning": 7,
+            "awareness": 9,
+            "impulse": 8
+          },
+          "keyStats": []
         },
         {
           "id": "thaumaturge",
           "name": "Thaumaturge",
-          "statMinimums": {},
-          "keyStats": [
-            "knowledge",
-            "logic",
-            "spirit",
-            "elements",
-            "discipline"
-          ]
+          "statMinimums": {
+            "knowledge": 7,
+            "logic": 9,
+            "spirit": 8,
+            "elements": 9,
+            "discipline": 8
+          },
+          "keyStats": []
         }
       ]
     },
@@ -268,134 +268,134 @@
         {
           "id": "dragonslayer",
           "name": "Dragonslayer",
-          "statMinimums": {},
-          "keyStats": [
-            "strength",
-            "athleticism",
-            "knowledge",
-            "survival",
-            "calmness"
-          ]
+          "statMinimums": {
+            "strength": 8,
+            "athleticism": 10,
+            "knowledge": 9,
+            "survival": 10,
+            "calmness": 10
+          },
+          "keyStats": []
         },
         {
           "id": "charmer",
           "name": "Charmer",
-          "statMinimums": {},
-          "keyStats": [
-            "knowledge",
-            "logic",
-            "spirit",
-            "finesse",
-            "detail"
-          ]
+          "statMinimums": {
+            "knowledge": 9,
+            "logic": 9,
+            "spirit": 10,
+            "finesse": 8,
+            "detail": 7
+          },
+          "keyStats": []
         },
         {
           "id": "hydramancer",
           "name": "Hydramancer",
-          "statMinimums": {},
-          "keyStats": [
-            "logic",
-            "spirit",
-            "elements",
-            "wisdom",
-            "discipline"
-          ]
+          "statMinimums": {
+            "logic": 9,
+            "spirit": 10,
+            "elements": 9,
+            "wisdom": 7,
+            "discipline": 8
+          },
+          "keyStats": []
         },
         {
           "id": "tempest",
           "name": "Tempest",
-          "statMinimums": {},
-          "keyStats": [
-            "logic",
-            "spirit",
-            "elements",
-            "survival",
-            "impulse"
-          ]
+          "statMinimums": {
+            "logic": 9,
+            "spirit": 10,
+            "elements": 9,
+            "survival": 10,
+            "impulse": 10
+          },
+          "keyStats": []
         },
         {
           "id": "shade",
           "name": "Shade",
-          "statMinimums": {},
-          "keyStats": [
-            "athleticism",
-            "knowledge",
-            "spirit",
-            "finesse",
-            "detail"
-          ]
+          "statMinimums": {
+            "athleticism": 10,
+            "knowledge": 9,
+            "spirit": 10,
+            "finesse": 8,
+            "detail": 7
+          },
+          "keyStats": []
         },
         {
           "id": "pirate",
           "name": "Pirate",
-          "statMinimums": {},
-          "keyStats": [
-            "strength",
-            "athleticism",
-            "conditioning",
-            "survival",
-            "impulse"
-          ]
+          "statMinimums": {
+            "strength": 8,
+            "athleticism": 10,
+            "conditioning": 10,
+            "survival": 10,
+            "impulse": 10
+          },
+          "keyStats": []
         },
         {
           "id": "ice-fang",
           "name": "Ice Fang",
-          "statMinimums": {},
-          "keyStats": [
-            "strength",
-            "conditioning",
-            "elements",
-            "survival",
-            "constitution"
-          ]
+          "statMinimums": {
+            "strength": 8,
+            "conditioning": 10,
+            "elements": 9,
+            "survival": 10,
+            "constitution": 7
+          },
+          "keyStats": []
         },
         {
           "id": "scarred-fisher",
           "name": "Scarred Fisher",
-          "statMinimums": {},
-          "keyStats": [
-            "strength",
-            "elements",
-            "survival",
-            "calmness",
-            "wisdom"
-          ]
+          "statMinimums": {
+            "strength": 8,
+            "elements": 9,
+            "survival": 10,
+            "calmness": 10,
+            "wisdom": 7
+          },
+          "keyStats": []
         },
         {
           "id": "street-rat",
           "name": "Street Rat",
-          "statMinimums": {},
-          "keyStats": [
-            "athleticism",
-            "survival",
-            "finesse",
-            "detail",
-            "calmness"
-          ]
+          "statMinimums": {
+            "athleticism": 10,
+            "survival": 10,
+            "finesse": 8,
+            "detail": 7,
+            "calmness": 10
+          },
+          "keyStats": []
         },
         {
           "id": "ronin",
           "name": "Ronin",
-          "statMinimums": {},
-          "keyStats": [
-            "strength",
-            "athleticism",
-            "conditioning",
-            "elements",
-            "constitution"
-          ]
+          "statMinimums": {
+            "strength": 8,
+            "athleticism": 10,
+            "conditioning": 10,
+            "elements": 9,
+            "constitution": 7
+          },
+          "keyStats": []
         },
         {
           "id": "archer",
           "name": "Archer",
-          "statMinimums": {},
-          "keyStats": [
-            "strength",
-            "logic",
-            "survival",
-            "finesse",
-            "calmness"
-          ]
+          "statMinimums": {
+            "strength": 8,
+            "logic": 9,
+            "survival": 10,
+            "finesse": 8,
+            "calmness": 10
+          },
+          "keyStats": []
         }
       ]
     }

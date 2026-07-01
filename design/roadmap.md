@@ -12,26 +12,24 @@ when GN's loop is proven.
 
 ---
 
-## Phase 0 — Foundation ← YOU ARE HERE
+## Phase 0 — Foundation ✅ COMPLETE 2026-07-01
 
 **Goal:** design data is canonical, tooling exists, engine is installed.
 
 - [x] Extract MMOStats.xlsx → validated JSON pipeline (`data/`, `tools/`)
 - [x] Repo on GitHub (illiset/MMO)
 - [x] Stat-minimums proposal drafted (283 numbers, 57 classes)
-- [ ] Daniel reviews/accepts stat proposal → numbers become canonical
-- [ ] Decide the DPS Logic floor (currently 1 — placeholder?)
-- [ ] UE 5.8 installed (in progress)
+- [x] Stat proposal accepted — every class fully numbered, as live formulas
+- [x] DPS Logic floor resolved: stays 1 (checksum-load-bearing); caster DPS
+      get Logic 9 via the Volva idiom
+- [x] UE 5.8 installed, VS 2022 toolchain installed
 
-**Done when:** `validate.py` passes with every class fully numbered, and
-UE 5.8 opens.
-
-## Phase 1 — Engine bring-up
+## Phase 1 — Engine bring-up ← YOU ARE HERE
 
 **Goal:** the project exists in UE 5.8 and your design data flows into it.
 
-- [ ] UE 5.8 C++ project at `C:\dev\` (outside OneDrive), own git repo
-      (engine content is too heavy for the design repo)
+- [x] UE 5.8 C++ project at `C:\dev\ThreeRealms` (outside OneDrive), own git
+      repo (engine content is too heavy for the design repo) — module builds
 - [ ] Third-person character walking around a gray-box zone
 - [ ] **Data bridge:** importer that turns `data/*.json` into UE DataAssets —
       the spreadsheet→JSON→engine pipeline becomes end-to-end
