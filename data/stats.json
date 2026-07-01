@@ -1,0 +1,45 @@
+{
+  "budgetPerArchetype": 100,
+  "categories": [
+    {
+      "id": "fitness",
+      "name": "Fitness",
+      "stats": [
+        "strength",
+        "athleticism",
+        "knowledge",
+        "conditioning"
+      ]
+    },
+    {
+      "id": "intelligence",
+      "name": "Intelligence",
+      "stats": [
+        "logic",
+        "spirit",
+        "elements",
+        "survival"
+      ]
+    },
+    {
+      "id": "skill",
+      "name": "Skill",
+      "stats": [
+        "finesse",
+        "detail",
+        "awareness",
+        "calmness"
+      ]
+    },
+    {
+      "id": "ancestral",
+      "name": "Ancestral",
+      "stats": [
+        "impulse",
+        "wisdom",
+        "discipline",
+        "constitution"
+      ]
+    }
+  ]
+}

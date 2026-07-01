@@ -1,0 +1,653 @@
+{
+  "id": "honorguard",
+  "name": "Honorguard",
+  "abbreviation": "HG",
+  "archetypes": [
+    {
+      "id": "frontline",
+      "name": "Frontline",
+      "statMinimums": {
+        "strength": 7,
+        "athleticism": 7,
+        "knowledge": 8,
+        "conditioning": 7,
+        "logic": 7,
+        "spirit": 6,
+        "elements": 5,
+        "survival": 6,
+        "finesse": 7,
+        "detail": 6,
+        "awareness": 6,
+        "calmness": 5,
+        "impulse": 5,
+        "wisdom": 5,
+        "discipline": 8,
+        "constitution": 5
+      },
+      "classes": [
+        {
+          "id": "samurai",
+          "name": "Samurai",
+          "statMinimums": {},
+          "keyStats": [
+            "athleticism",
+            "finesse",
+            "calmness",
+            "discipline",
+            "constitution"
+          ]
+        },
+        {
+          "id": "dishonored",
+          "name": "Dishonored",
+          "statMinimums": {},
+          "keyStats": [
+            "strength",
+            "athleticism",
+            "conditioning",
+            "survival",
+            "impulse"
+          ]
+        },
+        {
+          "id": "realm-warden",
+          "name": "Realm Warden",
+          "statMinimums": {},
+          "keyStats": [
+            "strength",
+            "athleticism",
+            "knowledge",
+            "logic",
+            "elements"
+          ]
+        },
+        {
+          "id": "rajak",
+          "name": "Rajak",
+          "statMinimums": {},
+          "keyStats": [
+            "strength",
+            "athleticism",
+            "spirit",
+            "wisdom",
+            "discipline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "healers",
+      "name": "Healers",
+      "statMinimums": {
+        "strength": 6,
+        "athleticism": 7,
+        "knowledge": 8,
+        "conditioning": 4,
+        "logic": 8,
+        "spirit": 8,
+        "elements": 8,
+        "survival": 8,
+        "finesse": 3,
+        "detail": 8,
+        "awareness": 3,
+        "calmness": 6,
+        "impulse": 3,
+        "wisdom": 7,
+        "discipline": 7,
+        "constitution": 6
+      },
+      "classes": [
+        {
+          "id": "cloud-priest",
+          "name": "Cloud Priest",
+          "statMinimums": {},
+          "keyStats": [
+            "spirit",
+            "calmness",
+            "wisdom",
+            "discipline",
+            "constitution"
+          ]
+        },
+        {
+          "id": "oracle",
+          "name": "Oracle",
+          "statMinimums": {},
+          "keyStats": [
+            "spirit",
+            "detail",
+            "awareness",
+            "calmness",
+            "wisdom"
+          ]
+        },
+        {
+          "id": "visioneer",
+          "name": "Visioneer",
+          "statMinimums": {},
+          "keyStats": [
+            "knowledge",
+            "logic",
+            "survival",
+            "detail",
+            "wisdom"
+          ]
+        },
+        {
+          "id": "courtesan",
+          "name": "Courtesan",
+          "statMinimums": {},
+          "keyStats": [
+            "athleticism",
+            "spirit",
+            "survival",
+            "finesse",
+            "detail"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "name": "Support",
+      "statMinimums": {
+        "strength": 5,
+        "athleticism": 5,
+        "knowledge": 5,
+        "conditioning": 5,
+        "logic": 7,
+        "spirit": 6,
+        "elements": 7,
+        "survival": 6,
+        "finesse": 7,
+        "detail": 7,
+        "awareness": 7,
+        "calmness": 7,
+        "impulse": 6,
+        "wisdom": 8,
+        "discipline": 6,
+        "constitution": 6
+      },
+      "classes": [
+        {
+          "id": "night-walker",
+          "name": "Night Walker",
+          "statMinimums": {},
+          "keyStats": [
+            "athleticism",
+            "survival",
+            "finesse",
+            "detail",
+            "wisdom"
+          ]
+        },
+        {
+          "id": "mentor",
+          "name": "Mentor",
+          "statMinimums": {},
+          "keyStats": [
+            "logic",
+            "detail",
+            "awareness",
+            "calmness",
+            "wisdom"
+          ]
+        },
+        {
+          "id": "monk",
+          "name": "Monk",
+          "statMinimums": {},
+          "keyStats": [
+            "logic",
+            "spirit",
+            "calmness",
+            "discipline",
+            "constitution"
+          ]
+        },
+        {
+          "id": "blackmarketeer",
+          "name": "Blackmarketeer",
+          "statMinimums": {},
+          "keyStats": [
+            "conditioning",
+            "logic",
+            "survival",
+            "finesse",
+            "detail"
+          ]
+        },
+        {
+          "id": "first-mate",
+          "name": "First Mate",
+          "statMinimums": {},
+          "keyStats": [
+            "strength",
+            "athleticism",
+            "conditioning",
+            "awareness",
+            "impulse"
+          ]
+        },
+        {
+          "id": "thaumaturge",
+          "name": "Thaumaturge",
+          "statMinimums": {},
+          "keyStats": [
+            "knowledge",
+            "logic",
+            "spirit",
+            "elements",
+            "discipline"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dps",
+      "name": "DPS",
+      "statMinimums": {
+        "strength": 6,
+        "athleticism": 8,
+        "knowledge": 7,
+        "conditioning": 8,
+        "logic": 1,
+        "spirit": 8,
+        "elements": 7,
+        "survival": 8,
+        "finesse": 6,
+        "detail": 5,
+        "awareness": 4,
+        "calmness": 8,
+        "impulse": 8,
+        "wisdom": 5,
+        "discipline": 6,
+        "constitution": 5
+      },
+      "classes": [
+        {
+          "id": "dragonslayer",
+          "name": "Dragonslayer",
+          "statMinimums": {},
+          "keyStats": [
+            "strength",
+            "athleticism",
+            "knowledge",
+            "survival",
+            "calmness"
+          ]
+        },
+        {
+          "id": "charmer",
+          "name": "Charmer",
+          "statMinimums": {},
+          "keyStats": [
+            "knowledge",
+            "logic",
+            "spirit",
+            "finesse",
+            "detail"
+          ]
+        },
+        {
+          "id": "hydramancer",
+          "name": "Hydramancer",
+          "statMinimums": {},
+          "keyStats": [
+            "logic",
+            "spirit",
+            "elements",
+            "wisdom",
+            "discipline"
+          ]
+        },
+        {
+          "id": "tempest",
+          "name": "Tempest",
+          "statMinimums": {},
+          "keyStats": [
+            "logic",
+            "spirit",
+            "elements",
+            "survival",
+            "impulse"
+          ]
+        },
+        {
+          "id": "shade",
+          "name": "Shade",
+          "statMinimums": {},
+          "keyStats": [
+            "athleticism",
+            "knowledge",
+            "spirit",
+            "finesse",
+            "detail"
+          ]
+        },
+        {
+          "id": "pirate",
+          "name": "Pirate",
+          "statMinimums": {},
+          "keyStats": [
+            "strength",
+            "athleticism",
+            "conditioning",
+            "survival",
+            "impulse"
+          ]
+        },
+        {
+          "id": "ice-fang",
+          "name": "Ice Fang",
+          "statMinimums": {},
+          "keyStats": [
+            "strength",
+            "conditioning",
+            "elements",
+            "survival",
+            "constitution"
+          ]
+        },
+        {
+          "id": "scarred-fisher",
+          "name": "Scarred Fisher",
+          "statMinimums": {},
+          "keyStats": [
+            "strength",
+            "elements",
+            "survival",
+            "calmness",
+            "wisdom"
+          ]
+        },
+        {
+          "id": "street-rat",
+          "name": "Street Rat",
+          "statMinimums": {},
+          "keyStats": [
+            "athleticism",
+            "survival",
+            "finesse",
+            "detail",
+            "calmness"
+          ]
+        },
+        {
+          "id": "ronin",
+          "name": "Ronin",
+          "statMinimums": {},
+          "keyStats": [
+            "strength",
+            "athleticism",
+            "conditioning",
+            "elements",
+            "constitution"
+          ]
+        },
+        {
+          "id": "archer",
+          "name": "Archer",
+          "statMinimums": {},
+          "keyStats": [
+            "strength",
+            "logic",
+            "survival",
+            "finesse",
+            "calmness"
+          ]
+        }
+      ]
+    }
+  ],
+  "cultureGroups": [
+    {
+      "id": "the-builders",
+      "name": "The Builders",
+      "races": [
+        {
+          "id": "celestial",
+          "name": "Celestial",
+          "allowedClasses": [
+            "dishonored",
+            "realm-warden",
+            "cloud-priest",
+            "visioneer",
+            "courtesan",
+            "night-walker",
+            "monk",
+            "blackmarketeer",
+            "first-mate",
+            "dragonslayer",
+            "shade",
+            "pirate",
+            "ronin",
+            "archer"
+          ]
+        },
+        {
+          "id": "sage",
+          "name": "Sage",
+          "allowedClasses": [
+            "samurai",
+            "dishonored",
+            "visioneer",
+            "courtesan",
+            "night-walker",
+            "blackmarketeer",
+            "first-mate",
+            "dragonslayer",
+            "shade",
+            "pirate",
+            "archer"
+          ]
+        },
+        {
+          "id": "skybound",
+          "name": "Skybound",
+          "allowedClasses": [
+            "dishonored",
+            "realm-warden",
+            "cloud-priest",
+            "courtesan",
+            "night-walker",
+            "mentor",
+            "blackmarketeer",
+            "first-mate",
+            "dragonslayer",
+            "charmer",
+            "shade",
+            "pirate",
+            "scarred-fisher",
+            "ronin",
+            "archer"
+          ]
+        },
+        {
+          "id": "neph",
+          "name": "Neph",
+          "allowedClasses": [
+            "realm-warden",
+            "oracle",
+            "monk",
+            "thaumaturge",
+            "hydramancer",
+            "tempest",
+            "archer"
+          ]
+        },
+        {
+          "id": "vedic",
+          "name": "Vedic",
+          "allowedClasses": [
+            "rajak",
+            "courtesan",
+            "night-walker",
+            "blackmarketeer",
+            "first-mate",
+            "dragonslayer",
+            "charmer",
+            "pirate",
+            "street-rat"
+          ]
+        },
+        {
+          "id": "desi",
+          "name": "Desi",
+          "allowedClasses": [
+            "rajak",
+            "courtesan",
+            "night-walker",
+            "blackmarketeer",
+            "first-mate",
+            "tempest",
+            "pirate",
+            "street-rat"
+          ]
+        },
+        {
+          "id": "volc",
+          "name": "Volc",
+          "allowedClasses": [
+            "realm-warden",
+            "courtesan",
+            "night-walker",
+            "blackmarketeer",
+            "first-mate",
+            "dragonslayer",
+            "pirate",
+            "scarred-fisher"
+          ]
+        },
+        {
+          "id": "gargoyle",
+          "name": "Gargoyle",
+          "allowedClasses": [
+            "samurai",
+            "oracle",
+            "night-walker",
+            "thaumaturge",
+            "hydramancer",
+            "archer"
+          ]
+        },
+        {
+          "id": "wei-vicari",
+          "name": "Wei' Vicari",
+          "allowedClasses": [
+            "cloud-priest",
+            "night-walker",
+            "monk",
+            "first-mate",
+            "tempest",
+            "pirate"
+          ]
+        },
+        {
+          "id": "vyrr-kin",
+          "name": "Vyrr Kin",
+          "allowedClasses": [
+            "realm-warden",
+            "cloud-priest",
+            "monk",
+            "thaumaturge",
+            "dragonslayer",
+            "ice-fang",
+            "scarred-fisher",
+            "archer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-shrouded",
+      "name": "The Shrouded",
+      "races": [
+        {
+          "id": "cultist",
+          "name": "Cultist",
+          "allowedClasses": [
+            "dishonored",
+            "courtesan",
+            "night-walker",
+            "monk",
+            "thaumaturge",
+            "tempest",
+            "shade",
+            "archer"
+          ]
+        },
+        {
+          "id": "elfkin",
+          "name": "Elfkin",
+          "allowedClasses": [
+            "dishonored",
+            "visioneer",
+            "night-walker",
+            "blackmarketeer",
+            "thaumaturge",
+            "dragonslayer",
+            "hydramancer",
+            "street-rat",
+            "archer"
+          ]
+        },
+        {
+          "id": "spellbrook",
+          "name": "Spellbrook",
+          "allowedClasses": [
+            "cloud-priest",
+            "mentor",
+            "blackmarketeer",
+            "thaumaturge",
+            "hydramancer",
+            "tempest",
+            "shade"
+          ]
+        },
+        {
+          "id": "veilling",
+          "name": "Veilling",
+          "allowedClasses": [
+            "oracle",
+            "night-walker",
+            "blackmarketeer",
+            "first-mate",
+            "thaumaturge",
+            "charmer",
+            "hydramancer",
+            "shade"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "peacefuls",
+      "name": "Peacefuls",
+      "races": [
+        {
+          "id": "shev",
+          "name": "Shev'",
+          "allowedClasses": [
+            "samurai",
+            "monk",
+            "tempest"
+          ]
+        },
+        {
+          "id": "minotaur",
+          "name": "Minotaur",
+          "allowedClasses": [
+            "dishonored",
+            "realm-warden",
+            "blackmarketeer",
+            "first-mate",
+            "dragonslayer",
+            "tempest",
+            "scarred-fisher"
+          ]
+        }
+      ]
+    }
+  ]
+}

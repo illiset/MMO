@@ -1,0 +1,676 @@
+{
+  "id": "great-north",
+  "name": "Great North",
+  "abbreviation": "GN",
+  "archetypes": [
+    {
+      "id": "frontline",
+      "name": "Frontline",
+      "statMinimums": {
+        "strength": 7,
+        "athleticism": 7,
+        "knowledge": 8,
+        "conditioning": 7,
+        "logic": 7,
+        "spirit": 6,
+        "elements": 5,
+        "survival": 6,
+        "finesse": 7,
+        "detail": 6,
+        "awareness": 6,
+        "calmness": 5,
+        "impulse": 5,
+        "wisdom": 5,
+        "discipline": 8,
+        "constitution": 5
+      },
+      "classes": [
+        {
+          "id": "knight",
+          "name": "Knight",
+          "statMinimums": {
+            "strength": 9,
+            "knowledge": 10,
+            "logic": 9,
+            "calmness": 7,
+            "constitution": 7
+          },
+          "keyStats": []
+        },
+        {
+          "id": "zealot",
+          "name": "Zealot",
+          "statMinimums": {
+            "athleticism": 9,
+            "spirit": 8,
+            "impulse": 7,
+            "discipline": 10,
+            "constitution": 7
+          },
+          "keyStats": []
+        },
+        {
+          "id": "wizard",
+          "name": "Wizard",
+          "statMinimums": {
+            "knowledge": 10,
+            "conditioning": 9,
+            "elements": 7,
+            "awareness": 8,
+            "constitution": 7
+          },
+          "keyStats": []
+        },
+        {
+          "id": "reaver",
+          "name": "Reaver",
+          "statMinimums": {
+            "strength": 9,
+            "spirit": 8,
+            "detail": 8,
+            "wisdom": 7,
+            "constitution": 7
+          },
+          "keyStats": []
+        }
+      ]
+    },
+    {
+      "id": "healers",
+      "name": "Healers",
+      "statMinimums": {
+        "strength": 6,
+        "athleticism": 7,
+        "knowledge": 8,
+        "conditioning": 4,
+        "logic": 8,
+        "spirit": 8,
+        "elements": 8,
+        "survival": 8,
+        "finesse": 3,
+        "detail": 8,
+        "awareness": 3,
+        "calmness": 6,
+        "impulse": 3,
+        "wisdom": 7,
+        "discipline": 7,
+        "constitution": 6
+      },
+      "classes": [
+        {
+          "id": "squire",
+          "name": "Squire",
+          "statMinimums": {
+            "strength": 8,
+            "knowledge": 10,
+            "survival": 10,
+            "finesse": 5,
+            "discipline": 9
+          },
+          "keyStats": []
+        },
+        {
+          "id": "truthspeaker",
+          "name": "Truthspeaker",
+          "statMinimums": {
+            "knowledge": 10,
+            "spirit": 10,
+            "survival": 10,
+            "awareness": 5,
+            "wisdom": 9
+          },
+          "keyStats": []
+        },
+        {
+          "id": "volva",
+          "name": "Volva",
+          "statMinimums": {
+            "spirit": 10,
+            "elements": 10,
+            "survival": 10,
+            "calmness": 10,
+            "wisdom": 10
+          },
+          "keyStats": []
+        },
+        {
+          "id": "preacher",
+          "name": "Preacher",
+          "statMinimums": {
+            "athleticism": 9,
+            "conditioning": 6,
+            "logic": 10,
+            "calmness": 8,
+            "discipline": 9
+          },
+          "keyStats": []
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "name": "Support",
+      "statMinimums": {
+        "strength": 5,
+        "athleticism": 5,
+        "knowledge": 5,
+        "conditioning": 5,
+        "logic": 7,
+        "spirit": 6,
+        "elements": 7,
+        "survival": 6,
+        "finesse": 7,
+        "detail": 7,
+        "awareness": 7,
+        "calmness": 7,
+        "impulse": 6,
+        "wisdom": 8,
+        "discipline": 6,
+        "constitution": 6
+      },
+      "classes": [
+        {
+          "id": "dracomancer",
+          "name": "Dracomancer",
+          "statMinimums": {
+            "strength": 7,
+            "survival": 8,
+            "finesse": 9,
+            "detail": 9,
+            "wisdom": 10
+          },
+          "keyStats": []
+        },
+        {
+          "id": "muse",
+          "name": "Muse",
+          "statMinimums": {
+            "spirit": 8,
+            "elements": 9,
+            "finesse": 9,
+            "calmness": 9,
+            "impulse": 8
+          },
+          "keyStats": []
+        },
+        {
+          "id": "provacateur",
+          "name": "Provacateur",
+          "statMinimums": {
+            "athleticism": 7,
+            "knowledge": 7,
+            "logic": 9,
+            "awareness": 9,
+            "impulse": 8
+          },
+          "keyStats": []
+        },
+        {
+          "id": "syndicate",
+          "name": "Syndicate",
+          "statMinimums": {
+            "knowledge": 7,
+            "conditioning": 7,
+            "finesse": 9,
+            "calmness": 9,
+            "discipline": 8
+          },
+          "keyStats": []
+        },
+        {
+          "id": "bard",
+          "name": "Bard",
+          "statMinimums": {
+            "strength": 7,
+            "knowledge": 7,
+            "spirit": 8,
+            "calmness": 9,
+            "constitution": 8
+          },
+          "keyStats": []
+        },
+        {
+          "id": "philosopher",
+          "name": "Philosopher",
+          "statMinimums": {
+            "knowledge": 7,
+            "logic": 9,
+            "detail": 9,
+            "wisdom": 10,
+            "discipline": 8
+          },
+          "keyStats": []
+        }
+      ]
+    },
+    {
+      "id": "dps",
+      "name": "DPS",
+      "statMinimums": {
+        "strength": 6,
+        "athleticism": 8,
+        "knowledge": 7,
+        "conditioning": 8,
+        "logic": 1,
+        "spirit": 8,
+        "elements": 7,
+        "survival": 8,
+        "finesse": 6,
+        "detail": 5,
+        "awareness": 4,
+        "calmness": 8,
+        "impulse": 8,
+        "wisdom": 5,
+        "discipline": 6,
+        "constitution": 5
+      },
+      "classes": [
+        {
+          "id": "knave",
+          "name": "Knave",
+          "statMinimums": {
+            "finesse": 8,
+            "detail": 7,
+            "awareness": 6,
+            "calmness": 10,
+            "discipline": 8
+          },
+          "keyStats": []
+        },
+        {
+          "id": "jester",
+          "name": "Jester",
+          "statMinimums": {
+            "knowledge": 9,
+            "spirit": 10,
+            "finesse": 8,
+            "detail": 7,
+            "wisdom": 7
+          },
+          "keyStats": []
+        },
+        {
+          "id": "hundr",
+          "name": "Hundr",
+          "statMinimums": {
+            "strength": 8,
+            "athleticism": 10,
+            "conditioning": 10,
+            "survival": 10,
+            "awareness": 6,
+            "impulse": 10
+          },
+          "keyStats": []
+        },
+        {
+          "id": "equal",
+          "name": "Equal",
+          "statMinimums": {
+            "strength": 8,
+            "athleticism": 10,
+            "knowledge": 9,
+            "conditioning": 10,
+            "constitution": 7
+          },
+          "keyStats": []
+        },
+        {
+          "id": "draoi",
+          "name": "Draoi",
+          "statMinimums": {},
+          "keyStats": [
+            "spirit",
+            "elements",
+            "survival",
+            "impulse",
+            "wisdom"
+          ]
+        },
+        {
+          "id": "pankrator",
+          "name": "Pankrator",
+          "statMinimums": {},
+          "keyStats": [
+            "strength",
+            "athleticism",
+            "knowledge",
+            "conditioning",
+            "finesse"
+          ]
+        },
+        {
+          "id": "frontiersman",
+          "name": "Frontiersman",
+          "statMinimums": {},
+          "keyStats": [
+            "athleticism",
+            "knowledge",
+            "conditioning",
+            "calmness"
+          ]
+        },
+        {
+          "id": "ranger",
+          "name": "Ranger",
+          "statMinimums": {},
+          "keyStats": [
+            "athleticism",
+            "conditioning",
+            "elements",
+            "survival",
+            "awareness"
+          ]
+        },
+        {
+          "id": "relic-master",
+          "name": "Relic Master",
+          "statMinimums": {},
+          "keyStats": [
+            "knowledge",
+            "spirit",
+            "elements",
+            "detail",
+            "wisdom"
+          ]
+        },
+        {
+          "id": "whisper",
+          "name": "Whisper",
+          "statMinimums": {},
+          "keyStats": [
+            "athleticism",
+            "spirit",
+            "elements",
+            "survival",
+            "finesse"
+          ]
+        },
+        {
+          "id": "veil-tamer",
+          "name": "Veil Tamer",
+          "statMinimums": {},
+          "keyStats": [
+            "logic",
+            "spirit",
+            "elements",
+            "survival",
+            "impulse"
+          ]
+        }
+      ]
+    }
+  ],
+  "cultureGroups": [
+    {
+      "id": "crusaders",
+      "name": "Crusaders",
+      "races": [
+        {
+          "id": "celtic",
+          "name": "Celtic",
+          "allowedClasses": [
+            "knight",
+            "zealot",
+            "wizard",
+            "reaver",
+            "squire",
+            "truthspeaker",
+            "volva",
+            "provacateur",
+            "bard",
+            "knave",
+            "draoi",
+            "frontiersman",
+            "ranger",
+            "veil-tamer"
+          ]
+        },
+        {
+          "id": "germanic",
+          "name": "Germanic",
+          "allowedClasses": [
+            "knight",
+            "zealot",
+            "wizard",
+            "reaver",
+            "squire",
+            "volva",
+            "provacateur",
+            "bard",
+            "hundr",
+            "draoi",
+            "frontiersman",
+            "whisper"
+          ]
+        },
+        {
+          "id": "romance",
+          "name": "Romance",
+          "allowedClasses": [
+            "knight",
+            "wizard",
+            "squire",
+            "preacher",
+            "syndicate",
+            "knave",
+            "relic-master",
+            "veil-tamer"
+          ]
+        },
+        {
+          "id": "hellenic",
+          "name": "Hellenic",
+          "allowedClasses": [
+            "knight",
+            "wizard",
+            "squire",
+            "muse",
+            "equal",
+            "pankrator"
+          ]
+        },
+        {
+          "id": "slavic",
+          "name": "Slavic",
+          "allowedClasses": [
+            "knight",
+            "wizard",
+            "reaver",
+            "squire",
+            "preacher",
+            "provacateur",
+            "syndicate",
+            "frontiersman",
+            "relic-master"
+          ]
+        },
+        {
+          "id": "baltic",
+          "name": "Baltic",
+          "allowedClasses": [
+            "knight",
+            "wizard",
+            "reaver",
+            "squire",
+            "truthspeaker",
+            "muse",
+            "knave",
+            "frontiersman"
+          ]
+        },
+        {
+          "id": "armenian",
+          "name": "Armenian",
+          "allowedClasses": [
+            "knight",
+            "zealot",
+            "wizard",
+            "reaver",
+            "squire",
+            "preacher",
+            "muse",
+            "provacateur",
+            "frontiersman",
+            "relic-master",
+            "veil-tamer"
+          ]
+        },
+        {
+          "id": "severus",
+          "name": "Severus",
+          "allowedClasses": [
+            "knight",
+            "wizard",
+            "reaver",
+            "squire",
+            "truthspeaker",
+            "dracomancer",
+            "muse",
+            "provacateur",
+            "syndicate",
+            "bard",
+            "frontiersman",
+            "relic-master",
+            "veil-tamer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elves",
+      "name": "Elves",
+      "races": [
+        {
+          "id": "mythic",
+          "name": "Mythic",
+          "allowedClasses": [
+            "zealot",
+            "wizard",
+            "truthspeaker",
+            "preacher",
+            "dracomancer",
+            "muse",
+            "philosopher",
+            "equal",
+            "pankrator",
+            "ranger",
+            "relic-master"
+          ]
+        },
+        {
+          "id": "sidhe",
+          "name": "Sidhe",
+          "allowedClasses": [
+            "knight",
+            "reaver",
+            "squire",
+            "volva",
+            "dracomancer",
+            "muse",
+            "philosopher",
+            "knave",
+            "draoi",
+            "ranger",
+            "whisper"
+          ]
+        },
+        {
+          "id": "alfar",
+          "name": "Alfar",
+          "allowedClasses": [
+            "zealot",
+            "reaver",
+            "truthspeaker",
+            "volva",
+            "dracomancer",
+            "muse",
+            "philosopher",
+            "hundr",
+            "ranger",
+            "whisper",
+            "veil-tamer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hillback-empire",
+      "name": "Hillback Empire",
+      "races": [
+        {
+          "id": "hillback-dwarves",
+          "name": "Hillback Dwarves",
+          "allowedClasses": [
+            "knight",
+            "reaver",
+            "squire",
+            "truthspeaker",
+            "provacateur",
+            "syndicate",
+            "bard",
+            "knave",
+            "hundr"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dew-hollow",
+      "name": "Dew Hollow",
+      "races": [
+        {
+          "id": "woodling",
+          "name": "Woodling",
+          "allowedClasses": [
+            "truthspeaker",
+            "muse",
+            "syndicate",
+            "bard",
+            "knave",
+            "jester",
+            "ranger",
+            "veil-tamer"
+          ]
+        },
+        {
+          "id": "gobbledrift",
+          "name": "Gobbledrift",
+          "allowedClasses": [
+            "muse",
+            "syndicate",
+            "bard",
+            "jester",
+            "pankrator",
+            "whisper"
+          ]
+        },
+        {
+          "id": "fae",
+          "name": "Fae",
+          "allowedClasses": [
+            "wizard",
+            "volva",
+            "muse",
+            "philosopher",
+            "draoi",
+            "relic-master",
+            "whisper",
+            "veil-tamer"
+          ]
+        },
+        {
+          "id": "centaur",
+          "name": "Centaur",
+          "allowedClasses": [
+            "knight",
+            "squire",
+            "preacher",
+            "equal",
+            "frontiersman",
+            "whisper"
+          ]
+        }
+      ]
+    }
+  ]
+}
