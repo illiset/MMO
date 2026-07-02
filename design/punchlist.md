@@ -12,6 +12,12 @@
    that offends the DAoC soul.
 
 ## Claude follow-ups (next runs)
+- [ ] **TOP PRIORITY (Daniel, 2026-07-02): OUR OWN login/creation screens**
+      — Three Realms branded, DAoC-style: login -> realm select (3 realms,
+      GN playable) -> class type -> race -> name -> loading screen. Build
+      as C++ UMG widgets in the kit project driving the kit's C++
+      WebSocket login; classic dark+gold skin from the start. Kit's stock
+      StartMap UI is NOT acceptable as the player-facing flow.
 - [x] JSON→kit AbilityAsset generator DONE (112 assets: slice-four +
       classtype trees; damage logic wired for strike/dd/dot kinds)
 - [ ] P1 BP wiring: realm select + class-type select in the kit's
