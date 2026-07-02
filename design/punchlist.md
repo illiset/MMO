@@ -29,7 +29,8 @@
 - [~] P5: start-flow reskin done; in-world kit widgets (inventory/HUD) still stock
 - [ ] Git LFS + private GitHub remote for MMOKitEval AND private remote for the MMOKitPersistence fork
 - [ ] Port classic-MMO controls (design/controls.md) onto kit player BP
-- [ ] Skill tree UI panel (classic talent layout) reading our skill JSON
+- [x] Skill tree UI panel SHIPPED (K in world: tabs, tiers, unlock levels,
+      cost/cd cards; wired to Frontline/Knight until class identity lands)
 - [ ] Daniel review: 21 draft class trees in data/skills/great-north/
       (slice four are authored; rest need his eye eventually, no rush)
 

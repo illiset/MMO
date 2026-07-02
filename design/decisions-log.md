@@ -92,3 +92,11 @@ Calls made without Daniel, per run authorization. Flag anything to reverse.
 17. Styling: gold hairline rims on all panels, 64px sigil diamonds,
     pre-alpha footer. P1 MARKED COMPLETE.
 18. Pacing change per Daniel: long hauls per waking, wider gaps between.
+
+## Loop iteration 6 (long-haul cont.) — 2026-07-02
+
+19. Skill tree panel shipped (K toggle via world subsystem — no kit BP
+    edits). Two build snags fixed: wrong world-type enum; DLL locked by
+    the running world server (stopped, built, restarted — brief outage).
+20. All three repos confirmed on GitHub: MMO (public), ThreeRealmsKit
+    (private, LFS), ThreeRealmsPersistence (private fork).
