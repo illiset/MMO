@@ -100,3 +100,19 @@ Calls made without Daniel, per run authorization. Flag anything to reverse.
     the running world server (stopped, built, restarted — brief outage).
 20. All three repos confirmed on GitHub: MMO (public), ThreeRealmsKit
     (private, LFS), ThreeRealmsPersistence (private fork).
+
+## Loop iteration 7 — 2026-07-02
+
+21. MILESTONE: Daniel entered the world through OUR login flow ("Server
+    logged in / Client logged in"). Spawn init errors diagnosed: our
+    creation blob lacked kit fields; Aldric fell to z=-598km (RIP, saved).
+22. Fix built (queued behind Daniel's open editor): creation payload now
+    kit-shaped (schema captured from a kit-authored save; Human body
+    placeholder; sword equipped); realm/classtype/race moved to dedicated
+    DB columns via new RPCs 12/13 because KIT SAVES CLOBBER THE JSON BLOB.
+    Client meta-read merge (fix realm lock post-save) = next iteration.
+23. Discovered kit-valid appearances: Human, Mannequin, DarkMinion. Sex
+    choice missing from our creation flow — punch-listed.
+24. LFS pointer incident during Daniel's session (TRStartMap unreadable)
+    — fixed via git lfs checkout; WBP_HUD still held by his session,
+    auto-fixes at editor close.

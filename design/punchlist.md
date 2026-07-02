@@ -38,3 +38,7 @@
 - Keep "Aldric" as your GM character name or pick your real main's name?
 - MMO Kit's stat set differs from our 16-stat system — mapping ours onto
   their character sheet is a design+code task; confirm priority.
+
+- [ ] Creation flow: SEX choice (currently defaults Male/Human body)
+- [ ] Client: merge GetCharacterMeta (RPC 13) into char select; realm lock from columns
+- [ ] lfs checkout WBP_HUD after Daniel's session closes
