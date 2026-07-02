@@ -30,7 +30,9 @@ when GN's loop is proven.
 
 - [x] UE 5.8 C++ project at `C:\dev\ThreeRealms` (outside OneDrive), own git
       repo (engine content is too heavy for the design repo) — module builds
-- [ ] Third-person character walking around a gray-box zone
+- [x] Third-person character walking around a gray-box zone — mannequin body,
+      classic-MMO controls (120°/s keyboard turn), code-spawned test arena.
+      Playtest verdict 2026-07-01: "beautiful controls and speed"
 - [ ] **Data bridge:** importer that turns `data/*.json` into UE DataAssets —
       the spreadsheet→JSON→engine pipeline becomes end-to-end
 - [ ] Dedicated server target builds; two clients connect and see each other
