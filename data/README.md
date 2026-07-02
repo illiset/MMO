@@ -10,6 +10,9 @@ extractor) and regenerate. Validate with `python tools/validate.py`.
   100-point-per-archetype budget
 - `factions/<id>.json` — one file per faction: `great-north`, `mystic-lands`,
   `honorguard`
+- `abilities.json` — **hand-authored** (the one file NOT generated from the
+  spreadsheet; edit it directly). Validated against faction/class ids by
+  `tools/validate.py`
 
 ## Faction schema
 

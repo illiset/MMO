@@ -60,6 +60,31 @@ def main():
               f"archetype stat minimums differ between {FACTION_IDS[0]} and {fid}",
               hard=False)
 
+    # Abilities (hand-authored, not xlsx-generated) must reference real
+    # factions/classes and carry sane numbers.
+    abilities_path = REPO / "data" / "abilities.json"
+    if abilities_path.exists():
+        abilities = json.loads(abilities_path.read_text(encoding="utf-8"))["abilities"]
+        seen_ids = set()
+        for ab in abilities:
+            aid = ab.get("id", "<missing-id>")
+            check(aid not in seen_ids, f"abilities: duplicate id {aid}")
+            seen_ids.add(aid)
+            faction = factions.get(ab.get("factionId"))
+            check(faction is not None, f"abilities/{aid}: unknown faction {ab.get('factionId')}")
+            if faction:
+                class_ids = {c["id"] for a in faction["archetypes"] for c in a["classes"]}
+                check(ab.get("classId") in class_ids,
+                      f"abilities/{aid}: unknown class {ab.get('classId')}")
+            check(ab.get("costType") in ("stamina", "mana", "none"),
+                  f"abilities/{aid}: bad costType {ab.get('costType')}")
+            check(ab.get("cost", 0) >= 0, f"abilities/{aid}: negative cost")
+            check(ab.get("cooldown", 0) >= 0, f"abilities/{aid}: negative cooldown")
+            check(ab.get("range", 0) > 0, f"abilities/{aid}: range must be positive")
+            dmg = ab.get("damage", {})
+            check(0 < dmg.get("min", 0) <= dmg.get("max", 0),
+                  f"abilities/{aid}: bad damage range")
+
     for w in warnings:
         print(f"WARN  {w}")
     for e in errors:

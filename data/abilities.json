@@ -1,0 +1,17 @@
+{
+  "abilities": [
+    {
+      "id": "shield-slam",
+      "name": "Shield Slam",
+      "factionId": "great-north",
+      "classId": "knight",
+      "type": "melee",
+      "costType": "stamina",
+      "cost": 25,
+      "cooldown": 6.0,
+      "range": 250,
+      "damage": { "min": 30, "max": 40 },
+      "description": "Drive your shield into the target with crusader force."
+    }
+  ]
+}
