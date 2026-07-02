@@ -42,3 +42,10 @@
 - [ ] Creation flow: SEX choice (currently defaults Male/Human body)
 - [ ] Client: merge GetCharacterMeta (RPC 13) into char select; realm lock from columns
 - [ ] lfs checkout WBP_HUD after Daniel's session closes
+
+## Daniel's playtest notes (2026-07-02, round 2)
+- [ ] Login backdrop: triptych realm key-art per his mock (art files ->
+      C:\devrt-drop; wire as background textures + realm columns)
+- [x] Login button copy -> EARN YOUR DESTINY; tagline updated; epithets added
+- [x] Input fields unreadable (too dim) -> dark fields, light text
+- [x] BACK button on every screen (server/charselect/realm/creation)

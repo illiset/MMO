@@ -14,21 +14,24 @@
       "factionId": "great-north",
       "displayName": "The Great North",
       "tagline": "Crusaders, elves, and dwarves under one winter banner.",
-      "playable": true
+      "playable": true,
+      "epithet": "Land of Ice and Iron"
     },
     {
       "factionId": "mystic-lands",
       "displayName": "The Mystic Lands",
       "tagline": "Empires of sand, secrets, and the Fallen.",
       "playable": false,
-      "comingSoon": true
+      "comingSoon": true,
+      "epithet": "Land of Magic and Wonder"
     },
     {
       "factionId": "honorguard",
       "displayName": "The Honorguard",
       "tagline": "The Builders, the Shrouded, and the peace they guard.",
       "playable": false,
-      "comingSoon": true
+      "comingSoon": true,
+      "epithet": "Land of Valor and Honor"
     }
   ],
   "classTypes": [
@@ -68,7 +71,8 @@
   "rules": {
     "realmLockPerServer": "Once an account has any character on a server, the account is locked to that character's realm on that server. LOCKED UX: realm select is SKIPPED entirely - the account goes straight to its realm's character creation screen. Unlock only by deleting all characters on the server or transferring off. Enforced server-side.",
     "buttonCopy": {
-      "createAccount": "Create Account"
+      "createAccount": "Create Account",
+      "login": "EARN YOUR DESTINY"
     },
     "createAccountFields": [
       "accountName",
@@ -80,8 +84,9 @@
   "uiStyle": {
     "login": "WoW-style fullscreen immersive, our own non-cartoony art, dark+gold classic UI",
     "characterCreation": "DAoC-style step flow; class TYPE at creation, true class at level 10",
-    "loginBackdrop": "Attempt live 3D winter scene (WoW-style); fallback clean dark+gold panel",
+    "loginBackdrop": "Triptych: three realm key-art panels (Daniel's mock, 2026-07-02); art files land in C:\\dev\u0007rt-drop",
     "realmSigils": "Claude-designed simple geometric crests v1 (GN sword+snowflake, ML sun+crescent, HG mountain+shield)",
-    "hourPriority": "function-first"
+    "hourPriority": "function-first",
+    "loginTagline": "A real MMORPG in the spirit of the old age"
   }
 }
