@@ -1,0 +1,32 @@
+{
+  "flow": ["login", "realm", "classType", "race", "name", "enterWorld"],
+  "realms": [
+    {
+      "factionId": "great-north",
+      "displayName": "The Great North",
+      "tagline": "Crusaders, elves, and dwarves under one winter banner.",
+      "playable": true
+    },
+    {
+      "factionId": "mystic-lands",
+      "displayName": "The Mystic Lands",
+      "tagline": "Empires of sand, secrets, and the Fallen.",
+      "playable": false,
+      "comingSoon": true
+    },
+    {
+      "factionId": "honorguard",
+      "displayName": "The Honorguard",
+      "tagline": "The Builders, the Shrouded, and the peace they guard.",
+      "playable": false,
+      "comingSoon": true
+    }
+  ],
+  "classTypes": [
+    { "archetypeId": "frontline", "displayName": "Frontline", "blurb": "Shield and steel. You are the wall.", "classCount": 4 },
+    { "archetypeId": "healers", "displayName": "Healer", "blurb": "The party lives because you say so.", "classCount": 4 },
+    { "archetypeId": "support", "displayName": "Support", "blurb": "Songs, wards, and cunning turn battles.", "classCount": 6 },
+    { "archetypeId": "dps", "displayName": "Damage", "blurb": "End fights. Preferably from behind.", "classCount": 11 }
+  ],
+  "_notes": "Race list per realm comes from factions data; race choice filters which true classes are reachable at level 10 (race x class matrix). Class TYPE is the only combat choice at creation — true class is earned at 10 via class quest (see quests.json)."
+}

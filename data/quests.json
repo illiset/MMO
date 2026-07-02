@@ -1,0 +1,32 @@
+{
+  "quests": [
+    {
+      "id": "class-quest-frontline-knight",
+      "name": "The Accolade",
+      "type": "class-quest",
+      "factionId": "great-north",
+      "classType": "frontline",
+      "grantsClassId": "knight",
+      "levelReq": 10,
+      "giver": "npc-sir-aldric-trainer",
+      "description": "Sir Aldric has watched your service on the frontline. Prove your discipline and be knighted.",
+      "steps": [
+        { "kind": "talk", "target": "npc-sir-aldric-trainer", "text": "Speak with Sir Aldric at the training yard." },
+        { "kind": "kill", "target": "training-dummy-veteran", "count": 5, "text": "Defeat 5 veteran training foes without falling." },
+        { "kind": "talk", "target": "npc-sir-aldric-trainer", "text": "Kneel before Sir Aldric to receive the accolade." }
+      ],
+      "rewards": {
+        "grantClass": "knight",
+        "title": "Knight of the Great North",
+        "message": "Rise, Knight of the Great North. Your true training begins now.",
+        "unlocksTree": "knight",
+        "items": ["worn-longsword"]
+      },
+      "status": "prototype"
+    }
+  ],
+  "_design": {
+    "rule": "Characters pick a CLASS TYPE (archetype) at creation and level 1-9 on the class-type tree. At level 10 a class quest per class unlocks the true class, limited by class type and the race x class matrix. One prototype quest ships first (Frontline->Knight); every other class follows this data shape.",
+    "decidedBy": "Daniel, 2026-07-01"
+  }
+}
