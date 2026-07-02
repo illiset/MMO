@@ -81,3 +81,14 @@ Calls made without Daniel, per run authorization. Flag anything to reverse.
     private remote (punch-listed).
 15. Bigger-chunk pacing adopted after Daniel's feedback: each waking
     works multiple pieces; wakeups stay ~90s.
+
+## Loop iteration 5 (long-haul) — 2026-07-02
+
+16. Backups: MMOKitPersistence fork pushed to private ThreeRealmsPersistence
+    (upstream remote preserved for kit updates). MMOKitEval migrated to
+    Git LFS (1064 binary assets) and pushing to private ThreeRealmsKit
+    (in progress, background). World server was stopped to unlock files —
+    restart via StartThreeRealmsServers.bat before playing.
+17. Styling: gold hairline rims on all panels, 64px sigil diamonds,
+    pre-alpha footer. P1 MARKED COMPLETE.
+18. Pacing change per Daniel: long hauls per waking, wider gaps between.

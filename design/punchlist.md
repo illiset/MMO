@@ -12,7 +12,9 @@
    that offends the DAoC soul.
 
 ## Claude follow-ups (next runs)
-- [ ] **TOP PRIORITY (Daniel, 2026-07-02): OUR OWN login/creation screens**
+- [x] **OUR OWN login/creation screens — SHIPPED** (login, create account
+      w/ email, server select, realm select+lock, DAoC creation, char
+      select, world travel; gold-rim styling pass done)
       — Three Realms branded, DAoC-style: login -> realm select (3 realms,
       GN playable) -> class type -> race -> name -> loading screen. Build
       as C++ UMG widgets in the kit project driving the kit's C++
@@ -24,7 +26,7 @@
       character creation flow (StartLevel widgets) — likely needs some
       GUI Blueprint work; plan a co-driving session or careful python
 - [ ] P4 runtime: implement The Accolade quest in kit quest/NPC systems
-- [ ] P5: classic UI reskin of kit widgets (dark + gold pass)
+- [~] P5: start-flow reskin done; in-world kit widgets (inventory/HUD) still stock
 - [ ] Git LFS + private GitHub remote for MMOKitEval AND private remote for the MMOKitPersistence fork
 - [ ] Port classic-MMO controls (design/controls.md) onto kit player BP
 - [ ] Skill tree UI panel (classic talent layout) reading our skill JSON
