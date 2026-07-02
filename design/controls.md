@@ -24,6 +24,15 @@ role coordination (positioning, interrupts, threat) rather than twitch
 aim — which also keeps the server-authoritative netcode simpler and
 cheaper than action-combat hit registration.
 
+## UI windows — decided 2026-07-01
+
+- **I — Inventory & equipment, PoE1/2 style**: paper-doll equipment slots
+  (main hand, off hand, head, chest, gloves, boots, belt, amulet, 2 rings)
+  plus a grid bag where items occupy width×height cells (longsword = 1×4).
+  Drag-and-drop when loot variety demands it; click-to-equip v1.
+- **C — Character sheet**: name/class/faction/level, vitals, the 16 design
+  stats grouped by category, equipment summary.
+
 ## Implementation notes (Phase 2)
 
 - Enhanced Input: contexts for "world" vs "UI focus"; rebindable from day

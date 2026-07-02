@@ -8,6 +8,7 @@
       "slot": "main-hand",
       "damage": { "min": 12, "max": 20 },
       "delay": 2.4,
+      "gridSize": { "w": 1, "h": 4 },
       "description": "A serviceable blade from the Great North's armories. It has seen better decades."
     }
   ]

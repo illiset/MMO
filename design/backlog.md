@@ -8,6 +8,11 @@
 - [ ] Max level: TBD. XP bar (20 segments × 5%) works regardless. Decide when
       the leveling curve gets real numbers.
 
+## Inventory (v1 shipped 2026-07-01, PoE-style)
+- [ ] Drag-and-drop item placement (v1 is click-to-equip/unequip)
+- [ ] Make remaining paper-doll slots functional as armor items exist
+- [ ] Per-item click handling once bags hold multiple items
+
 ## Polish
 - [ ] Death animation gets cut short by the 5s respawn — hold the corpse pose
       longer / fade camera
