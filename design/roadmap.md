@@ -24,6 +24,14 @@ when GN's loop is proven.
       get Logic 9 via the Volva idiom
 - [x] UE 5.8 installed, VS 2022 toolchain installed
 
+> **2026-07-02 pivot:** project adopted CodeSpartan MMO Kit (see
+> mmokit-evaluation.md). Primary engine project: `C:\dev\MMOKitEval`
+> (UE 5.7). Phase 1's dedicated-server box and Phase 4's accounts/login
+> are now DONE via the kit: persistence server (SQLite) + world server
+> verified end-to-end (account, login, character "Aldric" in DB,
+> 2026-07-02). Skills: 532 authored/drafted across GN (see data/skills).
+> Class-type→class-at-10 design recorded in quests.json.
+
 ## Phase 1 — Engine bring-up ← YOU ARE HERE
 
 **Goal:** the project exists in UE 5.8 and your design data flows into it.
