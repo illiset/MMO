@@ -61,3 +61,12 @@ Calls made without Daniel, per run authorization. Flag anything to reverse.
     realm-lock skip logic needs GetCharacters RPC parse; email persistence;
     button routing uses IsHovered lookup (tech debt); Live Coding blocked
     one build - editor was still open from Daniel's test (killed it).
+
+## Loop iteration 3 — 2026-07-02
+
+13. **Character select + realm lock shipped**: login -> server ->
+    character list (from RPC 21) with ENTER WORLD per character; realm
+    lock reads the first character's realm and skips realm select for
+    new characters (per spec). Empty accounts flow to realm select.
+    Tonight Daniel's daniel_test login will show Aldric (Level 1 celtic
+    frontline) ready to enter world.
