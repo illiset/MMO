@@ -33,3 +33,13 @@ Calls made without Daniel, per run authorization. Flag anything to reverse.
    generating kit data assets from our JSON.
 9. Kit uses **Paragon minion assets** as demo mobs — placeholder question
    resolved by the kit itself; consistent with our _DevPlaceholder policy.
+
+## Loop iteration 1 — 2026-07-02 (day)
+
+10. **Ability generator shipped**: 112 kit AbilityAssets under
+    /Game/ThreeRealms/Abilities/. Kit schema read from plugin C++
+    (AbilityAssetCpp.h). Mappings: our cost -> kit ManaCost (kit has ONE
+    resource; stamina-vs-mana split needs a kit extension later — logged);
+    strike/dd/dot get SwordAttackLogic_TargetBased with DamageFrom/To =
+    baseValue x0.8/x1.2; heal/buff/cc kinds have no logic instance yet
+    (per-kind logic classes = next); casters get 1.5s CastTime.

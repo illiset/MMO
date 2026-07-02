@@ -12,8 +12,8 @@
    that offends the DAoC soul.
 
 ## Claude follow-ups (next runs)
-- [ ] Finish JSON→kit AbilityAsset generator (schema archaeology on
-      AbilityAsset_C properties; python bridge already proven)
+- [x] JSON→kit AbilityAsset generator DONE (112 assets: slice-four +
+      classtype trees; damage logic wired for strike/dd/dot kinds)
 - [ ] P1 BP wiring: realm select + class-type select in the kit's
       character creation flow (StartLevel widgets) — likely needs some
       GUI Blueprint work; plan a co-driving session or careful python
