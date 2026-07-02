@@ -33,8 +33,9 @@ when GN's loop is proven.
 - [x] Third-person character walking around a gray-box zone — mannequin body,
       classic-MMO controls (120°/s keyboard turn), code-spawned test arena.
       Playtest verdict 2026-07-01: "beautiful controls and speed"
-- [ ] **Data bridge:** importer that turns `data/*.json` into UE DataAssets —
-      the spreadsheet→JSON→engine pipeline becomes end-to-end
+- [x] **Data bridge:** TRGameDataSubsystem loads `Content/Data/*.json`
+      (synced from this repo) at startup — spreadsheet→JSON→engine is
+      end-to-end. Verified 2026-07-01: 3 factions / 75 classes / 48 races
 - [ ] Dedicated server target builds; two clients connect and see each other
       move (Iris replication from day one — retrofitting networking kills
       MMO projects)
