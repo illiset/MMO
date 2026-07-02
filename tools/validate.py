@@ -85,6 +85,23 @@ def main():
             check(0 < dmg.get("min", 0) <= dmg.get("max", 0),
                   f"abilities/{aid}: bad damage range")
 
+    # Items (hand-authored like abilities).
+    items_path = REPO / "data" / "items.json"
+    if items_path.exists():
+        items = json.loads(items_path.read_text(encoding="utf-8"))["items"]
+        seen_items = set()
+        for item in items:
+            iid = item.get("id", "<missing-id>")
+            check(iid not in seen_items, f"items: duplicate id {iid}")
+            seen_items.add(iid)
+            check(item.get("type") in ("weapon", "armor", "misc"),
+                  f"items/{iid}: bad type {item.get('type')}")
+            if item.get("type") == "weapon":
+                dmg = item.get("damage", {})
+                check(0 < dmg.get("min", 0) <= dmg.get("max", 0),
+                      f"items/{iid}: bad damage range")
+                check(item.get("delay", 0) > 0, f"items/{iid}: delay must be positive")
+
     for w in warnings:
         print(f"WARN  {w}")
     for e in errors:
