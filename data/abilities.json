@@ -11,7 +11,8 @@
       "cooldown": 6.0,
       "range": 250,
       "damage": { "min": 30, "max": 40 },
-      "description": "Drive your shield into the target with crusader force."
+      "animation": "shield-bash-spin",
+      "description": "Slam your shield into the target, then whirl rightward with a full spinning slash."
     }
   ]
 }
