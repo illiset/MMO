@@ -60,19 +60,28 @@
   "_notes": "Race list per realm comes from factions data; race choice filters which true classes are reachable at level 10 (race x class matrix). Class TYPE is the only combat choice at creation \u2014 true class is earned at 10 via class quest (see quests.json).",
   "servers": [
     {
-      "id": "dev-1",
-      "displayName": "Three Realms Dev",
+      "id": "dev-gn-1",
+      "displayName": "Three Realms Dev GN",
       "region": "local"
     }
   ],
   "rules": {
-    "realmLockPerServer": "Once an account has any character on a server, that server is locked to that character's realm for the account. Unlock only by deleting all characters on the server or transferring them off. Enforced server-side.",
+    "realmLockPerServer": "Once an account has any character on a server, the account is locked to that character's realm on that server. LOCKED UX: realm select is SKIPPED entirely - the account goes straight to its realm's character creation screen. Unlock only by deleting all characters on the server or transferring off. Enforced server-side.",
     "buttonCopy": {
       "createAccount": "Create Account"
-    }
+    },
+    "createAccountFields": [
+      "accountName",
+      "password",
+      "confirmPassword",
+      "email"
+    ]
   },
   "uiStyle": {
     "login": "WoW-style fullscreen immersive, our own non-cartoony art, dark+gold classic UI",
-    "characterCreation": "DAoC-style step flow; class TYPE at creation, true class at level 10"
+    "characterCreation": "DAoC-style step flow; class TYPE at creation, true class at level 10",
+    "loginBackdrop": "Attempt live 3D winter scene (WoW-style); fallback clean dark+gold panel",
+    "realmSigils": "Claude-designed simple geometric crests v1 (GN sword+snowflake, ML sun+crescent, HG mountain+shield)",
+    "hourPriority": "function-first"
   }
 }
