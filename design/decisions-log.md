@@ -43,3 +43,21 @@ Calls made without Daniel, per run authorization. Flag anything to reverse.
     strike/dd/dot get SwordAttackLogic_TargetBased with DamageFrom/To =
     baseValue x0.8/x1.2; heal/buff/cc kinds have no logic instance yet
     (per-kind logic classes = next); casters get 1.5s CastTime.
+
+## Loop iteration 2 — 2026-07-02
+
+11. **Three Realms start flow SHIPPED (v1, function-first)**: C++ game module
+    added to kit project. TRAuthClient = our own WebSocket protocol client
+    (independent of kit BP login). TRStartFlowWidget: login (WoW-shape,
+    THREE REALMS title, live 3D scene backdrop via duplicated StartMap) ->
+    Create Account (name/email/password/confirm; email captured but not yet
+    stored server-side - DB extension pending) -> server select (Three
+    Realms Dev GN) -> realm select (3 sigil cards, GN playable, ML/HG
+    coming-soon) -> DAoC-style creation (class type -> race by culture
+    group -> name + "at level 10 you may become" destiny list from the
+    race matrix) -> character created in DB -> travels to 127.0.0.1:7779.
+12. **Known seams (next iterations)**: world-server cookie handshake on
+    entry (kit BP expects its own login state - travel may bounce);
+    realm-lock skip logic needs GetCharacters RPC parse; email persistence;
+    button routing uses IsHovered lookup (tech debt); Live Coding blocked
+    one build - editor was still open from Daniel's test (killed it).
