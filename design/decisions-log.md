@@ -70,3 +70,14 @@ Calls made without Daniel, per run authorization. Flag anything to reverse.
     new characters (per spec). Empty accounts flow to realm select.
     Tonight Daniel's daniel_test login will show Aldric (Level 1 celtic
     frontline) ready to enter world.
+
+## Loop iteration 4 — 2026-07-02
+
+14. **Email storage end-to-end**: persistence server fork gains SetEmail
+    RPC (repurposed unused slot 11) + SetAccountEmail; client captures
+    email at Create Account and sends it right after auth. Verified:
+    daniel_test row carries a real email in sqlite. NOTE: persistence
+    server is now OUR FORK with local-only commits — needs its own
+    private remote (punch-listed).
+15. Bigger-chunk pacing adopted after Daniel's feedback: each waking
+    works multiple pieces; wakeups stay ~90s.

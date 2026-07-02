@@ -25,7 +25,7 @@
       GUI Blueprint work; plan a co-driving session or careful python
 - [ ] P4 runtime: implement The Accolade quest in kit quest/NPC systems
 - [ ] P5: classic UI reskin of kit widgets (dark + gold pass)
-- [ ] Git LFS + private GitHub remote for MMOKitEval
+- [ ] Git LFS + private GitHub remote for MMOKitEval AND private remote for the MMOKitPersistence fork
 - [ ] Port classic-MMO controls (design/controls.md) onto kit player BP
 - [ ] Skill tree UI panel (classic talent layout) reading our skill JSON
 - [ ] Daniel review: 21 draft class trees in data/skills/great-north/
