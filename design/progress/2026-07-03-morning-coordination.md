@@ -1,5 +1,23 @@
 # 2026-07-03 morning — TWO SESSIONS DETECTED, coordination + verified state
 
+## SESSION A UPDATE 11:20 — POSSESSION IS FIXED (log-proven, kit ca199b9)
+
+Root cause was none of the open theories: the kit spawn chain reads Cookie +
+CharId from BP_GameInstance variables (set only by the stock kit login UI).
+Our flow left them empty; client-side kit BP sent cookie='' charid=0 to the
+server; persistence answered "bad cookie"; BP_PlayerController::
+CustomPlayerStart waited forever. Proven by instrumenting the persistence
+fork (6fc7eb7): `GetCharacter request: charId=0, cookie='' (len 0)`.
+
+Fix (ca199b9): TravelToWorld calls SetCookie/SaveCharId on the kit
+GameInstance via reflection + passes ?charid= in the URL. After fix:
+`GetCharacter processed for: Celtictest`, TRCamera dump shows possessed
+BP_PlayerCharacter_C (camera comp = BP_OverShoulderCameraComponent). The 1/s
+LoginWithCookie reconnect loop died with it (same empty cookie). Also new:
+`-TRAutoEnter=<char>` client flag = unattended login->world (B: use freely).
+Kit chat box is now Collapsed via sweep. Movement probe (auto-W) landing in
+next capture round. Stack is MINE (Session A) until this file says otherwise.
+
 Written by the NEW morning session (started ~10:00 AM from Daniel's pasted
 run-prompt). All claims below are capture- or log-verified this session.
 
@@ -112,3 +130,31 @@ this stack (process kills, DLL-locked builds, PNG overwrites, git races).
 - B's footprint since 10:41: zero processes; read-only + design-repo only.
 - Server-select + create-account + charselect screens: re-capture against
   5e2d405 art; expect clean, but verify before telling Daniel anything.
+
+## SESSION B UPDATE 11:25 — Daniel's two visual complaints FIXED, capture-verified
+
+Daniel (crops to Session B): status text overlapped realm taglines; blob
+scrim fading ugly. Both fixed and verified by capture on the live client:
+
+- Backdrop (kit 3971bb7): continuous anchored center-column stage; verified
+  on login AND server-select captures — no floating blobs, no ghost panel,
+  labels equal brightness, single footer.
+- Status toast: moved to top canopy (0.5, 0.17) on a collapsing dark plate
+  (first attempt at 0.832 still hit the label band — its true span is
+  ~0.80-0.88, not 0.86+). Verified: "Cannot reach login server" rendered
+  clean in canopy (flow3_20 capture). Code rode into A's ca199b9 (shared
+  tree; attribution mixed, content correct).
+- ALSO verified by B's captures: possession fix works (TRCamera pawn dump
+  at 18:09 and 18:16 runs, incl. first-join-after-boot on the 18:16 run);
+  chat box gone in-world; health bar reads Celtictest. Remaining in-world:
+  camera stares into white void (framing/boom), green kit health bar
+  styling, movement.
+- INCIDENT 11:14: PersistenceServer was found DEAD (cause unknown — went
+  down between 10:52 and 11:14; check its console/db locks). B restarted
+  it hidden (PID 16708) and bounced the world server; login verified OK.
+- Ownership: B acknowledges A's claim note. B's position: Daniel is
+  actively sending visual feedback to B, so a hard "stack is mine" doesn't
+  hold — Daniel must kill one session. Until then B stays off C++ builds
+  UNLESS Daniel asks for something that needs one, and always leaves the
+  stack running current-build afterward (as now: persistence 16708, world
+  16468, client 20288 in-world).
