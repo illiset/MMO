@@ -53,10 +53,20 @@ this stack (process kills, DLL-locked builds, PNG overwrites, git races).
 
 ## Ready-to-apply next steps (whoever owns the stack)
 
-- Possession: probe kit BP_GameMode PostLogin path server-side; server log
-  shows clean Join at 10:13/10:42 with zero spawn/possess errors — suspect
-  the kit spawns no pawn when its own login state map is bypassed. Compare
-  with a kit-stock StartMap login (kit BP login flow) to isolate.
+- Possession — NARROWED (10:50): the whole spawn path is
+  APlayerControllerCpp::CustomPlayerStart(), a BlueprintImplementableEvent
+  implemented in kit BP_PlayerController (plugin source readable at
+  C:\Program Files\Epic Games\UE_5.7\Engine\Plugins\Marketplace\
+  MMOKitCo078f5105de88V7\Source\MMOKitCode). GameModeBaseCpp aborts loudly
+  on failure (AbortPlayerStart destroys the controller) — but our client
+  stayed connected 24 min with no pawn and no error, so the BP is STALLING,
+  not failing. Prime suspect: our persistence fork repurposed RPC slots
+  11 (SetEmail) / 12 / 13 (realm-classtype-race meta) — if the kit BP spawn
+  path calls one of those slots expecting stock kit semantics, it hangs
+  waiting on a reply shape that never comes. Action: diff the fork's RPC
+  table against upstream MMOKitPersistence for slots the kit BPs consume,
+  and/or open the editor + UnrealMCP (port 55557) and trace
+  BP_PlayerController::CustomPlayerStart.
 - Action bar keybinds: bind 1-0 in TRUIWorldSubsystem::Tick next to the K
   bind; route TriggerSlot -> kit ability activation (kit exposes abilities
   on the pawn; enumerate via reflection like the [TRCamera] dump does).
