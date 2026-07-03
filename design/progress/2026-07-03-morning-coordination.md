@@ -67,8 +67,48 @@ this stack (process kills, DLL-locked builds, PNG overwrites, git races).
   table against upstream MMOKitPersistence for slots the kit BPs consume,
   and/or open the editor + UnrealMCP (port 55557) and trace
   BP_PlayerController::CustomPlayerStart.
-- Action bar keybinds: bind 1-0 in TRUIWorldSubsystem::Tick next to the K
-  bind; route TriggerSlot -> kit ability activation (kit exposes abilities
-  on the pawn; enumerate via reflection like the [TRCamera] dump does).
+- Action bar keybinds — PATCH SKETCH (unapplied, in TRUIWorldSubsystem::Tick
+  where K is bound):
+  ```cpp
+  static const FKey SlotKeys[10] = { EKeys::One, EKeys::Two, EKeys::Three,
+      EKeys::Four, EKeys::Five, EKeys::Six, EKeys::Seven, EKeys::Eight,
+      EKeys::Nine, EKeys::Zero };
+  for (int32 i = 0; i < 10; ++i)
+  {
+      FInputKeyBinding KB(SlotKeys[i], IE_Pressed);
+      KB.KeyDelegate.GetDelegateForManualSet().BindLambda(
+          [this, i] { TriggerActionSlot(i); });
+      PC->InputComponent->KeyBindings.Add(KB);
+  }
+  ```
+  TriggerActionSlot must (a) call Bar->TriggerSlot(i) for the cooldown
+  shade, (b) invoke the kit ability: kit pawns carry ability activation
+  via BP — enumerate callable UFunctions on the pawn matching
+  "*Ability*"/"*Skill*" with the same reflection loop as [TRCamera], then
+  CallFunctionByNameWithArguments. Requires a possessed pawn — blocked on
+  the possession bug.
+
+## Killed hypotheses (do not re-tread — verified 10:50-11:00)
+
+- RPC 11/12/13 collision: DEAD. Upstream RpcTypes.cs shows slots 11-13 were
+  RpcUnused1/2/3 in stock kit; kit BPs never call them. Fork's SetEmail(11)
+  and Set/GetCharacterMeta(12/13) collide with nothing.
+- LFS pointer stall: DEAD. `find Content -name "*.uasset" -size -1k` = 0
+  files; every uasset is smudged to real content on this checkout.
+- BP crash: DEAD. Zero "Accessed None"/Blueprint Runtime Error lines in the
+  world server log across both connected sessions this morning. The spawn
+  BP (BP_PlayerController::CustomPlayerStart, BlueprintImplementableEvent)
+  is stalling on an async step, not erroring. Next probe: editor + MCP
+  (55557) trace of that BP's node chain, or C++ instrumentation of
+  AsyncLoadAppearanceAssets / AsyncLoadPersistentClass (plugin sources).
+
+## Live-state timeline (for whoever reads this next)
+
+- 10:10 Session B killed A's client (unaware); relaunched own (16736).
+- 10:13-10:37 A drove ITS client (21668) into Frostmarch; no pawn; server
+  dropped it (ConnectionTimeout, client hitched 14s).
+- ~10:41 A killed B's client 16736; launched fresh client 24128; entered
+  Frostmarch as Celtictest 10:42:05. No pawn as of 11:00 ([TRCamera]=0).
+- B's footprint since 10:41: zero processes; read-only + design-repo only.
 - Server-select + create-account + charselect screens: re-capture against
   5e2d405 art; expect clean, but verify before telling Daniel anything.
