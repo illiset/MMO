@@ -82,3 +82,13 @@
       control — test script in chat). Later: unread-tab tint, timestamps
       toggle, server routing (local echo now), whisper targets vs real
       players, Combat feed from kit damage events.
+- [ ] ZOOM (Daniel: WoW-mod range): BP_WowStyleCameraComponent zooms by
+      lerping TargetArmLength toward ZoomTo; wheel clamp is a LITERAL in
+      the BP graph (props ZoomFrom/ZoomTo/ZoomAlpha confirmed via
+      TRZoomDump). Fix = open editor + UnrealMCP (55557), edit clamp max
+      400 -> 4000 in the wheel handler, save BP.
+- [ ] TARGET SOURCE: kit stores no target var on BP_PlayerController /
+      BP_PlayerCharacter (TRTarget dump lists all actor props). Find the
+      selection path in kit BPs (likely component or WBP_HUD function)
+      when wiring combat; TRUnitFrame target frame UI is READY and hidden
+      until fed. Also nothing targetable in Frostmarch until minions.
