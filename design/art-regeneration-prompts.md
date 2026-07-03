@@ -122,3 +122,29 @@ ornate fantasy UI button plate set on pure black background, three identical lon
 1. **B1** (unblocks three GN screens at once) → 2. **B5** (login) →
 3. **O1+O4** (native chrome everywhere) → 4. B2, B3 → 5. B4, B6–B8 →
 6. O2, O3 → 7. A-regens (nice-to-have references).
+
+## O5 — SKILL ICON BATCH (action bar; requested 2026-07-03)
+
+One generation per SKILL KIND first (10 icons unlock the whole bar); per-skill
+uniques come later. Square 1:1, generate large, deliver ≥512px each, PNG,
+drop in C:\dev\MMOKitEval\RawArt\icons\ named kind_<kind>.png
+(kind_strike, kind_dd, kind_dot, kind_heal, kind_hot, kind_buff, kind_debuff,
+kind_cc, kind_taunt, kind_utility).
+
+Base prompt for every icon:
+```
+fantasy MMORPG spell icon, painted in the style of classic WoW ability icons,
+rich saturated color on a dark vignetted background, thin dark inner border,
+razor sharp, centered single subject, no text --ar 1:1
+```
+Subjects per kind:
+- strike: crossed sword slash with white impact arc
+- dd: hurled fireball with trailing sparks
+- dot: green poison droplet over cracked skull
+- heal: radiant golden holy light burst
+- hot: soft green regrowth leaves with light motes
+- buff: upward golden shield glow on a raised gauntlet
+- debuff: purple downward-spiral curse mark
+- cc: ice-blue shackles/frozen chains
+- taunt: roaring horned war-horn
+- utility: swirling arcane compass rune

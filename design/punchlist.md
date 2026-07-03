@@ -65,3 +65,14 @@
 - [x] Login button copy -> EARN YOUR DESTINY; tagline updated; epithets added
 - [x] Input fields unreadable (too dim) -> dark fields, light text
 - [x] BACK button on every screen (server/charselect/realm/creation)
+
+## Daniel's decisions 2026-07-03 (binding, from crops session)
+- Controls: WoW-type. I = inventory, C = character sheet — PoE2-style
+  panels in Three Realms art, AAA quality (NEXT UI TASK, unbuilt)
+- Chat: mimic WoW completely for starters (shell SHIPPED; input v2 +
+  channels/tabs pending; typing still routes to hidden kit entry)
+- Action bar: WoW + ElvUI look (SHIPPED; real icons need O5 batch in
+  art-regeneration-prompts.md — kind_*.png drop-in)
+- [ ] Mana/stamina real data (kit has no such stats yet — kit extension)
+- [ ] Kit DemoWidget1/2 nameplates: style or replace (census-named)
+- [ ] Char-select panel: content top-heavy, empty lower half — tighten
