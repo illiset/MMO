@@ -43,6 +43,22 @@
 - [ ] Client: merge GetCharacterMeta (RPC 13) into char select; realm lock from columns
 - [ ] lfs checkout WBP_HUD after Daniel's session closes
 
+## 2026-07-03 morning session (A)
+- [x] MOVEMENT/POSSESSION BUG FIXED (kit ca199b9): kit BP_GameInstance needed
+      Cookie+CharId set before travel; persistence-verified spawn chain
+- [x] F7/WoW camera verified live: BP_WowStyleCameraComponent active after
+      PC->InputKey injection (log-proven)
+- [x] Kit chat box collapsed (banned sight); TR chat panel = future work
+- [x] Backdrop PNGs de-textified (debug line + footers inpainted, 5e2d405)
+- [x] TRStartMap unbuilt reflection capture deleted (overlay source)
+- [ ] Pawn fell through Nanite placeholder terrain: Nanite disabled on all
+      SM_GN_* (complex collision can't work under Nanite) — verify in-game
+- [ ] TR health/unit frame to replace kit green bar (banned default look)
+- [ ] Action bar keybinds 1-0 (Session B sketch in coordination doc;
+      unblocked now that possession works)
+- [ ] Scrim/replace creation-flow backdrops (baked panels + NON-CANON race
+      names in art; B1-B3 art regen is the real fix)
+
 ## Daniel's playtest notes (2026-07-02, round 2)
 - [ ] Login backdrop: triptych realm key-art per his mock (art files ->
       C:\devrt-drop; wire as background textures + realm columns)

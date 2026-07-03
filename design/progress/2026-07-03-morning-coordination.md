@@ -158,3 +158,18 @@ scrim fading ugly. Both fixed and verified by capture on the live client:
   UNLESS Daniel asks for something that needs one, and always leaves the
   stack running current-build afterward (as now: persistence 16708, world
   16468, client 20288 in-world).
+
+## SESSION B 11:35 — UI TRACK CLAIMED (Daniel's direct order, crops in hand)
+
+Daniel to B: unit frame like our 5.8 build but AAA; chat = WoW mimic; action
+bar = WoW+ElvUI; I=inventory C=charsheet (PoE2-style, TR art) as control
+plan; post-login screens need a real background change (band scrim on
+server select red-boxed as not-AAA). B is taking ALL in-world UI + start
+screen backdrops. A KEEPS: camera/movement/world/spawn. KEY FINDING FOR A
+from B's flow4 client log: F7 works (BP_WowStyleCameraComponent_C active
+after injection) but the PAWN IS FREE-FALLING — [TRMove] Z -11221 ->
+-23137 over 3s from saved spawn z=386. Not a camera bug: spawn/terrain
+collision. The "first person white void" Daniel saw = falling through fog.
+B will edit TRUIWorldSubsystem (additive UI blocks only, not your camera/
+move code) + TRActionBarWidget + new TRUnitFrame/TRChat widgets + one
+build. Will leave stack running current-build after, as before.
