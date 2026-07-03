@@ -76,3 +76,9 @@
 - [ ] Mana/stamina real data (kit has no such stats yet — kit extension)
 - [ ] Kit DemoWidget1/2 nameplates: style or replace (census-named)
 - [ ] Char-select panel: content top-heavy, empty lower half — tighten
+- [x] Chat v2 SHIPPED per Daniel's spec (kit 7d58f6a): tabs/colors/slash
+      commands/live input; capture-verified visuals + filtering. NOT yet
+      verified by hand: clicking tabs, typing (Daniel denied computer
+      control — test script in chat). Later: unread-tab tint, timestamps
+      toggle, server routing (local echo now), whisper targets vs real
+      players, Combat feed from kit damage events.
