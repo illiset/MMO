@@ -84,8 +84,15 @@ tools/sync_data_to_engine.py → Content/Data.
 1. Bring up stack, verify login screen by capture, fix anything visibly off
    BEFORE inviting Daniel in.
 2. Kill the open bugs above, capture-verified one by one.
-3. Finish EVERY start screen to the login's standard (ornate panels, gold
-   buttons, serif, art backdrops): server, characters, realm, path, race, name.
+3. Finish EVERY start screen — and understand the bar: TONIGHT'S LOGIN IS THE
+   FLOOR, NOT THE TARGET. Target = modern AAA login (WoW / Diablo IV class):
+   zero visible pixelation at native window size, zero smudge/ghost regions in
+   the art, consistent spacing/margins, professional type hierarchy, polished
+   ornament, satisfying hover/press on everything. FIRST ACTION of the session:
+   hand Daniel the exact art-generator prompts for 4K regenerations of every
+   mock (plus clean no-UI variants) so he can produce them while you work —
+   the source-art ceiling is the #1 blocker to this bar and only he can raise
+   it. Rebuild the login itself to the higher bar once new art lands.
 4. World beauty era: his Fab packs (Mountain Tops, Caves and Dungeons,
    Abandoned Cathedral — ask him to Add To Project in the Epic launcher, then
    dress Frostmarch with real meshes), lighting pass, snow material.
@@ -95,5 +102,9 @@ tools/sync_data_to_engine.py → Content/Data.
    design/progress reports with proof captures as you go.
 
 Quality bar: nothing reaches Daniel's eyes that you haven't seen in a capture
-and would defend as clean, readable, and styled to his art. When in doubt
-about look/feel: DAoC 2001 dignity + WoW 2004 clarity, painted in his gold.
+and would defend as SHIPPABLE IN A COMMERCIAL GAME. "Better than yesterday"
+is not the bar; "a stranger would believe this is a real MMO" is. When in
+doubt about look/feel: DAoC 2001 dignity + WoW 2004 clarity + Diablo IV
+polish, painted in his gold. If you cannot reach that bar with current
+assets, say exactly why and exactly what asset unlocks it — never ship a
+workaround and call it done.
