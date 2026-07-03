@@ -47,10 +47,19 @@ carries its proof artifact.
   (Viewport is fog-white: this capture predates the collision fix — the pawn
   was falling. Post-fix standing capture lands in the next report.)
 
+## FINAL PROOF — `2026-07-03-standing-in-frostmarch.png` (11:45)
+
+Celtictest standing on Frostmarch snow in third person (WoW camera), sword
+in hand, Session B's unit frame (name/level/HP/stamina/mana, dark+gold) and
+chat panel ("Welcome to the Great North") live, zero kit-stock UI, zero
+debug text. Client probe: floor at Z=126.8, walked 82.8 ground units.
+Live binaries: kit source ca199b9 + content 50b42de + Session B's
+uncommitted HUD widgets (in the built DLL).
+
 ## Still open (honest list)
 
-- Standing-on-ground capture pending (client probe running as this is
-  written). Terrain is placeholder-smooth either way; props unverified.
+- Terrain is placeholder-smooth; props crude, several read sideways
+  (visible in the standing capture) — art-blocked on Daniel's packs.
 - Action bar keys 1-0 unwired (sketch in coordination doc).
 - Kit green health bar replaced by Session B's TRUnitFrameWidget — visual
   verify pending. Chat: kit box collapsed; B's TRChatWidget lands next.
