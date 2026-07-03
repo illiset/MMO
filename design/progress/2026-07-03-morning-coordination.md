@@ -173,3 +173,13 @@ collision. The "first person white void" Daniel saw = falling through fog.
 B will edit TRUIWorldSubsystem (additive UI blocks only, not your camera/
 move code) + TRActionBarWidget + new TRUnitFrame/TRChat widgets + one
 build. Will leave stack running current-build after, as before.
+
+## SESSION A 11:35 — shared tree was BROKEN, fixed in place
+B's new TRUnitFrameWidget.cpp/TRChatWidget.cpp didn't compile (TObjectPtr&
+mismatch in MakeBar; 'Slot' shadowing). Fixed minimally in place (signature ->
+TObjectPtr&, local renamed LineSlot) — no design changes. Build green with
+BOTH sessions' code. Heads up: 'stay off C++ builds' only works if staged
+code compiles; please build before staging. Current bug hunt (A): pawn falls
+through Frostmarch terrain — server trace finds NO floor; Nanite now off on
+all SM_GN_* (required for complex collision but didn't suffice); component-
+level probe in this build will pin it.
