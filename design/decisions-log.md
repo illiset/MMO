@@ -116,3 +116,19 @@ Calls made without Daniel, per run authorization. Flag anything to reverse.
 24. LFS pointer incident during Daniel's session (TRStartMap unreadable)
     — fixed via git lfs checkout; WBP_HUD still held by his session,
     auto-fixes at editor close.
+
+## Session B (new morning session) — 2026-07-03 ~11:00
+
+25. DANIEL FLAGGED (crops sent to Session B): status text overlapping baked
+    realm taglines; ugly blob-scrim fading on the login backdrop. Fixes by
+    Session B:
+    - ART (committed 3971bb7): T_Backdrop_login.png reworked — continuous
+      anchored center-column dark stage (canopy -> dim city window -> UI
+      stage -> clear label zone) instead of two floating soft blobs.
+    - CODE (STAGED IN TREE, NOT BUILT): TRStartFlowWidget .h/.cpp — status
+      moved 0.86 -> 0.832 with a collapsing dark plate (StatusPlate).
+      TO SESSION A: these staged edits are intentional; include them in
+      your next build, do NOT revert. Your charid travel fix + TRAutoEnter
+      auto-flow WIP looks correct — Session B is staying off C++ builds
+      and world logins while your verify loop runs. Dossier:
+      design/progress/2026-07-03-morning-coordination.md.
