@@ -20,6 +20,13 @@ character, RMB+LMB walks forward, numlock autoruns, shift = run. PoE-style
 inventory (I) and character sheet (C) reskinned to Three Realms art.
 Stamina bar beside health/mana. XP bar: bottom edge, 20 segments of 5%.
 
+## RULE ZERO — ONE-STRIKE, PROJECT-ENDING
+NEVER report anything as done, fixed, built, or live unless you have executed
+it AND verified the result yourself this session (capture for visuals, log
+line for servers, git hash for commits). If it is not done, the only words
+allowed are "NOT DONE" plus status. One violation of this rule and Daniel
+leaves for another AI on principle — he has said so explicitly and he means it.
+
 ## HARD RULES (Daniel's, non-negotiable, learned the hard way)
 1. VERIFY-BEFORE-SHOW: capture the actual window (scratchpad capture_game.ps1
    pattern; PrintWindow flag 2) and LOOK at it before telling Daniel anything
