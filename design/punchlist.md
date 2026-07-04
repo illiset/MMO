@@ -58,11 +58,14 @@
       unblocked now that possession works)
 - [ ] Scrim/replace creation-flow backdrops (baked panels + NON-CANON race
       names in art; B1-B3 art regen is the real fix)
-- [ ] ESC in-game menu (Daniel 2026-07-04): Escape opens a menu with
-      Logout (-> character select), Character Selection, Settings, Exit
-      Game. DESIGN IMAGE INCOMING from Daniel — build ONLY to his exact
-      image (measure + slice workflow, same as player unit frame).
-      Start-flow reference sheet = the five mocks he re-sent today.
+- [x] ESC in-game menu SHIPPED to Daniel's exact design (kit dd38d92,
+      capture-proven): two-panel dialog, his sliced icons/ornaments, REAL
+      settings (V-Sync ini-flip verified end-to-end; window mode applied
+      live), Dev1/Great North/session clock, logout/exit wired, drag +
+      click-outside close. NOT yet hand-verified: the physical ESC
+      keypress (auto-open used the same toggle function), drag feel,
+      logout round-trip — Daniel's 60-second test list in chat.
+      Collections/Journal/Social/Support = dimmed until systems exist.
 
 ## Daniel's playtest notes (2026-07-02, round 2)
 - [ ] Login backdrop: triptych realm key-art per his mock (art files ->
