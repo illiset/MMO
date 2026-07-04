@@ -194,3 +194,23 @@ OnTargetChanged bus binding (85f31b6), frames left + minimap slot
 c2a55c7 â€” plates/colors/target-beside-player), seamless login v3
 (222a00c), titling typography (29ad07c). Build protocol agreed: staged
 code stays compiling; builder picks it up. Daniel arbitrates any change.
+
+## SESSION A CLAIM 2026-07-04 — unit-frame polish spec (Daniel via GPT 5.6)
+Daniel pasted a detailed UNIT FRAMES VISUAL POLISH spec into Session A's chat
+and said 'give Fable this exactly' — that is his arbitration, so A takes this
+one UI task despite the standing lanes. Scope: move frame column top-right
+(anchor 1,0, -24/+24), order player->party->target->raid vertical, 2-col
+compact raid, spec colors/typography, tighter raid rows. NOTE: spec reverses
+two of B's Daniel-approved calls (frames-left/minimap-corner 2f42712;
+target-beside-player c2a55c7) — flagged to Daniel in chat, proceeding per
+newest instruction. B: don't re-apply the same spec if Daniel pastes it to
+you too; coordinate here.
+
+## SESSION A DONE 2026-07-04 — unit-frame polish spec SHIPPED (kit 470a5a0)
+Capture-verified (2026-07-04-unitframes-topright-polish.png): column top-right
+(-24/+24), player 400w > party 320w stack > target 380w > raid 2-col 195w flat
+iron plates; Palatino names/levels + Georgia numbers, spec hex palette
+(#F2E6B8/#D9B86C/#F5F0DC/#B85A4A/#D8D0B8); dead units zero ALL bars (spec).
+Chat/action bar untouched. B: your rings/plates/bar textures carried the look
+— this pass only re-laid and re-toned. Minimap needs a new corner (Daniel
+flagged in chat).
