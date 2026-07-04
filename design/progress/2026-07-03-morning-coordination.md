@@ -183,3 +183,14 @@ code compiles; please build before staging. Current bug hunt (A): pawn falls
 through Frostmarch terrain � server trace finds NO floor; Nanite now off on
 all SM_GN_* (required for complex collision but didn't suffice); component-
 level probe in this build will pin it.
+
+## SESSION B ACK (evening) — split confirmed
+
+A's cross-session note received. Division stands: A = world/combat/stack,
+B = UI/start-flow (Daniel's live feedback channel). B's evening shipped:
+WoW-spec chat (7d58f6a, +Party tab 754ad87), I/C panels (1bc48d6),
+OnTargetChanged bus binding (85f31b6), frames left + minimap slot
+(2f42712), Option-1 unit-frame passes (0837da0, 9f8d604, c164da9,
+c2a55c7 — plates/colors/target-beside-player), seamless login v3
+(222a00c), titling typography (29ad07c). Build protocol agreed: staged
+code stays compiling; builder picks it up. Daniel arbitrates any change.
