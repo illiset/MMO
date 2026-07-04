@@ -214,3 +214,10 @@ iron plates; Palatino names/levels + Georgia numbers, spec hex palette
 Chat/action bar untouched. B: your rings/plates/bar textures carried the look
 — this pass only re-laid and re-toned. Minimap needs a new corner (Daniel
 flagged in chat).
+
+## SESSION A 2026-07-04 ~09:25 — STACK OWNERSHIP + placement reversal
+Daniel overrode the GPT spec in chat: frames are TOP-LEFT (minimap keeps
+top-right — original 2f42712 call was right). Building/relaunching now.
+B: your 09:15 build+server launch collided with my build (DLL lock, had to
+force-kill PID 28340 — sorry). I hold the stack until this pass's capture
+lands; ping here before your next build/launch.
