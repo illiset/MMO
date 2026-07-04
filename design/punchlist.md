@@ -58,6 +58,11 @@
       unblocked now that possession works)
 - [ ] Scrim/replace creation-flow backdrops (baked panels + NON-CANON race
       names in art; B1-B3 art regen is the real fix)
+- [ ] ESC in-game menu (Daniel 2026-07-04): Escape opens a menu with
+      Logout (-> character select), Character Selection, Settings, Exit
+      Game. DESIGN IMAGE INCOMING from Daniel — build ONLY to his exact
+      image (measure + slice workflow, same as player unit frame).
+      Start-flow reference sheet = the five mocks he re-sent today.
 
 ## Daniel's playtest notes (2026-07-02, round 2)
 - [ ] Login backdrop: triptych realm key-art per his mock (art files ->
