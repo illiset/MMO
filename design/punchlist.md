@@ -92,3 +92,12 @@
       selection path in kit BPs (likely component or WBP_HUD function)
       when wiring combat; TRUnitFrame target frame UI is READY and hidden
       until fed. Also nothing targetable in Frostmarch until minions.
+- [ ] LIVE TARGET FRAME: kit broadcasts selection via
+      BP_PlayerCharEventBus.OnTargetChanged (multicast delegate, 1 param;
+      found by TRTargetProbe scan of 28 owners). Next: bind from
+      TRUIWorldSubsystem with a runtime signature-checked dynamic
+      delegate; feed UnitFrames->SetTargetFromActor. No stored target
+      var exists anywhere on PC/pawn/components.
+- [x] I/C panels v1 SHIPPED (charsheet real data, inventory grid);
+      panels toggle on I/C keys — Daniel: verify keys by hand (typing in
+      chat should NOT trigger them; if it does, tell Claude)
