@@ -101,3 +101,5 @@
 - [x] I/C panels v1 SHIPPED (charsheet real data, inventory grid);
       panels toggle on I/C keys — Daniel: verify keys by hand (typing in
       chat should NOT trigger them; if it does, tell Claude)
+- [ ] MINIMAP: top-right corner is reserved (frames moved left 2026-07-03).
+      Kit may ship a minimap widget - check WBP census before building one.
