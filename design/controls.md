@@ -1,20 +1,102 @@
-# Controls — decided 2026-07-01
+# Controls — official standard (updated 2026-07-07)
 
 **Classic WoW/DAoC MMO controls. Not action combat.** Daniel's call, locked.
+This file is the authoritative control/keybind spec (supersedes the
+2026-07-01 draft; deltas noted at the bottom).
 
-## The scheme
+---
 
-- **Movement:** WASD (W forward, S backpedal, A/D turn; Q/E strafe).
-  Autorun on Num Lock. No dodge-roll, no sprint-stamina bar.
-- **Camera:** hold right-mouse = mouselook + character turns with camera;
-  hold left-mouse = orbit camera without turning character; mouse wheel
-  zoom, full zoom-out for group/raid awareness.
-- **Targeting:** tab-target cycle (nearest enemy first), left-click to
-  select, target-of-target display. No reticle, no aim requirement.
-- **Combat input:** action bars (1–0, shift/ctrl modifiers), abilities fire
-  on the current target with range/facing checks. Global cooldown model.
-- **UI expectations:** clickable unit frames (party/target), castbars,
-  hotbar cooldown sweeps — the vocabulary every MMO player already knows.
+## PHASE 0A — CORE MMO CONTROLS (official standard, 2026-07-07)
+
+**Status: specification only — NOT yet implemented/verified except where
+marked "already works." Preserve existing working controls; do not rebuild
+them unless a task explicitly says so.**
+
+### Movement
+| Key | Action |
+|---|---|
+| W | move forward |
+| A | **turn** left (not strafe by default) |
+| S | move backward |
+| D | **turn** right (not strafe by default) |
+| Q | strafe left |
+| E | strafe right |
+| Space | jump |
+| C | toggle crouch |
+| X | sit |
+| F | interact (confirmed 2026-07-07) |
+| Num Lock | auto-run toggle |
+
+### Mouse
+| Input | Action | Status |
+|---|---|---|
+| LMB hold | look without moving | **already works** |
+| RMB hold | camera/look control (mouse-look) | **already works** |
+| RMB + LMB hold | look and move forward | **already works** |
+| Mouse wheel | camera zoom | **already works** |
+
+### Targeting / Combat
+- **Tab** = basic MMO target cycling
+- Clear-target behavior (drop current target)
+- Auto-attack behavior
+- **Main action bar: 12 slots, old-school MMORPG style**, hotkeys
+  `1 2 3 4 5 6 7 8 9 0 - =`
+
+### Panel hotkeys
+| Key | Panel |
+|---|---|
+| U | progression / reputation |
+| I | inventory |
+| B | inventory (alias) |
+| O | character stats |
+| P | party |
+| J | skills |
+| K | specialization / spec tree |
+| L | quest log |
+| M | map |
+| N | guild |
+| Escape | escape/settings menu |
+
+**Important correction (2026-07-07): C is NOT character. C = crouch.
+O = character stats.**
+
+### Chat slash behavior
+- `/p ` + Space → input switches to **Party** chat
+- `/g ` + Space → input switches to **Guild** chat
+- `/1 ` + Space → input switches to **General** chat
+- `/w Name ` + Space → input switches to **Whisper** to Name
+
+Expected behavior on recognition:
+1. The raw slash command **disappears from the input body** after
+   command + space.
+2. The chat-mode indicator changes (e.g. `[Party] |`).
+3. The input/message color changes to the channel color.
+4. The typed message sends to the selected channel.
+
+Example: user types `/p ` → input becomes `[Party] |` in party color; the
+text box no longer contains "/p ".
+
+### Preserve (already working — do not rebuild)
+- WASD movement
+- LMB hold look
+- RMB + LMB move-forward
+- RMB mouse-look
+- Mouse wheel zoom
+- Space jump
+
+### Add / verify (not yet implemented)
+- A/D turn left/right, not strafe by default (verify current behavior)
+- Q/E strafe left/right
+- F interact
+- Num Lock auto-run toggle
+- C toggle crouch
+- X sit
+- Tab targeting + clear target + auto-attack
+- Main action bar hotkeys 1–9, 0, -, = (12 slots)
+- All panel hotkeys above (U I B O P J K L M N)
+- Chat slash channel-switch behavior above
+
+---
 
 ## Why (load-bearing)
 
@@ -24,14 +106,16 @@ role coordination (positioning, interrupts, threat) rather than twitch
 aim — which also keeps the server-authoritative netcode simpler and
 cheaper than action-combat hit registration.
 
-## UI windows — decided 2026-07-01
+## UI windows — decided 2026-07-01 (hotkeys updated 2026-07-07)
 
-- **I — Inventory & equipment, PoE1/2 style**: paper-doll equipment slots
-  (main hand, off hand, head, chest, gloves, boots, belt, amulet, 2 rings)
-  plus a grid bag where items occupy width×height cells (longsword = 1×4).
-  Drag-and-drop when loot variety demands it; click-to-equip v1.
-- **C — Character sheet**: name/class/faction/level, vitals, the 16 design
-  stats grouped by category, equipment summary.
+- **I / B — Inventory & equipment, PoE1/2 style**: paper-doll equipment
+  slots (main hand, off hand, head, chest, gloves, boots, belt, amulet,
+  2 rings) plus a grid bag where items occupy width×height cells
+  (longsword = 1×4). Drag-and-drop when loot variety demands it;
+  click-to-equip v1.
+- **O — Character sheet** (moved off C, which is now crouch): name/class/
+  faction/level, vitals, the 16 design stats grouped by category,
+  equipment summary.
 
 ## Implementation notes (Phase 2)
 
@@ -39,3 +123,14 @@ cheaper than action-combat hit registration.
   one (data-driven input config, not hardcoded keys).
 - Server-authoritative movement via CharacterMovementComponent defaults;
   tab-target = server-validated target handle, not client raycasts.
+
+## Deltas from the 2026-07-01 draft
+- **C** was character sheet → now **crouch**; character stats moved to **O**.
+- **B** added as inventory alias alongside **I**.
+- **X** = sit added.
+- Action bar formalized as **12 slots** with `1–9 0 - =`.
+- Panel hotkey map (U/P/J/K/L/M/N) formalized.
+- Chat slash channel-switch spec formalized.
+- Q/E strafe **confirmed kept** (Daniel, 2026-07-07); A/D remain turn, not
+  strafe.
+- **F = interact** added (Daniel, 2026-07-07).

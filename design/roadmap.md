@@ -32,6 +32,46 @@ when GN's loop is proven.
 > 2026-07-02). Skills: 532 authored/drafted across GN (see data/skills).
 > Class-type→class-at-10 design recorded in quests.json.
 
+## PHASE 0A — CORE MMO CONTROLS (official standard, set 2026-07-07)
+
+**Standing control/keybind specification** — authoritative detail lives in
+`controls.md`; this is the roadmap-level contract. Spec only as of
+2026-07-07: nothing below is implemented unless listed under "Preserve."
+
+**Preserve (already works — do not rebuild):**
+- WASD movement
+- LMB hold look (look without moving)
+- RMB + LMB move-forward
+- RMB mouse-look
+- Mouse wheel zoom
+- Space jump
+
+**Add / verify:**
+- A/D turn left/right, **not strafe** by default
+- Q/E strafe left/right
+- F interact
+- Num Lock auto-run toggle
+- C toggle crouch (**C is NOT character**)
+- X sit
+- Tab targeting
+- Clear-target behavior
+- Auto-attack behavior
+- Main action bar: **12 slots**, hotkeys 1–9, 0, -, = (old-school MMORPG)
+- MMO panel hotkeys:
+  - U progression/reputation
+  - I/B inventory
+  - O character stats (moved off C)
+  - P party
+  - J skills
+  - K spec tree
+  - L quest log
+  - M map
+  - N guild
+  - Escape settings menu
+- Chat slash channel-switching: `/p `, `/g `, `/1 `, `/w Name ` + Space →
+  raw command disappears from the input, mode indicator + channel color
+  change, message sends to that channel (full spec in controls.md)
+
 ## Phase 1 — Engine bring-up ← YOU ARE HERE
 
 **Goal:** the project exists in UE 5.8 and your design data flows into it.
