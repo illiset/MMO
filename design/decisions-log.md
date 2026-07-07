@@ -46,7 +46,7 @@ Calls made without Daniel, per run authorization. Flag anything to reverse.
 
 ## Loop iteration 2 — 2026-07-02
 
-11. **Three Realms start flow SHIPPED (v1, function-first)**: C++ game module
+11. **Mythic Earth start flow SHIPPED (v1, function-first)**: C++ game module
     added to kit project. TRAuthClient = our own WebSocket protocol client
     (independent of kit BP login). TRStartFlowWidget: login (WoW-shape,
     THREE REALMS title, live 3D scene backdrop via duplicated StartMap) ->
@@ -132,3 +132,15 @@ Calls made without Daniel, per run authorization. Flag anything to reverse.
       auto-flow WIP looks correct — Session B is staying off C++ builds
       and world logins while your verify loop runs. Dossier:
       design/progress/2026-07-03-morning-coordination.md.
+
+## 2026-07-07 — Game name is MYTHIC EARTH
+
+"Three Realms" was only ever the working title. Daniel confirmed the game
+is named **Mythic Earth**. Applied everywhere user-visible: start-screen
+title + footer, server row, chat welcome, ESC-menu title, UE ProjectName,
+engine source comments, and living design docs (README, CLAUDE.md,
+login-flow, punchlist, STATE-OF-THE-GAME). Deliberately NOT renamed
+(infrastructure keeps the old working title): repo dir `three-realms`,
+GitHub repo illiset/MMO, `Content/ThreeRealms/` asset folder (renaming
+breaks asset references), `TR*` C++ class prefix, and dated historical
+progress docs. Historical log entries above stay as written.

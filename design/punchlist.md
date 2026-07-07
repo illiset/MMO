@@ -5,7 +5,7 @@
    servers").
 2. Open `C:\dev\MMOKitEval\MMOKitEval.uproject` in UE 5.7, open StartMap,
    press Play: **create an account, log in, create a character, enter the
-   world.** Your first real login to Three Realms. Expect MMO Kit's stock
+   world.** Your first real login to Mythic Earth. Expect MMO Kit's stock
    UI and demo world — realm/class-type customization comes next.
 3. Walk around, fight a Paragon minion, open the kit's inventory/loot.
    Verdict notes on: combat feel vs our ThreeRealms build, UI, anything
@@ -15,7 +15,7 @@
 - [x] **OUR OWN login/creation screens — SHIPPED** (login, create account
       w/ email, server select, realm select+lock, DAoC creation, char
       select, world travel; gold-rim styling pass done)
-      — Three Realms branded, DAoC-style: login -> realm select (3 realms,
+      — Mythic Earth branded, DAoC-style: login -> realm select (3 realms,
       GN playable) -> class type -> race -> name -> loading screen. Build
       as C++ UMG widgets in the kit project driving the kit's C++
       WebSocket login; classic dark+gold skin from the start. Kit's stock
@@ -76,7 +76,7 @@
 
 ## Daniel's decisions 2026-07-03 (binding, from crops session)
 - Controls: WoW-type. I = inventory, C = character sheet — PoE2-style
-  panels in Three Realms art, AAA quality (NEXT UI TASK, unbuilt)
+  panels in Mythic Earth art, AAA quality (NEXT UI TASK, unbuilt)
 - Chat: mimic WoW completely for starters (shell SHIPPED; input v2 +
   channels/tabs pending; typing still routes to hidden kit entry)
 - Action bar: WoW + ElvUI look (SHIPPED; real icons need O5 batch in

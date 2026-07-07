@@ -1,4 +1,4 @@
-# Three Realms (working title)
+# Mythic Earth (repo dir keeps old working title "three-realms")
 
 A PvE-first MMORPG in the spirit of Dark Age of Camelot — three factions, deep
 group PvE, no microtransactions ever.

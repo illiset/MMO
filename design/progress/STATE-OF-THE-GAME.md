@@ -1,8 +1,8 @@
-# Three Realms — State of the Game
+# Mythic Earth — State of the Game
 
 *Updated 2026-07-02 (evening). This is the show-the-kids page.*
 
-**Three Realms** is Dad's MMORPG: three kingdoms — the frozen **Great North**,
+**Mythic Earth** is Dad's MMORPG: three kingdoms — the frozen **Great North**,
 the magical **Mystic Lands**, and the knightly **Honorguard** — where you earn
 your true class at level 10 through a quest, and the kingdoms battle for keeps
 on the frontiers.

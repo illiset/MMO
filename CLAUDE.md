@@ -1,4 +1,4 @@
-# Three Realms (working title) — Claude Code Rules
+# Mythic Earth — Claude Code Rules (repo dir keeps old working title "three-realms")
 
 A PvE-first MMORPG in the spirit of Dark Age of Camelot. Solo dev (Daniel) +
 Claude as full coding/systems/tooling partner. This file carries the

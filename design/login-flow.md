@@ -10,7 +10,7 @@
 
 ## Flow
 1. **Login** — account name + password, Login button, Create Account button.
-2. **Server select** — list of servers (v1: "Three Realms Dev GN";
+2. **Server select** — list of servers (v1: "Mythic Earth Dev GN";
    architecture supports many later).
 3. **Realm select** — Great North / Mystic Lands / Honorguard.
    **REALM LOCK RULE:** once an account creates a character on a server,
