@@ -108,11 +108,20 @@ cheaper than action-combat hit registration.
 
 ## UI windows — decided 2026-07-01 (hotkeys updated 2026-07-07)
 
-- **I / B — Inventory & equipment, PoE1/2 style**: paper-doll equipment
-  slots (main hand, off hand, head, chest, gloves, boots, belt, amulet,
-  2 rings) plus a grid bag where items occupy width×height cells
-  (longsword = 1×4). Drag-and-drop when loot variety demands it;
-  click-to-equip v1.
+- **I / B — Inventory window, PoE2-style, ONE window (clarified
+  2026-07-07)**: not just bags — it shows **what you have equipped** plus
+  carried items together, in this vertical order:
+  1. **Equipment paper-doll (top)**: main hand + off hand flanking the
+     body — head, amulet, chest, belt, gloves, boots, 2 rings. Equipped
+     items render their art in-slot (you can see your loadout at a glance).
+  2. **Potion row: 5 potion/flask slots** (Daniel likes PoE2's 5-slot row —
+     keep it).
+  3. **Bag grid (bottom)**: items occupy width×height cells
+     (longsword = 1×4). Drag-and-drop when loot variety demands it;
+     click-to-equip v1.
+  Reference: PoE2 inventory screenshot (2026-07-07) for layout ONLY —
+  visual identity must be **Mythic Earth's own** (dark + gold, faction
+  flavor), not a PoE clone.
 - **O — Character sheet** (moved off C, which is now crouch): name/class/
   faction/level, vitals, the 16 design stats grouped by category,
   equipment summary.
