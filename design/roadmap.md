@@ -72,7 +72,46 @@ when GN's loop is proven.
   raw command disappears from the input, mode indicator + channel color
   change, message sends to that channel (full spec in controls.md)
 
-## Phase 1 — Engine bring-up ← YOU ARE HERE
+## PHASE 0B — COMBAT SLICE STATUS ← YOU ARE HERE (updated 2026-07-13)
+
+Maker/checker lanes on the kit slice (`Playable_FrostmarchSlice`, project
+`C:\dev\MMOKitEval`). Every checked item shipped with a fresh-context
+verifier PASS — **12 PASSes, 0 FAILs** so far.
+
+**Done (verified):**
+- [x] Practice target: "Training Dummy" in the slice (150 HP, harmless)
+- [x] Tab targeting + clear-target (ESC), skips dead mobs
+- [x] Target visibility: gold selection ring + top-center target frame
+- [x] Target frame shows real replicated data (name + live HP)
+- [x] HUD sanity: solo shows player frame only (demo party/raid gated off)
+- [x] Auto-attack v1: server-authoritative swings, first kill
+- [x] Action bar slot 1 = Attack (key 1 + click, one code path)
+- [x] Mob death → corpse → respawn loop (self-sustaining, no restarts)
+- [x] XP on kill, exactly once per kill, from authored mob-rewards.json
+- [x] Combat presentation: swing montage on player; action bar shows only
+      real abilities (slots 2–12 honest empty sockets until earned)
+- [x] Slot 2 = Frontline Strike, data-driven from authored frontline.json
+      (23 dmg / 3s cd) — the 532-skill JSON→bar→server pipeline works
+- [x] Skill routing + slot 3 = Shield Bash (38 / 6s), independent cooldowns
+- [x] XP bar + level-up: purple XP strip + live level badge under player
+      frame; 100 XP × level curve; **dinged level 2 live** (server log,
+      client replication, and on-screen proof)
+
+**Next up (each = one approved lane, in recommended order):**
+- [ ] Second mob type — HOSTILE, fights back (kit AI/aggro) ← recommended next
+- [ ] Player damage intake + player death/respawn (needs a hostile mob first)
+- [ ] Stamina/resource v1: enforce authored skill costs (frame's stamina bar
+      already exists; same replication pattern as XP)
+- [ ] Chat sanity: remove seeded Mira/Rowan demo lines (quick filler lane)
+- [ ] XP/level DB persistence (survive relog)
+- [ ] Level-up feel: ding sound + VFX
+- [ ] Proper skill icons (Attack/Strike/Bash are text placeholders)
+- [ ] Mob death animation (kit montages exist)
+- [ ] Phase 0A controls implementation (Q/E strafe, F interact, C crouch, …)
+- [ ] Camera pull-back — Blueprint-graph-locked at 400; needs a GUI edit of
+      BP_WowStyleCameraComponent (Daniel, in-editor)
+
+## Phase 1 — Engine bring-up (superseded by the kit pivot)
 
 **Goal:** the project exists in UE 5.8 and your design data flows into it.
 
@@ -84,9 +123,10 @@ when GN's loop is proven.
 - [x] **Data bridge:** TRGameDataSubsystem loads `Content/Data/*.json`
       (synced from this repo) at startup — spreadsheet→JSON→engine is
       end-to-end. Verified 2026-07-01: 3 factions / 75 classes / 48 races
-- [ ] Dedicated server target builds; two clients connect and see each other
-      move (Iris replication from day one — retrofitting networking kills
-      MMO projects)
+- [x] Dedicated server target builds and runs daily (kit world server +
+      persistence server — the whole verify loop rides on it)
+- [ ] Two clients connect and see each other move (never tested — fold into
+      a future multiplayer-sanity lane)
 
 **Done when:** you and one friend walk around the same gray-box zone from
 two machines.
@@ -95,16 +135,19 @@ two machines.
 
 **Goal:** the moment it becomes a game.
 
-- [ ] Vertical-slice picks: **one GN zone**, **4 classes** (one per
-      archetype — proposal: Knight / Squire / Bard / Ranger)
+- [x] Zone pick: Frostmarch slice (GN); class picks for the other 3
+      archetypes still open (proposal: Knight / Squire / Bard / Ranger)
 - [ ] Character creation v1 from real data: race → class gating, stat
       minimums, 100-point budget
-- [ ] Combat v1: targeting, auto-attack, 3–4 abilities per slice class,
-      mob AI (aggro, leash), death/respawn
-- [ ] XP and levels 1–5
+- [~] Combat v1: targeting ✔, auto-attack ✔, 3 abilities ✔ (Attack /
+      Frontline Strike / Shield Bash), mob death/respawn ✔ — **mob AI
+      (aggro, leash) is the missing half** (= the hostile-mob lane)
+- [~] XP ✔ and level 1→2 ✔; levels 1–5 tuning open
 
 **Done when:** you create a Celtic Knight, kill a mob, and ding level 2 —
-on the dedicated server.
+on the dedicated server. *(The ding happened 2026-07-12 — Celtictest,
+Training Dummy, level 2, dedicated server. What keeps this phase open:
+character creation from real data + real mob AI.)*
 
 ## Phase 3 — First Dungeon (the thesis proven)
 
