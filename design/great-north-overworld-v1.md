@@ -1,5 +1,11 @@
 # Great North Overworld — v1 read (Inkarnate WIP, 2026-07-14)
 
+> **PARKED (Daniel, 2026-07-14): disregard this whole doc for now.** The
+> map it reads is already outdated — Daniel is actively expanding it in
+> Inkarnate with the real allocations. When he delivers the accurate
+> Great North map, redo the read from scratch against that export; keep
+> this file only as background reasoning.
+
 Daniel's first Inkarnate pass at the Great North overworld. Unfinished by
 his own note — "possibly just part of the Great North, governments and race
 starting locations not fully allocated." This doc is the design read of
