@@ -72,7 +72,24 @@ a real place on the world map from day one.
 raid-tier cold) extends past the TOP edge beyond the massif. That's the
 next Inkarnate canvas northward, not a rework of this one.
 
-## Starting locations (from authored culture groups)
+## Starting locations
+
+> **DANIEL'S DIRECTION 2026-07-14 — supersedes the v1 proposals below.**
+> He is annotating the Inkarnate map with this now; the exported map is
+> the authority once it lands. Recorded from chat so nothing is lost:
+> - Starts are **culture-paired, not culture-group-blocked**: each elf
+>   race starts beside its mythologically-linked human culture.
+> - **Celtic** start: top right of the map; **Sidhe** start nearby
+>   (Celtic myth pairing).
+> - **Baltic + Slavic** start: also the top-right region.
+> - **Germanic + Alfar** (Alfar = snow elves): the snowy mid-north.
+> - **Mythic elves = high elves**: start near the **Hellenic** culture.
+> - Remaining allocations (Romance, Armenian, Severus, Hillback, Dew
+>   Hollow races) still being placed on the map.
+> - This allocation is VITAL input for in-game terrain/world building —
+>   transcribe into `data/zones/` once the annotated map is exported.
+
+### v1 proposals (SUPERSEDED — kept for the zone-cut reasoning only)
 
 `great-north.json` defines exactly four culture groups → four starts:
 
