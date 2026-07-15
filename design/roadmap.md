@@ -97,19 +97,36 @@ verifier PASS — **12 PASSes, 0 FAILs** so far.
       frame; 100 XP × level curve; **dinged level 2 live** (server log,
       client replication, and on-screen proof)
 
-**Next up (each = one approved lane, in recommended order):**
-- [ ] Second mob type — HOSTILE, fights back (kit AI/aggro) ← recommended next
-- [ ] Player damage intake + player death/respawn (needs a hostile mob first)
-- [ ] Stamina/resource v1: enforce authored skill costs (frame's stamina bar
-      already exists; same replication pattern as XP)
-- [ ] Chat sanity: remove seeded Mira/Rowan demo lines (quick filler lane)
-- [ ] XP/level DB persistence (survive relog)
-- [ ] Level-up feel: ding sound + VFX
-- [ ] Proper skill icons (Attack/Strike/Bash are text placeholders)
-- [ ] Mob death animation (kit montages exist)
-- [ ] Phase 0A controls implementation (Q/E strafe, F interact, C crouch, …)
-- [ ] Camera pull-back — Blueprint-graph-locked at 400; needs a GUI edit of
-      BP_WowStyleCameraComponent (Daniel, in-editor)
+**Shipped since (also verifier-PASSed, 14 PASSes total):**
+- [x] XP bar v2/v3: full-width 20-bubble bottom strip; faction skins
+      (GN aurora LIVE w/ animated shimmer; HG ember + ML gilt in the table)
+- [x] Terrain triage (two-sided ground + underlay) — **Daniel's verdict:
+      inadequate, "not AAA" — real fix is UE Landscape; no more prop patching**
+
+**HONESTY NOTE (Daniel 2026-07-15):** "done" above means *v1 verified at
+slice scope*, NOT shipping quality. Known-insufficient-by-design: combat
+feel (one shared attack anim, silent refusals, no hit reacts/death anims/
+damage numbers/sounds), placeholder skill icons, seeded demo chat, XP not
+DB-persisted, stamina costs authored but UNENFORCED (skills are free),
+hills unwalkable, camera zoom graph-locked, multiplayer never tested with
+a second client. Daniel re-judges sufficiency as he plays; his verdict
+supersedes any PASS.
+
+**Next up (each = one approved lane):**
+- [ ] COMBAT FEEL v1 — distinct kit montages per attack, player-facing
+      refusal feedback, mob hit-react + death anim, auto-attack active
+      indicator (spec proposed, AWAITING APPROVAL) ← mechanics track
+- [ ] LANDSCAPE TECH PROOF — heightmap→Landscape→auto-material→collision
+      in a THROWAWAY map (not the world; prep for Sidhe) ← world track
+- [ ] SIDHE TERRITORY zone build on real Landscape — **blocked on Daniel:
+      zoned map w/ borders + zone direction** (full GN map exists, unzoned)
+- [ ] Hostile mob v1 (fights back, kit AI) → then player damage/death
+- [ ] Stamina/resource v1 + skill `requires` enforcement (needs Daniel's
+      frontline gear matrix — design/skill-requirements.md)
+- [ ] Chat sanity; XP/level DB persistence; ding sound/VFX; skill icons;
+      Shift-sprint; Phase 0A controls (queued, unordered)
+- [ ] Daniel-side: camera zoom GUI edit; gear matrix; zone borders;
+      marketplace-packs gitignore-vs-commit call
 
 ## Phase 1 — Engine bring-up (superseded by the kit pivot)
 
