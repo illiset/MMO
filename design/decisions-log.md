@@ -144,3 +144,16 @@ login-flow, punchlist, STATE-OF-THE-GAME). Deliberately NOT renamed
 GitHub repo illiset/MMO, `Content/ThreeRealms/` asset folder (renaming
 breaks asset references), `TR*` C++ class prefix, and dated historical
 progress docs. Historical log entries above stay as written.
+
+## 2026-07-14 — Faction XP bar skins
+Daniel picked per-faction XP bar identities from mock rounds (generic MMO
+skins rejected; "should look mythic"):
+- **Great North = "Northern aurora"** — teal→blue→violet ramp across the
+  20 bubbles (the North's own sky), shimmer sweep + pulsing tip glow.
+- **Honor Guard = "Runeforged ember"** — iron frame, ember fill.
+- **Mystic Lands = "Molten gilt"** — liquid gold.
+Layout (all factions): full-width 20-bubble strip flush at screen bottom,
+cur/req plaque floating above, trim end caps. GN live in-game
+(commit dcd779d, MMOKitEval); HG/ML sit in the FTRXpBarSkin table until
+their realms are playable. Faction routing note: characters DB already
+stores realm; client-side faction id plumbing is a future lane.
