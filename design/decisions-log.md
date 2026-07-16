@@ -157,3 +157,15 @@ cur/req plaque floating above, trim end caps. GN live in-game
 (commit dcd779d, MMOKitEval); HG/ML sit in the FTRXpBarSkin table until
 their realms are playable. Faction routing note: characters DB already
 stores realm; client-side faction id plumbing is a future lane.
+
+## 2026-07-16 — Stay on UE 5.7.4 (for now)
+UE 5.8 shipped (2026-06-17) with Epic's experimental editor-embedded MCP
+server — attractive because every "GUI-locked" limitation (camera zoom BP,
+AnimBP slots, NavMesh volumes, kit BP internals) is an editor-authoring
+gap. Decision: CONTINUE ON 5.7.4. Reasons: CodeSpartan kit is a 5.7
+product (5.8 compatibility unverified), Phase 0 momentum (17 verified
+lanes), and the project already ships a third-party UnrealMCP plugin
+(Plugins/UnrealMCP, incl. Blueprint node commands) that can be wired up
+on 5.7 without any migration. Revisit 5.8 as its own verified lane —
+ideally before Sidhe Territory zone construction begins (cheapest moment);
+persistence server (C#) is engine-independent and unaffected either way.
