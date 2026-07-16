@@ -1,6 +1,6 @@
 # Great North Frontline — Levels 1–9 (Daniel's design, 2026-07-16)
 
-AUTHORITATIVE. Supersedes the old 8-skill classtype draft in
+REFERENCE COPY — the canonical governing copy is `MMOKitEval/docs/design/GN-Frontline-Starter-1-9-v1.md`. Supersedes the old 8-skill classtype draft in
 `data/skills/great-north/archetypes/frontline.json` (migration pending —
 see "Data consequences"). Realm kits are DISTINCT: ML/HG frontlines will
 be authored separately, no template crossover.
