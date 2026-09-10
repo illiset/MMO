@@ -169,3 +169,36 @@ lanes), and the project already ships a third-party UnrealMCP plugin
 on 5.7 without any migration. Revisit 5.8 as its own verified lane —
 ideally before Sidhe Territory zone construction begins (cheapest moment);
 persistence server (C#) is engine-independent and unaffected either way.
+
+## 2026-09-10 — MIGRATE TO UE 5.8.2 (Daniel's call, reverses the hold)
+Daniel: world/map quality on 5.7.4 is unacceptable ("looks like a 3rd
+grader got ahold of a pc"), and the goal is AAA with Daniel doing
+near-ZERO editor work himself. The 5.7 headless toolchain (blind python,
+commandlet crashes, GUI-locked BP edits) is the root cause — Claude could
+not do real level art with it. UE 5.8 ships Epic's official experimental
+**ModelContextProtocol** plugin ("Anthropic MCP server implementation for
+Unreal Engine") which lets Claude drive the editor directly. Actions:
+- 5.7.4 baseline snapshot-committed + pushed (ThreeRealmsKit 969f8be)
+  before any surgery; rollback = checkout + rebuild on UE_5.7.
+- MMOKitCode kit plugin copied from UE_5.7 engine Marketplace folder into
+  project `Plugins/MMOKitCode` (source-complete, 19 cpp) — we own its 5.8
+  build now; kit vendor 5.8 support no longer gates us.
+- .uproject → 5.8; ModelContextProtocol ENABLED; third-party UnrealMCP
+  DISABLED (superseded); LudusAI DISABLED (no 5.8 engine build yet —
+  re-enable if/when Ludus ships one).
+- Lane 1 (auto attack) code snapshot rides along; its build + full
+  verification package completes ON 5.8.2 (not built twice).
+- Next after boot verify: environment/world quality lane driven through
+  official MCP — this is the direct answer to the map complaint.
+
+RESULT (same day): build green on the FIRST attempt (183 s; only
+deprecation warnings — FSlateFontInfo path ctor + UButton::WidgetStyle
+direct access, due before 5.9). First 5.8.2 boot clean (map check 0
+errors). MCP server live at 127.0.0.1:8000/mcp; 49 toolsets registered
+incl. our new `MMOKitEval.TRMythicToolset` (ExecutePython /
+ExecutePythonFile / ExecuteConsoleCommand — all PROVEN over MCP) and
+Epic's BlueprintTools/MaterialTools/SceneTools/ActorTools/UMG/Niagara/PCG.
+Every "GUI-locked" blocker from July (camera BP literal, AnimBP slots,
+NavMesh volume) is now reachable. Commit: ThreeRealmsKit (see git log
+2026-09-10 "Migrate to UE 5.8.2"). Game-stack (persistence + world
+server + client) end-to-end on 5.8 NOT yet re-verified — next step.
