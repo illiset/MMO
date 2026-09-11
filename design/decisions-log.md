@@ -202,3 +202,30 @@ Every "GUI-locked" blocker from July (camera BP literal, AnimBP slots,
 NavMesh volume) is now reachable. Commit: ThreeRealmsKit (see git log
 2026-09-10 "Migrate to UE 5.8.2"). Game-stack (persistence + world
 server + client) end-to-end on 5.8 NOT yet re-verified — next step.
+
+## 2026-09-11 — World M1 shipped: the Frostmarch valley replaces the greybox (ThreeRealmsKit f22d89d)
+The first real answer to "the map looks like a 3rd grader made it". Built
+entirely through the official MCP (editor Python via our TRMythicToolset,
+Epic's EditorAppToolset for captures); Daniel did zero editor work.
+- 1 km landscape from a generated 16-bit heightmap (floor +2 m, valley
+  walls to +250 m, west pass +48 m, east lake basin -4 m, 4 road corridors
+  ≤ 11.3° grade), MW auto-material (snow/rock by slope), horizon + far
+  mountain meshes, cathedral ruin on the +18 m north terrace, frozen lake
+  (ice plane 80 cm under floor level so it only shows inside the basin),
+  bivouac camp with fire pit / windbreaks / bedrolls / chest, 84 cairn
+  stones on the roads, 55 boulders / 80 dead trees / 170 dry bushes by
+  slope band, nav bounds + recast (projection verified at all key points).
+- Light: the sun now shines ALONG the valley axis from the WSW (42°). A sun
+  across the valley left the whole lake in the south wall's shadow — it
+  looked like a blue slab until a red-material test proved it was shadow,
+  not material. Neutral-white 7000K sun (the old warm light_color was the
+  sepia cast), warm-white sky fill, rock colour-corrected to cold granite,
+  stones/dirt layers off on the floor.
+- Verified in-game (not just in the editor): character spawns on the ground
+  at z=292, walks 30 m without falling, both mobs seated (z=290), Tab
+  targeting unchanged. Evidence: scratchpad world/walk/01..09.
+- Known/deferred: player still in underwear (starter clothing = M5), road
+  surfaces are snow (no dirt trail texture), Stylized_Tree_Pack unused
+  (dead trees only), MWAM scatter density edit lives in the untracked pack.
+- Decision D-M1: proximity grouping and data-driven everything carry into
+  the enemy milestone (M3) — no per-mob literals in C++.
