@@ -229,3 +229,47 @@ Epic's EditorAppToolset for captures); Daniel did zero editor work.
   (dead trees only), MWAM scatter density edit lives in the untracked pack.
 - Decision D-M1: proximity grouping and data-driven everything carry into
   the enemy milestone (M3) — no per-mob literals in C++.
+
+
+## 2026-09-12 — Enemy M3 shipped: the Rimethralls fight for real (ThreeRealmsKit 9965b6c)
+The encounter loop the Frost Raider lane only sketched is now proven on the
+live stack with a data-driven hostile family; every number the fight uses
+comes from Content/Data/mobs/rimethralls.json. Evidence: two harness runs,
+logs + contact sheets in progress/2026-09-12-enemy-m3-*.
+- Proven: acquire at 13.5 m (aggro 14 m) → both G1 Stalkers alerted (the
+  second by social pull) → 1.2 s tell → engaged → quick shot (0.45 s) and
+  draw-and-loose (1.40 s, ×1.15) every 2.6 s → player to the 1 HP floor;
+  melee kill 18+38+23 in 2.7 s → hit-reacts at both severities → backward
+  death → corpse hidden at 3 s → respawn at exactly 45 s → re-aggro;
+  back-pedal → "leash exceeded — returning home" → "reset complete 70/70"
+  for both Stalkers. Client tell latency 1.9 s → 0.27 s after the preload.
+- Decision D-M3-1: proximity groups are authored as a per-caste
+  socialPullRadius (2000 for the archers). Spawner spacing stays free; the
+  1600 default never linked G1 (1628 uu apart) or G3 (1825 uu).
+- Decision D-M3-2: wherever OUR code deals damage or schedules a respawn the
+  def wins over the kit's FStatsMob. The kit stats component never exposed
+  DmgMin/DmgMax to reflection (the 4-7 fallback had shipped) and respawn
+  used the component's 10 s. The spawner's FStatsMob is nameplate/HP only.
+- Decision D-M3-3: a def's presentation set (tell/attack/hit/death
+  sequences, cues, FX) streams the moment its first mob is dressed. "No
+  first-use hitch" is an AAA requirement, not a polish item.
+- Harness rules (Tools/frostmarch/m3): never hardcode spawn z — trace the
+  ground and write ground+120 (a buried capsule makes the kit's
+  SpawnCharacter fail silently); the [TRGround] probe only runs 30 s, so the
+  player signal is the server possession line; PersistenceServer restarts
+  every run; the laptop's integrated GPU (512 MB VRAM) runs full Lumen at
+  2-3 fps, which swallows posted key holds → logic runs use a low
+  scalability profile, looks captures use full quality.
+- Daniel can play: C:\dev\PlayMythicEarth.bat (servers + client auto-entering
+  Celtictest at the camp, laptop scalability) and StopMythicEarth.bat.
+- Deferred: player still in underwear (M5); "Preparing Shaders (1)" still
+  flashes on the player's own Shield Bash VFX first use; Warden / Huntress /
+  Halvard encounters and the G2 fire-camp look are unevidenced.
+- DIRECTION CHANGE (Daniel, same day): no more dev-only test bed — build the
+  real Great North and test there. His Inkarnate map is at
+  design/Mythic Earth-Great North.jpg: culture territories, each with
+  per-archetype starts (Frontline / Damage / Healer / Support). The World M1
+  pipeline (heightmap → Landscape → auto-material → dressing → nav) and the
+  enemy/combat lanes carry over unchanged; the Frostmarch slice retires to an
+  enemy lab. First real zone: Claude recommends Dál Riata (his character is a
+  Celt; its Frontline Start is on that island) — awaiting Daniel's pick.
