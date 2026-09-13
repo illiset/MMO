@@ -3,6 +3,9 @@
 Scope: only what Dál Riata needs to be a complete level 1–15 starter island. Order = priority.
 Nights = engine work (from the main session as background agents); days = design docs (Opus chats).
 
+## 0. Bugs from Daniel's walk test (fix first tonight)
+- A/D turn: camera turns but the walk direction doesn't follow (or the body turns and movement keeps going straight). WoW rule: A/D rotate the character, camera follows, W moves along facing, Q/E strafe relative to facing.
+
 ## 1. World polish (night 2, in this order)
 1. Tobarglas re-sited on a natural shelf under the Bealanard Shoulder; all four starts re-checked.
 2. Ground cover: real grass, ferns (Fern Collection + Quixel ferns), heath (bilberry/nettle/anemone),
