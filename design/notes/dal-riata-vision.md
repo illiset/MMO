@@ -40,3 +40,31 @@ Direction given in conversation after the first night build. Treat as authoritat
   Roots, stumps, boulders), canopy shadow density for darkness, a firefly emitter for night.
 - Night 2 Carrigrua: blockout only (walls, gate, keep) until a castle kit lands.
 - Creatures lane: forest mob families (bandits + aggressive wildlife) join the wildlife defs.
+
+## Look and weather — Pacific Northwest (Daniel, 2026-09-13, from reference photos)
+- **The forest is a PNW temperate rainforest**, not an English wood: very tall straight conifers
+  (Douglas-fir / cedar / hemlock scale, trunks bare for the first 20 m, canopy far overhead),
+  moss-draped trunks and hanging moss, ferns and huge shrubs on the floor, nurse logs and fallen
+  giants, root walls, gullies and streams, waterfalls where the ground drops, sun shafts through
+  fog, mossy wooden footbridges and boardwalks over the wet ground. Dark under the canopy;
+  beautiful from above.
+- **Weather:** Dál Riata is overcast about 70% of the time; Sidhe Territory 85–90%. Dál Riata's
+  clear weather lives on the south, south-east and east shores and the coastal fields (Portcorr,
+  the Moyree, Dromcairn) and almost nowhere else. The north (Benlea, Rinnbeg, Cuaseen) is foggy.
+- Daniel's reference images are in the chat of 2026-09-13; drop copies into `design/reference/
+  dal-riata-pnw/` to keep them (mood-board use only, never shipped).
+
+### Consequences
+- Tree mix: conifer-dominant. Baked tall Norway Spruce + Baltic (Scots) Pine as the canopy, scaled
+  up; birch, alder, willow, rowan only at edges and water; oak/hornbeam/beech become rare.
+- Floor: moss materials (vault has Nordic Moss, Mossy Forest Floor, Mossy Grass), ferns (asset to
+  source — check free Megaplants for a fern; otherwise a purchase), large shrubs (elder, hazel).
+- Obstacles: Large Fallen Tree ×2, Nordic Forest Tree Fallen ×2, Old/Rotten Tree Stump, Mossy
+  Forest Roots, Mossy Forest Boulder, Nordic Forest cliffs — all already in the vault.
+- Water: the Owenfinn gets a waterfall where it leaves the forest onto the lowlands; streams and
+  gullies inside the forest; a plank footbridge or two (kitbash) — Athgorm stays a ford.
+- Light: overcast PNW baseline atmosphere (soft grey-white sky, low sun, volumetric fog, light
+  shafts), fog density graded stronger to the north, clearer on the S/SE/E coast.
+- Weather system (later lane): dynamic weather + time of day with per-region overcast probability
+  (Dál Riata 70%, Sidhe 85–90%) and regional clear pockets. Fastest path = Ultra Dynamic Sky (Fab,
+  paid, Daniel's buy) vs a homegrown controller on SkyAtmosphere + VolumetricCloud + fog.
