@@ -48,6 +48,10 @@ Nights = engine work (from the main session as background agents); days = design
   the raider camp 8–10; the forest 6–12 grind ground; the 5-man 9–15 with its 9–10 first leg inside
   the trial; the boat at Portcorr as the gate.
 
+## 4b. HUD navigation (Daniel 2026-09-13): compass + minimap + zone map
+- Compass strip at the top (heading, N/E/S/W, markers for the starts, Dunadd, Carrigrua, the ford, Portcorr, the cave).
+- Minimap: rotating crop of the as-built map texture centred on the player with a player arrow; M key opens the full labelled zone map with the player dot. Map texture = the render from Tools/dalriata/render_labeled_map.py (regenerate when the island changes).
+
 ## 5. Systems the island needs
 - Done: first-entry placement, wander AI, hostile policy, movement pass, camera clamp.
 - Next: Ultra Dynamic Sky integration; death/rez v1 (XP debt, rally points, Healer rez); the boat
