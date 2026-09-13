@@ -332,3 +332,45 @@ the build that outlive it:
 Also decided in passing: **the sun on an island goes over the water the player faces.**
 The first Dál Riata sun put the whole southern face of Benlea in shadow, which is the
 same mistake the Frostmarch lake taught (`WORLD M1`). Sun now travels north-east.
+
+## 2026-09-13 (night shift 2) — four decisions taken while closing the Dál Riata blockers
+Full report: `design/progress/2026-09-13-dal-riata-m2.md`, "Night shift 2".
+
+- **D-PERF-1: the laptop gets a client PROFILE, the project keeps its look.** The Dál Riata GPU
+  crash was a **TDR** on an AMD Radeon 860M iGPU whose Windows watchdog is 2 s, stalled inside
+  `UpdateDistanceFieldAtlas` — not the out-of-memory the numbers first suggested. The fix is
+  `r.GenerateMeshDistanceFields=False` plus ray tracing / Lumen / VSM off **on the client command
+  line** (`Tools/dalriata/n2_start_client_lap.ps1`), so `Config/DefaultEngine.ini` still carries
+  the ship targets (`r.RayTracing=True`, `r.Lumen.HardwareRayTracing=True`) for real hardware.
+  Every laptop run from now on uses that profile; looks captures stay full-quality in the editor.
+  Not done, and Daniel's call: raising the Windows `TdrDelay` registry value, which is a system
+  setting.
+
+- **D-ART-2: hero trees in Dál Riata are Roman & Celtic statics, not Megaplant skeletals.** The 62
+  Megaplant hero trees were swapped 1:1 for the static trees the HISM scatter already uses, height-
+  matched to each original. This removes the last skeletal foliage *and* every Megaplant material
+  and texture from the level, and it costs no new shader permutations because those meshes were
+  already resident. It also means **no Megaplant asset is referenced by GN_DalRiata any more.**
+  D-ART-1's fork (convert the species to static meshes, or adopt their ProceduralVegetation plugin)
+  is still open and still has to be resolved before Megaplant is worth its licence.
+
+- **D-WORLD-5: foliage is culled, not deleted.** Rather than halving the scatter, all 25,308 HISM
+  instances stay and instead get cull distances and an honest shadow policy: ground clutter fades
+  60 → 90 m and casts no shadow, trees cull at 450 m, rocks at 600 m, and nothing feeds distance
+  fields. Density near the player — the thing that sells a forest — is untouched.
+
+- **D-SERVER-1: first-entry placement fires on an UNUSABLE TRANSFORM, not on an empty `Zone`.**
+  The kit never writes `Zone`; it is `""` for every character in `mmokit.db`. A literal
+  "Zone is empty ⇒ send to start" rule would relocate the player on every login. The server
+  therefore places at the realm+race+classtype start when the `Zone` is empty **or** mismatched
+  **or** the saved transform is at the origin / outside the zone's landscape bounds, and otherwise
+  keeps the saved transform. Related and still owed: the identity (realm/classtype/race) rides the
+  travel URL because the persistence server's `GetCharacterMeta` is account-scoped and the
+  dedicated server has no account session — so it is a placement *hint*, not a trust boundary,
+  until a charid-keyed RPC is added to `MMOKitPersistence`.
+
+Also logged in passing: **the MMOKitEval module no longer uses unity builds.** Adding one .cpp
+re-shuffled the unity blobs and broke the build outright, because five UI files each declare their
+own file-local `Serif()` / `Gold` / `Muted` / `Parchment` / `PanelBG` in an anonymous namespace and
+only ever compiled because unity happened to keep them apart. Those names are meant to be
+file-local, so the module sets `bUseUnity = false` rather than renaming a palette across the UI.
