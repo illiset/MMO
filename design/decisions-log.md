@@ -273,3 +273,33 @@ logs + contact sheets in progress/2026-09-12-enemy-m3-*.
   enemy/combat lanes carry over unchanged; the Frostmarch slice retires to an
   enemy lab. First real zone: Claude recommends Dál Riata (his character is a
   Celt; its Frontline Start is on that island) — awaiting Daniel's pick.
+
+
+## 2026-09-12 — World scale settled: the Great North grows by canvases, not by inflation
+Daniel asked how big the Great North is, judged the answer too small, and chose
+how to fix it. The whole scale hangs on one anchor: Dál Riata is 3 km tip to tip.
+- Measured: the Celtic island's long axis is ~1/4.8 of the map's width, so the
+  Inkarnate canvas is ~14.4 km across = **~207 km² of canvas, ~160 km² of land**
+  (the land/water split is eyeballed — three attempts at pixel classification were
+  unreliable, reading snowfields as ocean and missing the north-eastern sea; the
+  14.4 km width is solid because it derives from Daniel's own 3 km).
+- Travel-time reality: 7 min to cross Dál Riata on foot at 7 m/s; 34 min on foot
+  or 17 mounted to cross the whole canvas. Area is not what makes a world feel
+  big — travel time and density are.
+- **Decision D-WORLD-1: Dál Riata stays 3 km. The scale multiplier does NOT
+  change.** The overnight Dál Riata build stands — no heightmap rebuild, nothing
+  in flight is invalidated.
+- **Decision D-WORLD-2: the Great North grows by adding canvases at the same
+  scale**, northward into the frozen true north first (per the parked
+  great-north-overworld-v1 note). Each new Inkarnate canvas adds ~200 km² of the
+  same-density world. Growth is incremental and each canvas ships finished,
+  rather than one inflated map that has to be filled before it reads as anything.
+- Consequence: this canvas is one REGION of the Great North, not the whole of it.
+  It needs its own name; "the Great North" is the faction/realm, not this map.
+- Consequence: at ~30 zones this canvas averages ~5.4 km² per zone, so Dál Riata
+  (~2.5 km² of land) is about half an average zone. Fine for a first build —
+  small island, hard edges, no neighbours to stitch — but it is NOT a size
+  template for the zones that follow.
+- Still open: the zone cut (how many zones per territory). It gates naming the 13
+  generic "<Culture> Territory" labels, since a territory split four ways needs
+  four names rather than one. See design/names/great-north-places.md.

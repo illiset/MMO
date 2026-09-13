@@ -210,10 +210,20 @@ from "it crashed" to "nerf Volva."
 
 **Goal:** the business model turns on, exactly as designed.
 
-- [ ] Free-trial content gate (FFXIV-style)
+- [ ] Free-trial content gate (FFXIV-style) — **decided 2026-09-13
+      (progression-v1.md §6): the trial is levels 1–9, the first 5-man at its
+      9–10 band, and the level-10 class quest at Dunadd, ending one beat after
+      the class is granted. The gate is the boat at Portcorr. A locked
+      character keeps everything and can log in, walk Dál Riata and chat —
+      but earns no XP, no tree points, and never boards the boat.**
 - [ ] Account portal + Stripe/Paddle subscription ($15/mo, billed outside
       Steam) — **not built before Phase 5; nobody bills an empty server**
 - [ ] Steam F2P launch
+- [ ] **Level cap raise 30 → 50** — Early Access ships capped at 30
+      (progression-v1.md §1: 21 tree points, exactly one capstone, ~45.6 h
+      solo). The curve is already authored for 50, so the raise is a content
+      and tuning beat, not a re-tune. **Schedule it; do not improvise it when
+      players start hitting the ceiling.**
 - [ ] Live-ops cadence; Mystic Lands then Honorguard content waves as the
       post-launch drumbeat
 
