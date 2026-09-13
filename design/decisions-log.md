@@ -303,3 +303,32 @@ how to fix it. The whole scale hangs on one anchor: Dál Riata is 3 km tip to ti
 - Still open: the zone cut (how many zones per territory). It gates naming the 13
   generic "<Culture> Territory" labels, since a territory split four ways needs
   four names rather than one. See design/names/great-north-places.md.
+
+## 2026-09-13 — World M2 Dál Riata built; three build-time decisions worth logging
+The overnight session built `/Game/ThreeRealms/Zones/GN/GN_DalRiata` from the
+approved names and the Inkarnate map. Full report:
+`design/progress/2026-09-13-dal-riata-m2.md`. Three decisions were taken inside
+the build that outlive it:
+- **D-WORLD-3: the map-to-metres constant is measured, not estimated.** The island
+  outline was traced off the 8k map by sea/land colour classification; its longest
+  chord is 1901.5 map px, and anchoring that to Daniel's 3 km gives
+  **1 map px = 1.5777 m**. The canvas is therefore ~12.9 km across, not the ~14.4 km
+  D-WORLD-1 estimated by eye. D-WORLD-1's *decision* (3 km, no multiplier change)
+  is untouched; only the derived canvas width moves. Land area of Dál Riata as
+  built is **3.43 km²**, not the eyeballed ~2.5.
+- **D-WORLD-4: the landscape grid is 2 m per quad, not 1 m.** 2017 × 1261 verts at
+  scale 200 covers 4032 × 2520 m in 160 components. A 1 m grid over the same ground
+  would have been 640 components on a laptop that already GPU-crashes in this level.
+  Roads are dressed and graded, not sculpted at vertex resolution, so 2 m is enough.
+- **D-ART-1: Megaplant cannot be the bulk-foliage source as shipped.** Every Megaplant
+  species Daniel added is a **SkeletalMesh** (wind-animated via their
+  ProceduralVegetation plugin); the only StaticMeshes are loose branches. Instanced
+  foliage (HISM) needs StaticMeshes, so Dál Riata's 25,308 scatter instances come from
+  the Roman and Celtic Pack's 41 static vegetation meshes, with Megaplant used for 62
+  hero trees at the starts and Dunadd. Before the next zone, either convert the
+  Megaplant species to static meshes or adopt their plugin — this is a fork in the
+  art pipeline, not a one-zone workaround.
+
+Also decided in passing: **the sun on an island goes over the water the player faces.**
+The first Dál Riata sun put the whole southern face of Benlea in shadow, which is the
+same mistake the Frostmarch lake taught (`WORLD M1`). Sun now travels north-east.

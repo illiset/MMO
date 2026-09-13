@@ -1,0 +1,1115 @@
+{
+ "_note": "HAND-BUILT from design/Mythic Earth-Great North.jpg by the overnight World M2 session (2026-09-13). Names are canon from data/zones/great-north-names.json - never invent new ones. Coordinates are Unreal world metres in the built level /Game/ThreeRealms/Zones/GN/GN_DalRiata: +X = north, +Y = east, z = 0 is sea level.",
+ "id": "dal-riata",
+ "name": "Dál Riata",
+ "faction": "great-north",
+ "territory": "celtic",
+ "level": "/Game/ThreeRealms/Zones/GN/GN_DalRiata",
+ "authored": "2026-09-13",
+ "status": "BUILT (terrain, sea, atmosphere, roads, vegetation, village, starts). No NPCs, no dungeon interior, no wildlife yet.",
+ "scale": {
+  "decision": "D-WORLD-1 - Dál Riata is 3 km tip to tip",
+  "tipToTip_m": 3000,
+  "mapPixelsToMetres": 1.577702,
+  "sourceMap": "design/Mythic Earth-Great North.jpg (8192 px)",
+  "islandBoundingBox_m": {
+   "north_south": 2871,
+   "east_west": 1792
+  },
+  "landArea_km2": 3.433,
+  "walkTime_minutes_at_400uu_s": 12.5
+ },
+ "landscape": {
+  "verts": [
+   2017,
+   1261
+  ],
+  "components": [
+   16,
+   10
+  ],
+  "sectionsPerComponent": 2,
+  "quadsPerSection": 63,
+  "scale": [
+   200,
+   200,
+   100
+  ],
+  "metresPerQuad": 2.0,
+  "extent_m": {
+   "x": [
+    -2016.0,
+    2016.0
+   ],
+   "y": [
+    -1260.0,
+    1260.0
+   ]
+  },
+  "seaLevel_m": 0,
+  "heightRange_m": {
+   "min": -3.1,
+   "max": 244.0
+  },
+  "material": "/Game/ThreeRealms/World/MI_DalRiata_Landscape (MWAM island preset, snow disabled)",
+  "heightmap": "MMOKitEval/Tools/dalriata/dal_riata_2017x1261_g16.png",
+  "generator": "MMOKitEval/Tools/dalriata/gen_dal_riata.py"
+ },
+ "settlement": {
+  "id": "dunadd",
+  "name": "Dunadd",
+  "where": {
+   "x": -769.9,
+   "y": 168.8,
+   "z": 45.6
+  },
+  "npcSlots": [
+   "chieftain",
+   "smith",
+   "trader",
+   "innkeeper",
+   "stablemaster",
+   "banker",
+   "class-trainer-frontline",
+   "class-trainer-dps",
+   "class-trainer-healer",
+   "class-trainer-support",
+   "quest-giver-ladder-1-9"
+  ],
+  "note": "roundhouses, two granaries, a stilt store and the chief's hall; NO NPCs placed - the slots above are data only"
+ },
+ "fortress": {
+  "id": "carrigrua",
+  "name": "Carrigrua",
+  "where": {
+   "x": -577.4,
+   "y": 18.9,
+   "z": 69.6
+  },
+  "npcSlots": [
+   "captain-of-the-gate",
+   "guard",
+   "guard",
+   "quest-giver-level-10-class"
+  ],
+  "note": "palisade ring, two towers and the hall on Kingshill's eastern shoulder"
+ },
+ "starts": [
+  {
+   "id": "lissban",
+   "name": "Lissban",
+   "meaning": "the White Enclosure",
+   "archetype": "frontline",
+   "mapLabel": "Frontline Start",
+   "where": "the neck of Blunt Head in the south-west, on Boherath Road 0.22 km south-west of Athgorm Ford",
+   "position": {
+    "x": -911.9,
+    "y": -312.4,
+    "z": 38.0
+   },
+   "playerStartActor": "PlayerStart_DR_Lissban",
+   "npcSlots": [
+    "quartermaster",
+    "weaponmaster",
+    "start-guide"
+   ]
+  },
+  {
+   "id": "rinnbeg",
+   "name": "Rinnbeg",
+   "meaning": "the Little Point",
+   "archetype": "dps",
+   "mapLabel": "Damage Start",
+   "where": "the north cape at the head of Bohermara Road, beside Cuaseen",
+   "position": {
+    "x": 1210.1,
+    "y": -75.7,
+    "z": 3.8
+   },
+   "playerStartActor": "PlayerStart_DR_Rinnbeg",
+   "npcSlots": [
+    "hunt-master",
+    "fletcher",
+    "start-guide"
+   ]
+  },
+  {
+   "id": "tobarglas",
+   "name": "Tobarglas",
+   "meaning": "the Green Well",
+   "archetype": "healers",
+   "mapLabel": "Healer Start",
+   "where": "the north-east slope above the coast road, at the foot of the Bealanard Shoulder",
+   "position": {
+    "x": 744.7,
+    "y": 586.9,
+    "z": 105.5
+   },
+   "playerStartActor": "PlayerStart_DR_Tobarglas",
+   "npcSlots": [
+    "truthspeaker",
+    "herbalist",
+    "start-guide"
+   ]
+  },
+  {
+   "id": "dromcairn",
+   "name": "Dromcairn",
+   "meaning": "the Ridge Cairn",
+   "archetype": "support",
+   "mapLabel": "Support Start",
+   "where": "the south-east shore, the hamlet beside the pier, 0.31 km west of Portcorr",
+   "position": {
+    "x": -1109.1,
+    "y": 523.8,
+    "z": 12.8
+   },
+   "playerStartActor": "PlayerStart_DR_Dromcairn",
+   "npcSlots": [
+    "bard",
+    "ferryman",
+    "start-guide"
+   ]
+  }
+ ],
+ "byArchetype": {
+  "frontline": "lissban",
+  "healers": "tobarglas",
+  "support": "dromcairn",
+  "dps": "rinnbeg"
+ },
+ "features": [
+  {
+   "id": "benlea_s1",
+   "name": "Benlea Mountains",
+   "kind": "range",
+   "where": "south-west summit sample point",
+   "position": {
+    "x": 602.7,
+    "y": 34.7,
+    "z": 80.9
+   }
+  },
+  {
+   "id": "benlea_s2",
+   "name": "Benlea Mountains",
+   "kind": "range",
+   "where": "central and highest summit",
+   "position": {
+    "x": 792.0,
+    "y": 239.8,
+    "z": 238.2
+   }
+  },
+  {
+   "id": "benlea_s3",
+   "name": "Benlea Mountains",
+   "kind": "range",
+   "where": "north-east summit sample point",
+   "position": {
+    "x": 949.8,
+    "y": 429.1,
+    "z": 189.7
+   }
+  },
+  {
+   "id": "bealanard",
+   "name": "The Bealanard Shoulder",
+   "kind": "pass",
+   "where": "Benlea's eastern saddle; Bohermara Road's high point",
+   "position": {
+    "x": 815.7,
+    "y": 444.9,
+    "z": 216.8
+   }
+  },
+  {
+   "id": "shanderry",
+   "name": "Shanderry Forest",
+   "kind": "forest",
+   "where": "centre of the old oakwood",
+   "position": {
+    "x": 18.9,
+    "y": 82.0,
+    "z": 31.0
+   }
+  },
+  {
+   "id": "kingshill",
+   "name": "Kingshill",
+   "kind": "hill",
+   "where": "the mound Carrigrua stands on",
+   "position": {
+    "x": -609.0,
+    "y": -72.6,
+    "z": 75.0
+   }
+  },
+  {
+   "id": "carrigrua",
+   "name": "Carrigrua",
+   "kind": "fortress",
+   "where": "on Kingshill's eastern shoulder, 0.25 km north-west of Dunadd",
+   "position": {
+    "x": -577.4,
+    "y": 18.9,
+    "z": 69.6
+   }
+  },
+  {
+   "id": "moyree",
+   "name": "The Moyree Lowlands",
+   "kind": "region",
+   "where": "the island's only good ploughing",
+   "position": {
+    "x": -785.7,
+    "y": 397.6,
+    "z": 30.6
+   }
+  },
+  {
+   "id": "whitemill",
+   "name": "Whitemill",
+   "kind": "landmark",
+   "where": "0.27 km east of Dunadd on the Moyree",
+   "position": {
+    "x": -612.1,
+    "y": 381.8,
+    "z": 34.5
+   }
+  },
+  {
+   "id": "cromcross",
+   "name": "Cromcross",
+   "kind": "landmark",
+   "where": "the waystone where Bohermara Road turns west for Carrigrua",
+   "position": {
+    "x": -391.3,
+    "y": 366.0,
+    "z": 40.8
+   }
+  },
+  {
+   "id": "athgorm_ford",
+   "name": "Athgorm Ford",
+   "kind": "crossing",
+   "where": "where Boherath Road crosses the Owenfinn",
+   "position": {
+    "x": -845.6,
+    "y": -52.1,
+    "z": 41.9
+   }
+  },
+  {
+   "id": "portcorr",
+   "name": "Portcorr",
+   "kind": "harbour",
+   "where": "the island's only pier - and the free-trial gate (the boat out)",
+   "position": {
+    "x": -1156.5,
+    "y": 736.8,
+    "z": 3.5
+   }
+  },
+  {
+   "id": "camasmore_bay",
+   "name": "Camasmore Bay",
+   "kind": "bay",
+   "where": "the scalloped west-coast bay",
+   "position": {
+    "x": 145.2,
+    "y": -399.2,
+    "z": -0.9
+   }
+  },
+  {
+   "id": "cuaseen",
+   "name": "Cuaseen",
+   "kind": "cove",
+   "where": "the little cove at the north tip beside Rinnbeg",
+   "position": {
+    "x": 1162.8,
+    "y": 239.8,
+    "z": -3.7
+   }
+  },
+  {
+   "id": "blunt_head",
+   "name": "Blunt Head",
+   "kind": "headland",
+   "where": "the low south-west peninsula",
+   "position": {
+    "x": -1006.6,
+    "y": -840.9,
+    "z": 5.8
+   }
+  },
+  {
+   "id": "grey_head",
+   "name": "Grey Head",
+   "kind": "headland",
+   "where": "the rocky north-east corner",
+   "position": {
+    "x": 1233.8,
+    "y": 736.8,
+    "z": 34.0
+   }
+  }
+ ],
+ "roads": {
+  "bohermara": {
+   "name": "Bohermara Road",
+   "sense": "bóthar + mara, 'the sea road'",
+   "from": "Rinnbeg",
+   "to": "Cromcross, then west for Carrigrua and Dunadd",
+   "length_m": 2683,
+   "maxGrade_deg": 10.0,
+   "points": [
+    [
+     1147.0,
+     -75.7
+    ],
+    [
+     1115.4,
+     82.0
+    ],
+    [
+     1099.7,
+     271.4
+    ],
+    [
+     1104.4,
+     460.7
+    ],
+    [
+     1052.3,
+     618.5
+    ],
+    [
+     934.0,
+     700.5
+    ],
+    [
+     807.8,
+     705.2
+    ],
+    [
+     725.7,
+     634.2
+    ],
+    [
+     586.9,
+     642.1
+    ],
+    [
+     397.6,
+     657.9
+    ],
+    [
+     208.3,
+     634.2
+    ],
+    [
+     18.9,
+     586.9
+    ],
+    [
+     -201.9,
+     508.0
+    ],
+    [
+     -343.9,
+     413.4
+    ],
+    [
+     -391.3,
+     366.0
+    ],
+    [
+     -485.9,
+     271.4
+    ],
+    [
+     -627.9,
+     216.2
+    ],
+    [
+     -746.2,
+     176.7
+    ]
+   ]
+  },
+  "boherath": {
+   "name": "Boherath Road",
+   "sense": "bóthar + áth, 'the ford road'",
+   "from": "Carrigrua",
+   "to": "Athgorm Ford, then Lissban",
+   "length_m": 534,
+   "maxGrade_deg": 10.0,
+   "points": [
+    [
+     -596.4,
+     22.1
+    ],
+    [
+     -706.8,
+     -12.6
+    ],
+    [
+     -845.6,
+     -52.1
+    ],
+    [
+     -899.3,
+     -154.6
+    ],
+    [
+     -915.1,
+     -312.4
+    ]
+   ]
+  },
+  "boherath_coast": {
+   "name": "Boherath Road (southern shore leg)",
+   "from": "Lissban",
+   "to": "Dromcairn and the pier at Portcorr",
+   "length_m": 1097,
+   "maxGrade_deg": 7.04,
+   "points": [
+    [
+     -915.1,
+     -312.4
+    ],
+    [
+     -927.7,
+     -154.6
+    ],
+    [
+     -924.5,
+     18.9
+    ],
+    [
+     -940.3,
+     176.7
+    ],
+    [
+     -975.0,
+     350.2
+    ],
+    [
+     -1085.5,
+     492.2
+    ],
+    [
+     -1109.1,
+     523.8
+    ],
+    [
+     -1145.4,
+     681.6
+    ],
+    [
+     -1153.3,
+     728.9
+    ]
+   ]
+  },
+  "dunadd_spur": {
+   "name": "Dunadd spur",
+   "from": "Carrigrua's gate",
+   "to": "Boherath Road",
+   "length_m": 389,
+   "maxGrade_deg": 10.0,
+   "points": [
+    [
+     -609.0,
+     31.6
+    ],
+    [
+     -691.0,
+     113.6
+    ],
+    [
+     -769.9,
+     168.8
+    ],
+    [
+     -864.6,
+     145.2
+    ],
+    [
+     -927.7,
+     97.8
+    ]
+   ]
+  }
+ },
+ "river": {
+  "name": "Owenfinn River",
+  "sense": "abhainn + fionn, 'the fair river'",
+  "length_m": 1710,
+  "fall_m": 36.9,
+  "fordDepth_m": 1.01,
+  "points": [
+   [
+    -201.9,
+    97.8
+   ],
+   [
+    -343.9,
+    26.8
+   ],
+   [
+    -495.4,
+    -154.6
+   ],
+   [
+    -653.2,
+    -189.3
+   ],
+   [
+    -769.9,
+    -157.8
+   ],
+   [
+    -845.6,
+    -52.1
+   ],
+   [
+    -959.2,
+    18.9
+   ],
+   [
+    -1041.3,
+    160.9
+   ],
+   [
+    -1101.2,
+    350.2
+   ],
+   [
+    -1156.5,
+    539.6
+   ],
+   [
+    -1195.9,
+    744.7
+   ]
+  ],
+  "note": "the map does not draw a river on Dál Riata; its course is authored from the approved names doc (forest -> past Carrigrua's western side -> east to the sea at Portcorr). No water plane in the channel yet."
+ },
+ "dungeon": {
+  "id": "uaimh-na-scath",
+  "name": "Uaimh na Scáth",
+  "commonName": "Cave of Shadows",
+  "levelRange": [
+   9,
+   15
+  ],
+  "groupSize": 5,
+  "mouth": {
+   "x": -130.9,
+   "y": -481.2,
+   "z": 30.8
+  },
+  "markerActor": "DR_Marker_UaimhNaScath",
+  "outdoorApproach": {
+   "name": "Fomorian raider camp",
+   "levelRange": [
+    8,
+    10
+   ],
+   "where": {
+    "x": -192.5,
+    "y": -410.2,
+    "z": 39.3
+   },
+   "markerActor": "DR_Marker_FomorianCamp"
+  },
+  "status": "MOUTH AND CAMP SITE RESERVED AND DRESSED - no interior, no creatures yet",
+  "note": "sea cliffs at the southern end of Camasmore Bay, below Shanderry Forest; inside the free trial at its 9-10 band (design/progression-v1.md §6)"
+ },
+ "outline_m": [
+  [
+   1435.7,
+   545.9
+  ],
+  [
+   1423.1,
+   470.2
+  ],
+  [
+   1341.0,
+   356.6
+  ],
+  [
+   1195.9,
+   249.3
+  ],
+  [
+   1170.7,
+   268.2
+  ],
+  [
+   1132.8,
+   255.6
+  ],
+  [
+   1132.8,
+   224.0
+  ],
+  [
+   1192.7,
+   189.3
+  ],
+  [
+   1227.5,
+   12.6
+  ],
+  [
+   1284.2,
+   -69.4
+  ],
+  [
+   1281.1,
+   -126.2
+  ],
+  [
+   1252.7,
+   -160.9
+  ],
+  [
+   1180.1,
+   -173.5
+  ],
+  [
+   981.3,
+   -101.0
+  ],
+  [
+   694.2,
+   -94.7
+  ],
+  [
+   571.1,
+   -116.7
+  ],
+  [
+   517.5,
+   -277.7
+  ],
+  [
+   495.4,
+   -296.6
+  ],
+  [
+   419.7,
+   -290.3
+  ],
+  [
+   353.4,
+   -385.0
+  ],
+  [
+   249.3,
+   -378.6
+  ],
+  [
+   189.3,
+   -400.7
+  ],
+  [
+   126.2,
+   -366.0
+  ],
+  [
+   53.6,
+   -375.5
+  ],
+  [
+   -22.1,
+   -454.4
+  ],
+  [
+   -145.1,
+   -479.6
+  ],
+  [
+   -198.8,
+   -583.7
+  ],
+  [
+   -331.3,
+   -571.1
+  ],
+  [
+   -347.1,
+   -590.1
+  ],
+  [
+   -334.5,
+   -691.0
+  ],
+  [
+   -362.9,
+   -735.2
+  ],
+  [
+   -422.8,
+   -741.5
+  ],
+  [
+   -432.3,
+   -769.9
+  ],
+  [
+   -463.8,
+   -782.5
+  ],
+  [
+   -662.6,
+   -735.2
+  ],
+  [
+   -725.7,
+   -801.5
+  ],
+  [
+   -826.7,
+   -820.4
+  ],
+  [
+   -880.4,
+   -896.1
+  ],
+  [
+   -959.2,
+   -893.0
+  ],
+  [
+   -965.6,
+   -864.6
+  ],
+  [
+   -1012.9,
+   -842.5
+  ],
+  [
+   -1123.3,
+   -864.6
+  ],
+  [
+   -1208.5,
+   -839.3
+  ],
+  [
+   -1236.9,
+   -776.2
+  ],
+  [
+   -1224.3,
+   -681.6
+  ],
+  [
+   -1262.2,
+   -681.6
+  ],
+  [
+   -1312.6,
+   -640.5
+  ],
+  [
+   -1331.6,
+   -596.4
+  ],
+  [
+   -1322.1,
+   -536.4
+  ],
+  [
+   -1378.9,
+   -489.1
+  ],
+  [
+   -1385.2,
+   -426.0
+  ],
+  [
+   -1341.0,
+   -356.6
+  ],
+  [
+   -1341.0,
+   -325.0
+  ],
+  [
+   -1435.7,
+   -126.2
+  ],
+  [
+   -1423.1,
+   -78.9
+  ],
+  [
+   -1350.5,
+   -53.6
+  ],
+  [
+   -1322.1,
+   -15.8
+  ],
+  [
+   -1325.3,
+   34.7
+  ],
+  [
+   -1388.4,
+   97.8
+  ],
+  [
+   -1369.4,
+   201.9
+  ],
+  [
+   -1397.8,
+   211.4
+  ],
+  [
+   -1432.6,
+   350.2
+  ],
+  [
+   -1385.2,
+   372.3
+  ],
+  [
+   -1382.1,
+   419.7
+  ],
+  [
+   -1331.6,
+   470.2
+  ],
+  [
+   -1334.7,
+   571.1
+  ],
+  [
+   -1290.6,
+   615.3
+  ],
+  [
+   -1281.1,
+   668.9
+  ],
+  [
+   -1236.9,
+   706.8
+  ],
+  [
+   -1243.2,
+   769.9
+  ],
+  [
+   -1186.4,
+   807.8
+  ],
+  [
+   -1189.6,
+   861.4
+  ],
+  [
+   -1173.8,
+   877.2
+  ],
+  [
+   -1161.2,
+   848.8
+  ],
+  [
+   -1132.8,
+   848.8
+  ],
+  [
+   -1066.5,
+   896.1
+  ],
+  [
+   -1060.2,
+   870.9
+  ],
+  [
+   -1088.6,
+   848.8
+  ],
+  [
+   -1082.3,
+   766.8
+  ],
+  [
+   -924.5,
+   754.1
+  ],
+  [
+   -798.3,
+   754.1
+  ],
+  [
+   -678.4,
+   785.7
+  ],
+  [
+   -593.2,
+   769.9
+  ],
+  [
+   -536.4,
+   852.0
+  ],
+  [
+   -416.5,
+   833.0
+  ],
+  [
+   -350.2,
+   864.6
+  ],
+  [
+   -198.8,
+   893.0
+  ],
+  [
+   -107.3,
+   870.9
+  ],
+  [
+   -15.8,
+   792.0
+  ],
+  [
+   50.5,
+   773.1
+  ],
+  [
+   85.2,
+   776.2
+  ],
+  [
+   129.4,
+   820.4
+  ],
+  [
+   230.3,
+   817.2
+  ],
+  [
+   432.3,
+   870.9
+  ],
+  [
+   785.7,
+   864.6
+  ],
+  [
+   908.8,
+   842.5
+  ],
+  [
+   1164.3,
+   725.7
+  ],
+  [
+   1246.4,
+   713.1
+  ],
+  [
+   1363.1,
+   646.9
+  ],
+  [
+   1435.7,
+   549.0
+  ]
+ ],
+ "audit": {
+  "scale": {
+   "m_per_map_px": 1.577702,
+   "tip_to_tip_m": 3000,
+   "m_per_quad": 2.0,
+   "landscape_m": [
+    2016,
+    1260
+   ]
+  },
+  "land_km2": 3.433,
+  "height_m": {
+   "min": -60.9,
+   "max": 244.0
+  },
+  "land_height_m": {
+   "min": -3.1,
+   "max": 244.0
+  },
+  "slope_deg": {
+   "land_mean": 10.6,
+   "land_max": 75.33,
+   "land_over_35_pct": 4.7
+  },
+  "roads": {
+   "bohermara": {
+    "length_m": 2683,
+    "max_grade_deg": 10.0,
+    "mean_grade_deg": 5.8,
+    "z_min_m": 4.6,
+    "z_max_m": 79.2,
+    "carriageway_slope_max_deg": 18.52,
+    "carriageway_slope_mean_deg": 5.93
+   },
+   "boherath": {
+    "length_m": 534,
+    "max_grade_deg": 10.0,
+    "mean_grade_deg": 4.76,
+    "z_min_m": 38.0,
+    "z_max_m": 72.4,
+    "carriageway_slope_max_deg": 10.59,
+    "carriageway_slope_mean_deg": 4.81
+   },
+   "boherath_coast": {
+    "length_m": 1097,
+    "max_grade_deg": 7.04,
+    "mean_grade_deg": 2.63,
+    "z_min_m": 3.7,
+    "z_max_m": 46.0,
+    "carriageway_slope_max_deg": 7.04,
+    "carriageway_slope_mean_deg": 2.97
+   },
+   "dunadd_spur": {
+    "length_m": 389,
+    "max_grade_deg": 10.0,
+    "mean_grade_deg": 4.0,
+    "z_min_m": 42.0,
+    "z_max_m": 69.4,
+    "carriageway_slope_max_deg": 12.57,
+    "carriageway_slope_mean_deg": 4.06
+   }
+  },
+  "river": {
+   "length_m": 1710,
+   "source_bed_z_m": 35.6,
+   "mouth_bed_z_m": -1.3,
+   "ford_bed_z_m": 39.6,
+   "ford_water_depth_m": 1.01,
+   "road_surface_at_ford_m": 41.8,
+   "water_surface_monotone_downhill": true,
+   "total_fall_m": 36.9
+  },
+  "road_grade_verdict": "PASS: every road <= 12 deg (worst 10.00)"
+ },
+ "openItems": [
+  "server-side first-entry placement (realm+race+classtype -> start) is NOT implemented; the characters table has realm/classtype/race and the four PlayerStart actors are tagged, but the kit still spawns at the saved transform",
+  "no NPCs anywhere (deliberate - MetaHuman body lane first)",
+  "no wildlife or Fomorian raiders yet (Phase 4)",
+  "Whitemill has a granary standing in for a windmill - no windmill mesh in any landed pack",
+  "no water plane in the Owenfinn channel and no swimming (the sea plane has no collision)"
+ ]
+}
