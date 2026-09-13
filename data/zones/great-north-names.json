@@ -1,0 +1,904 @@
+{
+  "_note": "HAND-AUTHORED — not extractor output. Unlike the rest of data/, this file is not generated from MMOStats.xlsx; edit it directly (same rule as abilities.json). Prose twin and rationale: design/names/great-north-places.md",
+  "id": "great-north-names",
+  "faction": "great-north",
+  "source": "design/Mythic Earth-Great North.jpg",
+  "authored": "2026-09-12",
+  "status": "APPROVED by Daniel 2026-09-12 — all 55 names locked. Treat as canon for world building; rename only on his say-so.",
+  "archetypeIds": ["frontline", "healers", "support", "dps"],
+
+  "territories": {
+    "celtic": {
+      "race": "Celtic",
+      "cultureGroup": "crusaders",
+      "territoryLabel": "Celtic Territory",
+      "zone": "Dál Riata",
+      "firstZone": true,
+      "settlement": {
+        "name": "Dunadd",
+        "status": "approved",
+        "altRejected": "Dunlaith",
+        "where": "centre of the island, the keep on the crag",
+        "flavour": "The royal seat. The rock-cut footprint at its gate is where every Dál Riata king has stood."
+      },
+      "starts": [
+        {
+          "id": "lissban",
+          "name": "Lissban",
+          "meaning": "the White Enclosure",
+          "say": "LISS-bawn",
+          "archetypes": ["frontline"],
+          "mapLabel": "Frontline Start",
+          "where": "south of the island, at the road junction below Dunadd",
+          "flavour": "The lime-washed muster yard below Dunadd's southern gate, where the warbands form before they ever see the sea."
+        },
+        {
+          "id": "rinnbeg",
+          "name": "Rinnbeg",
+          "meaning": "the Little Point",
+          "say": "RIN-beg",
+          "archetypes": ["dps"],
+          "mapLabel": "Damage Start",
+          "where": "north cape, at the head of the coast road",
+          "flavour": "A hunters' camp on the north cape, close enough to the cliff edge that the gulls wake you."
+        },
+        {
+          "id": "tobarglas",
+          "name": "Tobarglas",
+          "meaning": "the Green Well",
+          "say": "TOH-bar-glass",
+          "archetypes": ["healers"],
+          "mapLabel": "Healer Start",
+          "where": "northeast slope, above the coast road",
+          "flavour": "A spring-shrine on the eastern slope; the truthspeakers take their first oath over the water."
+        },
+        {
+          "id": "dromcairn",
+          "name": "Dromcairn",
+          "meaning": "the Ridge Cairn",
+          "say": "DROM-cairn",
+          "archetypes": ["support"],
+          "mapLabel": "Support Start",
+          "where": "southeast shore — the hamlet beside the island's pier, ~0.5 km southeast of Dunadd",
+          "flavour": "The cairn on the rise behind the landing, where the bards meet every boat and keep the island's news and its arguments.",
+          "corrected": "2026-09-12: the original 'ridge above the ford and windmill' was a misread of the 2k map. The Support Start is a coastal hamlet at the pier; the ford is 0.2 km from Lissban, and the windmill sits 0.35 km east of Dunadd. Name unchanged."
+        }
+      ],
+      "byArchetype": {
+        "frontline": "lissban",
+        "healers": "tobarglas",
+        "support": "dromcairn",
+        "dps": "rinnbeg"
+      },
+      "featureNaming": "Gaelic specific + English generic (Daniel 2026-09-13) — 'Owenfinn River', 'Athgorm Ford'. Most are deliberately tautological, the way real Celtic-derived English names are (River Avon = 'river river'). Settlements keep the bare Gaelic; landscape takes the English generic.",
+      "features": [
+        {
+          "id": "benlea-mountains", "name": "Benlea Mountains", "kind": "range", "say": "BEN-lee",
+          "sense": "beann + liath — 'the grey peaks'",
+          "where": "north-centre of the island, south of Bohermara Road's northern loop",
+          "flavour": "Three summits in a north-east line. The island's roof, and visible from every start."
+        },
+        {
+          "id": "shanderry-forest", "name": "Shanderry Forest", "kind": "forest", "say": "SHAN-derry",
+          "sense": "sean + doire — 'the old oakwood'",
+          "where": "the island's middle, from the mountains' southern foot down to Carrigrua, reaching the west coast at Camasmore Bay",
+          "flavour": "Older than Dunadd, and it knows it."
+        },
+        {
+          "id": "carrigrua", "name": "Carrigrua", "kind": "fortress", "say": "CARRIG-ROO-a",
+          "sense": "carraig + rua — 'the red rock'",
+          "where": "on Kingshill's eastern shoulder, 0.27 km north-west of Dunadd village",
+          "flavour": "Red roofs on grey stone. Dunadd's fortress — the village grew downhill from its gate."
+        },
+        {
+          "id": "moyree-lowlands", "name": "The Moyree Lowlands", "kind": "region", "say": "MOY-ree",
+          "sense": "maigh + réidh — 'the level land'",
+          "where": "east and south-east of Carrigrua, between Shanderry Forest and the eastern shore",
+          "flavour": "The island's only good ploughing, and the only part of it that has ever been quiet."
+        },
+        {
+          "id": "whitemill", "name": "Whitemill", "kind": "landmark",
+          "where": "0.35 km east of Dunadd, standing alone on the Moyree",
+          "flavour": "Lime-washed and visible from the whole vale. The Moyree's clock and its meeting place."
+        },
+        {
+          "id": "kingshill", "name": "Kingshill", "kind": "hill",
+          "where": "immediately west of Carrigrua, Boherath Road crossing its back",
+          "flavour": "The mound the fort stands on. The footprint cut into its crown is where the kings are made — Dunadd is named for this hill, not the other way round."
+        },
+        {
+          "id": "cromcross", "name": "Cromcross", "kind": "landmark", "say": "CROM-cross",
+          "sense": "crom — 'crooked'",
+          "where": "Shanderry Forest's south-east corner, where Bohermara Road turns west for Carrigrua",
+          "flavour": "A waystone at the bend. Every traveller on the island passes it, and most leave something."
+        },
+        {
+          "id": "bealanard-shoulder", "name": "The Bealanard Shoulder", "kind": "pass", "say": "BAL-a-nard",
+          "sense": "bealach + ard — 'the high pass'",
+          "where": "Benlea's eastern saddle, where Bohermara Road runs closest to the peaks; Tobarglas sits at its foot",
+          "flavour": "The road's high point. From here you see both coasts and the Sidhe island beyond."
+        },
+        {
+          "id": "owenfinn-river", "name": "Owenfinn River", "kind": "river", "say": "OWEN-finn",
+          "sense": "abhainn + fionn — 'the fair river'",
+          "where": "out of Shanderry Forest, south past Carrigrua's western side, then east to the sea near Portcorr",
+          "flavour": "Fast, shallow and clear. It cuts the island in two, and the halves do not much like each other."
+        },
+        {
+          "id": "athgorm-ford", "name": "Athgorm Ford", "kind": "crossing", "say": "ATH-gorm",
+          "sense": "áth + gorm — 'the blue ford'",
+          "where": "on Boherath Road, 0.22 km north-east of Lissban",
+          "flavour": "Cold, shallow, and the only dry way south. It floods twice a winter."
+        },
+        {
+          "id": "portcorr", "name": "Portcorr", "kind": "harbour", "say": "PORT-corr",
+          "sense": "port + corr — 'heron landing'",
+          "where": "the south-east shore at the Owenfinn's mouth, 0.31 km east of Dromcairn",
+          "flavour": "The island's only pier. Every boat off Dál Riata leaves from it, including the one to Tara."
+        },
+        {
+          "id": "camasmore-bay", "name": "Camasmore Bay", "kind": "bay", "say": "CAM-as-more",
+          "sense": "camas + mór — 'the great bay'",
+          "where": "the west coast at mid-island, where Shanderry Forest comes down to the water",
+          "flavour": "Wide, scalloped and sheltered. The cliffs at its southern end hold Uaimh na Scáth."
+        },
+        {
+          "id": "cuaseen", "name": "Cuaseen", "kind": "cove", "say": "KOO-a-sheen",
+          "sense": "cuas + -ín — 'the little cove'",
+          "where": "the island's north tip, beside Rinnbeg",
+          "flavour": "Room for four boats and no more. The first water a northern Celt ever rows."
+        },
+        {
+          "id": "kyleshee-strait", "name": "Kyleshee Strait", "kind": "strait", "say": "KYLE-shee",
+          "sense": "caol + sí — 'the fairy strait'",
+          "where": "the water between Dál Riata and the Sidhe island to the west",
+          "flavour": "Tara is visible across it on a clear day. Nobody crosses it casually."
+        },
+        {
+          "id": "muirmore-sea", "name": "Muirmore Sea", "kind": "sea", "say": "MOOR-more",
+          "sense": "muir + mór — 'the great sea'",
+          "where": "the open water east of Dál Riata, toward the Germanic coast",
+          "flavour": "Realm-level water — it touches Germanic, Alfar, Romance and Baltic shores too.",
+          "status": "provisional — belongs to the realm pass; other cultures should have their own word for it"
+        },
+        {
+          "id": "blunt-head", "name": "Blunt Head", "kind": "headland",
+          "where": "the south-west peninsula; Lissban sits on its neck",
+          "flavour": "Low, bare and square to the weather. The first land a boat from the south sees."
+        },
+        {
+          "id": "grey-head", "name": "Grey Head", "kind": "headland",
+          "where": "the north-east corner, where Bohermara Road turns south",
+          "flavour": "Grey rock through green turf. Answers Blunt Head at the island's other corner."
+        },
+        {
+          "id": "bohermara-road", "name": "Bohermara Road", "kind": "road", "say": "BOHER-MAR-a",
+          "sense": "bóthar + mara — 'the sea road'",
+          "where": "from Rinnbeg at the north tip, down the whole east shore, to Cromcross",
+          "flavour": "Never out of sight of water. Links Rinnbeg, Tobarglas and the Bealanard Shoulder."
+        },
+        {
+          "id": "boherath-road", "name": "Boherath Road", "kind": "road", "say": "BOHER-ath",
+          "sense": "bóthar + áth — 'the ford road'",
+          "where": "from Carrigrua south over Athgorm Ford to Lissban, then east to Portcorr",
+          "flavour": "The island's southern half in one line."
+        },
+        {
+          "id": "garveen-shallows", "name": "Garveen Shallows", "kind": "shallows", "say": "gar-VEEN",
+          "sense": "garbh + -ín — 'the rough little water'",
+          "where": "the sandbars and breakers ringing the island's coasts",
+          "flavour": "Good fishing, bad sailing. Wrecks on the western side going back further than Dunadd."
+        }
+      ],
+      "dungeons": [
+        {
+          "id": "uaimh-na-scath",
+          "name": "Uaimh na Scáth",
+          "commonName": "Cave of Shadows",
+          "say": "OO-iv na SKAW",
+          "sense": "uaimh + na + scáth — 'the cave of the shadows'",
+          "grammarNote": "Irish never eclipses s (the pairs are b→mb, c→gc, d→nd, f→bhf, g→ng, p→bp, t→dt), so the earlier 'na dScáth' is not valid. 'na Scáth' reads as an archaic genitive plural; strict modern Irish would be 'na Scáthanna'.",
+          "nameUsage": "Irish is the formal/map name; 'Cave of Shadows' is the common name players use. It is the one name on Dál Riata an English speaker will not get right on sight — deliberate, for the dungeon only.",
+          "levelRange": [9, 15],
+          "groupSize": 5,
+          "where": "the sea cliffs at the southern end of Camasmore Bay, on the west coast below Shanderry Forest — the far side of the island from Portcorr and the starts",
+          "acts": [
+            {
+              "act": 1,
+              "name": "the outer caves",
+              "inhabitants": "Fomorian raiders — sea-giants beached in the tidal caves",
+              "note": "their coastal camp outside the mouth is the level 8-10 outdoor approach (Phase 4's Fomorian raider family), teaching the mechanics the dungeon tests"
+            },
+            {
+              "act": 2,
+              "name": "the dark behind",
+              "inhabitants": "the Otherworld bleeding through",
+              "note": "what the Fomorians are squatting beside, and why they are jumpy. Ties to the Sidhe across Kyleshee Strait and to Phase 4's fae creature in the northern wood."
+            }
+          ],
+          "flavour": "The tide goes into the cliff further than it comes out. The raiders took the front of it and will not sleep past the second turn."
+        }
+      ]
+    },
+
+    "sidhe": {
+      "race": "Sidhe",
+      "cultureGroup": "elves",
+      "territoryLabel": "Sidhe Territory",
+      "settlement": {
+        "name": "Tara",
+        "status": "existing-on-map",
+        "where": "west of the island, below the mountain",
+        "flavour": "The many-spired seat of the Sidhe."
+      },
+      "starts": [
+        {
+          "id": "ardshee",
+          "name": "Ardshee",
+          "meaning": "the High Mound",
+          "say": "ARD-shee",
+          "archetypes": ["dps"],
+          "mapLabel": "Damage Start",
+          "where": "northeast ridge, above the eastern coast",
+          "flavour": "A fairy-mound on the eastern ridge; the whispers go out from it with the wind at their back."
+        },
+        {
+          "id": "aislin",
+          "name": "Aislin",
+          "meaning": "the Vision",
+          "say": "ASH-lin",
+          "archetypes": ["support"],
+          "mapLabel": "Support Start",
+          "where": "mid-island, east of the mountain spine",
+          "flavour": "A still hollow where the muses and philosophers are taught to trust what they see asleep."
+        },
+        {
+          "id": "carrowdoon",
+          "name": "Carrowdoon",
+          "meaning": "the Fort Quarter",
+          "say": "CARROW-doon",
+          "archetypes": ["frontline", "healers"],
+          "mapLabel": "Frontline/Healer Start",
+          "where": "south of the island, by the cave mouth above the strand",
+          "flavour": "The cave-hall on the southern strand; shield-line and healers share one fire and one watch."
+        }
+      ],
+      "byArchetype": {
+        "frontline": "carrowdoon",
+        "healers": "carrowdoon",
+        "support": "aislin",
+        "dps": "ardshee"
+      }
+    },
+
+    "germanic": {
+      "race": "Germanic",
+      "cultureGroup": "crusaders",
+      "territoryLabel": "Germanic Territory",
+      "settlement": {
+        "name": "Miklagarðr",
+        "status": "existing-on-map",
+        "where": "north head of the range, in the frost forest",
+        "flavour": "The great copper-roofed city at the head of the mountains."
+      },
+      "secondarySettlements": [
+        {
+          "name": "Hedeby",
+          "status": "existing-on-map",
+          "where": "east of the range, on the trading water below the passes"
+        }
+      ],
+      "starts": [
+        {
+          "id": "jarnborg",
+          "name": "Jarnborg",
+          "meaning": "Iron Fort",
+          "say": "YARN-borg",
+          "archetypes": ["frontline"],
+          "mapLabel": "Frontline Start",
+          "where": "centre of the range, at the black forge-keep in the pass",
+          "flavour": "The black forge-keep holding the central pass; the shieldmen are made here, in both senses."
+        },
+        {
+          "id": "grimstrand",
+          "name": "Grimstrand",
+          "meaning": "Grey Shore",
+          "say": "GRIM-strand",
+          "archetypes": ["dps", "healers"],
+          "mapLabel": "Damage/Healer Start",
+          "where": "east coast, at the great gabled hall north of Hedeby",
+          "flavour": "The long hall on the eastern strand where the hunters land and the seeresses read the tide."
+        },
+        {
+          "id": "skaldfell",
+          "name": "Skaldfell",
+          "meaning": "Skald's Mountain",
+          "say": "SKALD-fell",
+          "archetypes": ["support"],
+          "mapLabel": "Support Start",
+          "where": "south of Hedeby, high in the white peaks",
+          "flavour": "A windmill hamlet in the peaks; every Germanic song worth singing was first sung badly here."
+        }
+      ],
+      "byArchetype": {
+        "frontline": "jarnborg",
+        "healers": "grimstrand",
+        "support": "skaldfell",
+        "dps": "grimstrand"
+      }
+    },
+
+    "alfar": {
+      "race": "Alfar",
+      "cultureGroup": "elves",
+      "territoryLabel": "Alfar Territory",
+      "settlement": {
+        "name": "Vetrholt",
+        "meaning": "the Winter Wood",
+        "say": "VET-r-holt",
+        "where": "centre of the Alfar lowland, under the treeline",
+        "flavour": "The Alfar hall-town, roofed in split shingle that never quite loses its rime."
+      },
+      "starts": [
+        {
+          "id": "frostvik",
+          "name": "Frostvik",
+          "meaning": "Frost Bay",
+          "say": "FROST-vik",
+          "archetypes": ["support", "dps"],
+          "mapLabel": "Support/Damage Start",
+          "where": "northwest coast, at the lakeside village",
+          "flavour": "The white-shingle inlet; muses and hunters share the same pier and the same bad weather."
+        },
+        {
+          "id": "steinvard",
+          "name": "Steinvard",
+          "meaning": "Stone Watch",
+          "say": "STEIN-vard",
+          "archetypes": ["frontline"],
+          "mapLabel": "Frontline Start",
+          "where": "southwest, at the bridge and windmill on the south coast",
+          "flavour": "The bridge-fort at the southern crossing, the one place the Alfar have never yielded."
+        },
+        {
+          "id": "brunnstead",
+          "name": "Brunnstead",
+          "meaning": "Wellstead",
+          "say": "BRUN-sted",
+          "archetypes": ["healers"],
+          "mapLabel": "Healer Start",
+          "where": "southeast, at the coastal village and dock",
+          "flavour": "The dock beside the meltwater spring the Alfar healers draw from and carry out."
+        }
+      ],
+      "byArchetype": {
+        "frontline": "steinvard",
+        "healers": "brunnstead",
+        "support": "frostvik",
+        "dps": "frostvik"
+      }
+    },
+
+    "hillback-dwarves": {
+      "race": "Hillback Dwarves",
+      "cultureGroup": "hillback-empire",
+      "territoryLabel": "Hillback Territory",
+      "tongue": "invented — brak stone, gorn iron, mor hold/seat, ruk works/camp",
+      "settlement": {
+        "name": "Brakmor",
+        "meaning": "the Stonehold",
+        "say": "BRAK-mor",
+        "where": "northeast, the great round tower crowning the pass",
+        "flavour": "The Hillback Empire is run out of one room in it."
+      },
+      "starts": [
+        {
+          "id": "gornruk",
+          "name": "Gornruk",
+          "meaning": "the Ironworks",
+          "say": "GORN-ruk",
+          "archetypes": ["frontline", "healers", "support", "dps"],
+          "mapLabel": "Hillback Start",
+          "where": "the terraced camp at Brakmor's foot",
+          "flavour": "No Hillback begins inside the hold; you earn the door."
+        }
+      ],
+      "byArchetype": {
+        "frontline": "gornruk",
+        "healers": "gornruk",
+        "support": "gornruk",
+        "dps": "gornruk"
+      }
+    },
+
+    "baltic": {
+      "race": "Baltic",
+      "cultureGroup": "crusaders",
+      "territoryLabel": "Baltic Territory",
+      "settlement": {
+        "name": "Laukapils",
+        "meaning": "Field Castle",
+        "say": "LAU-ka-pils",
+        "where": "east, the stone keep and its orange-roofed town",
+        "flavour": "Ringed by windmills on the dry plain."
+      },
+      "starts": [
+        {
+          "id": "ozolkalns",
+          "name": "Ozolkalns",
+          "meaning": "Oak Hill",
+          "say": "OH-zol-kalns",
+          "archetypes": ["frontline"],
+          "mapLabel": "Frontline Start",
+          "where": "north, at the lone great tree on the rise",
+          "flavour": "One enormous oak; Baltic shieldmen are sworn under it and nowhere else."
+        },
+        {
+          "id": "saltinis",
+          "name": "Saltinis",
+          "meaning": "the Spring",
+          "say": "SHAL-ti-nis",
+          "archetypes": ["healers"],
+          "mapLabel": "Healer Start",
+          "where": "northwest coast, the small orange-roofed hamlet",
+          "flavour": "The wise-women boil their herbs within sight of the water."
+        },
+        {
+          "id": "vilkupe",
+          "name": "Vilkupe",
+          "meaning": "Wolf River",
+          "say": "VIL-koo-pe",
+          "archetypes": ["dps", "support"],
+          "mapLabel": "Damage/Support Start",
+          "where": "west coast, the camp at the river mouth",
+          "flavour": "The scouts and the agitators both claim they named it."
+        }
+      ],
+      "byArchetype": {
+        "frontline": "ozolkalns",
+        "healers": "saltinis",
+        "support": "vilkupe",
+        "dps": "vilkupe"
+      }
+    },
+
+    "slavic": {
+      "race": "Slavic",
+      "cultureGroup": "crusaders",
+      "territoryLabel": "Slavic Territory",
+      "settlement": {
+        "name": "Borograd",
+        "meaning": "Pinewood Town",
+        "say": "BOR-o-grad",
+        "where": "east, the farm town with the white church",
+        "flavour": "The largest settled place on the eastern plain."
+      },
+      "starts": [
+        {
+          "id": "vukoves",
+          "name": "Vukoves",
+          "meaning": "Wolf Village",
+          "say": "VOO-ko-ves",
+          "archetypes": ["dps", "support"],
+          "mapLabel": "Damage Support",
+          "where": "northwest, the kiln camp in the foothills under the white peaks",
+          "flavour": "Charcoal-burners' kilns; you learn to move quietly because of the smoke, not the wolves."
+        },
+        {
+          "id": "studenbrod",
+          "name": "Studenbrod",
+          "meaning": "Cold Ford",
+          "say": "STOO-den-brod",
+          "archetypes": ["support"],
+          "mapLabel": "Support Start",
+          "where": "west, the camp at the stream crossing",
+          "flavour": "Holds the western crossing and the road tax nobody admits to paying."
+        },
+        {
+          "id": "kamenles",
+          "name": "Kamenles",
+          "meaning": "Stone Forest",
+          "say": "KAM-en-les",
+          "archetypes": ["frontline", "healers"],
+          "mapLabel": "Frontline/Healer Start",
+          "where": "south, the palisaded longhouse and tents at the forest edge",
+          "flavour": "The shield-line and its preachers muster together."
+        }
+      ],
+      "byArchetype": {
+        "frontline": "kamenles",
+        "healers": "kamenles",
+        "support": "studenbrod",
+        "dps": "vukoves"
+      },
+      "note": "Daniel 2026-09-12: confirmed all four archetypes are covered here. The 'Damage Support' marker at Vukoves carries Damage; the dedicated 'Support Start' at Studenbrod carries Support, which is how byArchetype resolves them."
+    },
+
+    "severus": {
+      "race": "Severus",
+      "cultureGroup": "crusaders",
+      "territoryLabel": "Crusader Empire",
+      "settlement": {
+        "name": "Crucivallum",
+        "meaning": "the Rampart of the Cross",
+        "say": "kroo-kee-VAL-um",
+        "where": "centre of the map, the five-sided moat-wall and grey citadel",
+        "flavour": "The polity label 'Crusader Empire' stays; this is what the city itself is called."
+      },
+      "starts": [
+        {
+          "id": "tirocastra",
+          "name": "Tirocastra",
+          "meaning": "the Recruit Camp",
+          "say": "TEE-ro-CAS-tra",
+          "archetypes": ["frontline", "healers", "support", "dps"],
+          "mapLabel": "Severus Start",
+          "where": "inside the western wall, the tent lines and round drill-ring",
+          "flavour": "Everyone the Empire will ever use passes through it."
+        }
+      ],
+      "byArchetype": {
+        "frontline": "tirocastra",
+        "healers": "tirocastra",
+        "support": "tirocastra",
+        "dps": "tirocastra"
+      }
+    },
+
+    "romance": {
+      "race": "Romance",
+      "cultureGroup": "crusaders",
+      "territoryLabel": "Romance Territory",
+      "region": "Italics Romana",
+      "settlement": {
+        "name": "Valmonde",
+        "meaning": "the Valley Seat",
+        "say": "val-MOND",
+        "where": "south, the hill town in the orchard country",
+        "flavour": "Italics Romana is the region; Valmonde is who runs it."
+      },
+      "starts": [
+        {
+          "id": "marvigne",
+          "name": "Marvigne",
+          "meaning": "Sea Vine",
+          "say": "mar-VEEN",
+          "archetypes": ["support"],
+          "mapLabel": "Support Start",
+          "where": "north coast, the terraced red-roofed hamlet",
+          "flavour": "The syndicates weigh every cargo twice."
+        },
+        {
+          "id": "pierregarde",
+          "name": "Pierregarde",
+          "meaning": "Stone Watch",
+          "say": "pee-AIR-gard",
+          "archetypes": ["frontline", "dps"],
+          "mapLabel": "Frontline/Damage Start",
+          "where": "west, the black stone fort below the mountains",
+          "flavour": "It takes the road-toll and the first fight, in that order."
+        },
+        {
+          "id": "fontcalme",
+          "name": "Fontcalme",
+          "meaning": "Calm Spring",
+          "say": "FONT-calm",
+          "archetypes": ["healers"],
+          "mapLabel": "Healer Start",
+          "where": "centre, the walled manor on the hill road",
+          "flavour": "Squires and preachers learn their letters and their bandages in the same hour."
+        }
+      ],
+      "byArchetype": {
+        "frontline": "pierregarde",
+        "healers": "fontcalme",
+        "support": "marvigne",
+        "dps": "pierregarde"
+      }
+    },
+
+    "mythic": {
+      "race": "Mythic",
+      "cultureGroup": "elves",
+      "territoryLabel": "Mythic Territory",
+      "tongue": "Greek, archaic — APPROVED by Daniel 2026-09-12. Rationale: Equal and Pankrator are rollable only by Hellenic, Mythic and one outlier each; among the eight human cultures only Hellenic rolls either, and among the three elf races only Mythic does. Completes the elf-pairs-with-human pattern (Sidhe/Celtic/Irish, Alfar/Germanic/Norse). The map places Mythic Territory in the western vastwood rather than beside Hellenic, so they read as the older withdrawn branch.",
+      "settlement": {
+        "name": "Argyrion",
+        "meaning": "the Silver Place",
+        "say": "ar-GEER-ee-on",
+        "where": "deep in the western vastwood, the lone white spire",
+        "flavour": "Visible from nowhere except directly below."
+      },
+      "starts": [
+        {
+          "id": "anthemon",
+          "name": "Anthemon",
+          "meaning": "the Flowering",
+          "say": "AN-theh-mon",
+          "archetypes": ["frontline", "healers", "support", "dps"],
+          "mapLabel": "Mythic Start",
+          "where": "south edge of the wood, the tent camp on the golden hills",
+          "flavour": "Where the Mythic send their young out into the light for the first time."
+        }
+      ],
+      "byArchetype": {
+        "frontline": "anthemon",
+        "healers": "anthemon",
+        "support": "anthemon",
+        "dps": "anthemon"
+      }
+    },
+
+    "hellenic": {
+      "race": "Hellenic",
+      "cultureGroup": "crusaders",
+      "territoryLabel": "Hellenic Territory",
+      "settlement": {
+        "name": "Leukopolis",
+        "meaning": "the White City",
+        "say": "loo-KOP-o-lis",
+        "where": "east, the marble terraces and round theatre above the lake",
+        "flavour": "Marble terraces stepping down to the water."
+      },
+      "starts": [
+        {
+          "id": "aspidon",
+          "name": "Aspidon",
+          "meaning": "the Shield",
+          "say": "AS-pi-don",
+          "archetypes": ["frontline"],
+          "mapLabel": "Frontline Start",
+          "where": "northwest, the river village at the mountain gate",
+          "flavour": "The line forms in its square every dawn whether or not anything is coming."
+        },
+        {
+          "id": "palaistron",
+          "name": "Palaistron",
+          "meaning": "the Wrestling Ground",
+          "say": "pa-LICE-tron",
+          "archetypes": ["dps"],
+          "mapLabel": "Damage Start",
+          "where": "northeast, the villas above the aqueduct",
+          "flavour": "Pankrators are broken in and equals are made."
+        },
+        {
+          "id": "mouseion",
+          "name": "Mouseion",
+          "meaning": "Seat of the Muses",
+          "say": "MOO-say-on",
+          "archetypes": ["support"],
+          "mapLabel": "Support Start",
+          "where": "south bank of the river",
+          "flavour": "Argument is the local industry."
+        },
+        {
+          "id": "panakeia",
+          "name": "Panakeia",
+          "meaning": "All-Healing",
+          "say": "pan-a-KAY-a",
+          "archetypes": ["healers"],
+          "mapLabel": "Healer Start",
+          "where": "east, the temple complex above the lake",
+          "flavour": "The only building in the territory nobody has ever fought over."
+        }
+      ],
+      "byArchetype": {
+        "frontline": "aspidon",
+        "healers": "panakeia",
+        "support": "mouseion",
+        "dps": "palaistron"
+      }
+    },
+
+    "armenian": {
+      "race": "Armenian",
+      "cultureGroup": "crusaders",
+      "territoryLabel": "Armenian Territory",
+      "settlement": {
+        "name": "Lusavank",
+        "meaning": "Light Monastery",
+        "say": "LOO-sa-vank",
+        "where": "centre, the conical-domed church and village above the lake",
+        "flavour": "At the Bloom's northern edge."
+      },
+      "starts": [
+        {
+          "id": "berdkar",
+          "name": "Berdkar",
+          "meaning": "Fortress Stone",
+          "say": "BERD-kar",
+          "archetypes": ["frontline"],
+          "mapLabel": "Frontline Start",
+          "where": "west, the camp on the water at the Bloom's edge",
+          "flavour": "The Bloom stops here, because the Armenians stop it."
+        },
+        {
+          "id": "arevtun",
+          "name": "Arevtun",
+          "meaning": "Sun House",
+          "say": "a-REV-toon",
+          "archetypes": ["support", "dps"],
+          "mapLabel": "Support/Damage Start",
+          "where": "northeast, the farmstead and chapel on the terrace above Lusavank",
+          "flavour": "The sunny terrace; everything grown here is grown twice a year."
+        },
+        {
+          "id": "surbhogi",
+          "name": "Surbhogi",
+          "meaning": "Holy Spirit",
+          "say": "SOORB-ho-gee",
+          "archetypes": ["healers"],
+          "mapLabel": "Healer Start",
+          "where": "south, the shrine-camp on the lakeshore inside the Bloom",
+          "flavour": "The preachers tend the ones the Bloom has already touched."
+        }
+      ],
+      "byArchetype": {
+        "frontline": "berdkar",
+        "healers": "surbhogi",
+        "support": "arevtun",
+        "dps": "arevtun"
+      }
+    },
+
+    "woodling": {
+      "race": "Woodling",
+      "cultureGroup": "dew-hollow",
+      "territoryLabel": "Woodling Territory",
+      "tongue": "invented — -knot a settled thicket, -burr a sheltered hollow, -mott a scout copse",
+      "settlement": {
+        "name": "Amberknot",
+        "where": "centre of the autumn scrub",
+        "flavour": "The round gold-leaved thicket-town."
+      },
+      "starts": [
+        {
+          "id": "mossburr",
+          "name": "Mossburr",
+          "say": "MOSS-bur",
+          "archetypes": ["healers", "support"],
+          "mapLabel": "Healer/Support Start",
+          "where": "west, the lakeside hollow behind the fence line",
+          "flavour": "Everything green in Woodling medicine grows within fifty paces of it."
+        },
+        {
+          "id": "thornmott",
+          "name": "Thornmott",
+          "say": "THORN-mot",
+          "archetypes": ["dps"],
+          "mapLabel": "Damage Start",
+          "where": "east, in the open boulder country",
+          "flavour": "A scout copse, deliberately uncomfortable."
+        }
+      ],
+      "byArchetype": {
+        "frontline": null,
+        "healers": "mossburr",
+        "support": "mossburr",
+        "dps": "thornmott"
+      },
+      "note": "No Frontline start because Woodling has no Frontline class. Not a gap."
+    },
+
+    "gobbledrift": {
+      "race": "Gobbledrift",
+      "cultureGroup": "dew-hollow",
+      "territoryLabel": "Gobbledrift Territory",
+      "tongue": "invented — -drift a wandering camp, -glim a hearth-place",
+      "settlement": {
+        "name": "Rattledrift",
+        "where": "centre of the hummocky scrub",
+        "flavour": "The biggest and loudest of the Gobbledrift camps, which is how it became the capital. It has moved four times."
+      },
+      "starts": [
+        {
+          "id": "tinglim",
+          "name": "Tinglim",
+          "say": "TIN-glim",
+          "archetypes": ["support", "dps"],
+          "mapLabel": "Gobbledrift Start",
+          "where": "east, the boulder overhang in the dry scrub",
+          "flavour": "A hearth roofed in salvaged sheet. Warm, bright, and audible from a long way off."
+        }
+      ],
+      "byArchetype": {
+        "frontline": null,
+        "healers": null,
+        "support": "tinglim",
+        "dps": "tinglim"
+      },
+      "note": "Gobbledrift can only roll Support and DPS classes; the two nulls are correct."
+    },
+
+    "fae": {
+      "race": "Fae",
+      "cultureGroup": "dew-hollow",
+      "territoryLabel": "Fae Territory",
+      "tongue": "invented — -bell a seat or hall, -wisp a camp, -glass a still pool",
+      "settlement": {
+        "name": "Hollowbell",
+        "where": "centre of the Bloom, southeast of the map",
+        "flavour": "Named for the note the crystal flowers make before a storm."
+      },
+      "starts": [
+        {
+          "id": "quickenwisp",
+          "name": "Quickenwisp",
+          "say": "KWIK-en-wisp",
+          "archetypes": ["frontline", "healers"],
+          "mapLabel": "Frontline Start",
+          "where": "centre-south of the Bloom",
+          "flavour": "A rowan camp — quicken-wood, the old ward against fae mischief, which the Fae find funny. The volvas keep the ward and the shield-line keeps the volvas."
+        },
+        {
+          "id": "dewglass",
+          "name": "Dewglass",
+          "say": "DEW-glass",
+          "archetypes": ["support", "dps"],
+          "mapLabel": "Support Start",
+          "where": "east of the Bloom",
+          "flavour": "A still pool that holds the reflection a second longer than it should. Whatever the Fae send out hunting goes out from here, and checks itself in the water first."
+        }
+      ],
+      "byArchetype": {
+        "frontline": "quickenwisp",
+        "healers": "quickenwisp",
+        "support": "dewglass",
+        "dps": "dewglass"
+      },
+      "note": "Daniel 2026-09-12: Fae has exactly two markers and they double up — Healer rides with Frontline at Quickenwisp, Damage rides with Support at Dewglass. All four archetypes covered."
+    },
+
+    "centaur": {
+      "race": "Centaur",
+      "cultureGroup": "dew-hollow",
+      "territoryLabel": "Centaur Territory",
+      "tongue": "invented — -mane a seat, -run a road or course",
+      "settlement": {
+        "name": "Longmane",
+        "where": "northeast shoulder of the plateau, the red-roofed hall",
+        "flavour": "The Centaur seat above the elder wood."
+      },
+      "starts": [
+        {
+          "id": "archrun",
+          "name": "Archrun",
+          "say": "ARCH-run",
+          "archetypes": ["frontline", "healers", "dps"],
+          "mapLabel": "Centaur Start",
+          "where": "the plateau's north edge, beneath the old aqueduct arches",
+          "flavour": "Every Centaur's first gallop is the length of it, and they all remember the time."
+        }
+      ],
+      "byArchetype": {
+        "frontline": "archrun",
+        "healers": "archrun",
+        "support": null,
+        "dps": "archrun"
+      },
+      "note": "Centaur has no Support class (Knight, Squire, Preacher, Equal, Frontiersman, Whisper); the null is correct."
+    }
+  },
+
+  "regions": [
+    { "name": "Crusader Empire", "status": "existing-on-map", "note": "the pentagon polity; its city is Crucivallum" },
+    { "name": "Italics Romana", "status": "existing-on-map", "note": "Romance heartland region; its seat is Valmonde" },
+    { "name": "Thracian Frontier", "status": "existing-on-map", "note": "mountain march between the Empire and the Hellenic lands; no start points" },
+    { "name": "Castrated Plains", "status": "existing-on-map", "note": "blighted plain east of the Empire; no start points" },
+    { "name": "Dew Hollow", "status": "existing-on-map", "note": "culture-group region spanning Woodling, Gobbledrift, Fae and Centaur territories" }
+  ],
+
+  "settled": [
+    "2026-09-12 all 55 names approved by Daniel.",
+    "Dunadd stands as the Dál Riata seat; Dunlaith rejected.",
+    "Mythic keeps the Greek register (Argyrion, Anthemon).",
+    "Miklagarðr is the Germanic capital for spawn/hearth purposes; Hedeby is the second town.",
+    "Slavic and Baltic each cover all four archetypes.",
+    "Fae's two markers each carry two archetypes.",
+    "Woodling has no Frontline class and Centaur no Support class; those nulls are correct."
+  ],
+
+  "openQuestions": [
+    "Lore hook, unclaimed: who built the aqueduct through Centaur country, and why does it run toward Dew Hollow?"
+  ]
+}
