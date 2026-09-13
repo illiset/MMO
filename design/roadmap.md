@@ -219,6 +219,31 @@ from "it crashed" to "nerf Volva."
 
 **Done when:** subscriptions cover server costs — the game pays its own rent.
 
+### Post-launch solo PvP event — "The Hunt" battle royale (Daniel's idea, 2026-09-12)
+
+- **Concept (Daniel):** a PUBG-style battle royale set in this world — no
+  guns, the game's own melee/magic/bows — as one of the SOLO PvP events, and
+  the loot won there carries back into the real MMORPG. Reference: Black
+  Desert Online's Shadow Arena, which ran as an in-game BR event before
+  being spun off and scrapped.
+- **Claude's design notes (for when it is scheduled, not before):**
+  - *Pillar check:* fine as an optional event; it must never become the
+    gear path. Rewards = catch-up/consumable/cosmetic-earned or a parallel
+    currency, never best-in-slot — otherwise PvE players feel forced into
+    PvP, the exact failure this game exists to avoid.
+  - *Population math:* a BR needs a full lobby every few minutes. At the
+    First-100 scale that is impossible; design it as a 12–24 player "Hunt"
+    with a short queue and bots to fill, not a 100-player drop. Shadow Arena
+    died on split population — schedule it as timed events (weekend
+    windows), not an always-on queue.
+  - *Setting:* the Castrated Plains (the blighted dead-tree zone on the
+    Great North map) is a natural arena — the blight itself is the closing
+    circle. Drop-in on foot from the plains' edge; loot = the plains'
+    scavenged relics; no guns means the closing pressure comes from the
+    blight, terrain and ambush design, not ranged DPS.
+  - *When:* Phase 6 live-ops candidate at the earliest (needs the population
+    and the PvP ruleset from RvR-lite). Parked here so it is not lost.
+
 ---
 
 ## Cross-cutting tracks (advance inside every phase)
