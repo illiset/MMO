@@ -5,6 +5,16 @@ Nights = engine work (from the main session as background agents); days = design
 
 ## 0. Bugs from Daniel's walk test (fix first tonight)
 - A/D turn: camera turns but the walk direction doesn't follow (or the body turns and movement keeps going straight). WoW rule: A/D rotate the character, camera follows, W moves along facing, Q/E strafe relative to facing.
+- LMB+RMB together = walk forward (and it must cancel Num Lock auto-run); auto-run must also stop on S.
+- Stairs are not walkable (the stilt granary's stair and the roundhouse steps): collision + step height/ramp; doors don't open: an interact-to-open door (F) on the Celtic houses.
+- Locomotion animation looks lifeless: replace the kit mannequin walk/run/idle set with a proper locomotion set (Epic's free Lyra / Animation Starter Pack retargeted, or the MetaHuman set when bodies land); sprint and turn-in-place included.
+- Character-to-tree scale is wrong: the Roman & Celtic scatter trees read as shrubs; every tree must be 8–25 m against a 1.8 m character (scale audit script).
+- XP bar: replace the light-blue aurora skin with a bold solid fill on a stone-textured plaque (Daniel: "bolder solid colour, stone background").
+
+## 0b. Composition standard for hamlets (Daniel's Lissban verdict 2026-09-13: "one of the shittiest towns")
+- What went wrong: multiple identical stone circles/cairn clusters scattered everywhere, lone palisade gate segments standing in the open with no wall, watchtowers dropped at random, houses with no paths, yard, fire or fences, nothing grounded. Floating stones. No composition rule.
+- The rule from now on: ONE sacred circle per hamlet at most (real menhirs, spaced, outside the gate), an ENCLOSURE (bank + ditch + continuous palisade with a single gate) or none at all — never a lone gate; houses around a yard with a central fire, paths worn between doors, fences/pens with the pig and dog, woodpiles, racks; a watchtower only where it guards the gate or the shore; everything traced to the ground; trees at real scale around and inside; a composition captured and checked from the road before the night ends.
+- Identity check: the stone-circle hamlet is LISSBAN (Frontline start). Carrigrua is the fort on the rise NE of Dunadd and is currently only a blockout.
 
 ## 1. World polish (night 2, in this order)
 1. Tobarglas re-sited on a natural shelf under the Bealanard Shoulder; all four starts re-checked.
