@@ -15,7 +15,11 @@ saved level and a log line; steps 11–12 are the proof. Daniel's hand-placed ac
    east–west line and at the gates.
 3. **Palisade + gates.** Keep the wobbly ring. Open an EAST gate opposite the west one (3.2 m). Both gates get the swinging
    gate actor with F to open/shut and a 30 s auto-close. Build the east BAFFLE: an 8 m palisade section 3.5 m outside the
-   gate on a low earth bank, torch posts at its ends, a hurdle or two, the path splitting round it.
+   gate on a low earth bank, torch posts at its ends, a hurdle or two, the path splitting round it. **Archer posts**
+   (Daniel 14:08): two or three timber platforms inside the palisade — a ladder up to a plank deck whose floor sits just
+   below the spike tips, so a standing archer sees over the wall (deck ~2.6–2.8 m up for a 3.5 m palisade), one beside each
+   gate and one on the side facing the hill/road; posts and rails from the Celtic/Medieval kit pieces, walkable (collision
+   on the deck and ladder), a quiver/bow prop on each.
 4. **Buildings.** Hall (bigger), three family huts, barn (large granary): re-seated on the pad by their bounds (the meshes'
    pivots are 20–30 m off), doors checked for a 2.1 m × 0.9 m clearance (scale up or swap the variant), collider rings
    rebuilt from the REAL walls with the gap on the REAL door (found by probing the post ring), wooden floors at pad height,
