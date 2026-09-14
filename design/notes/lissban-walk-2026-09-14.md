@@ -45,3 +45,8 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
 8. **Same for the grain field** (top-down, 09:58): green inside the fence line must go — "only dirt for ground and then the
    plants that are being farmed." **Farm tools** in and around the fields would be good: a plough, hoes/rakes leaning on the
    fence, a hand cart, baskets, a hay pile — whatever the packs have (CelticHouse baskets, Medieval_Megapack tools/carts).
+9. **Crops outside the fence on the east side of the wheat field** (red-marked top-down, 10:00): three patches of wheat
+   rows run past the fence into the lane between the wheat field and the next field. Crops must be clipped to the fence
+   polygon (inset 0.3 m) — the crop rows were laid on a rectangle that is bigger/rotated relative to the fenced quad. Also:
+   the fence on the near (south) side has a gap in the middle; close it unless it is a deliberate 3 m gate opening, then
+   put a gate there.
