@@ -273,3 +273,10 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     profile: r.LandscapeLODDistributionScale 2.5 / r.LandscapeLOD0DistributionScale 3 (added to PlayMythicEarth.bat
     now), full LOD on the PC, (4) a ridge-crest smoothing pass in the generator (round arêtes over 8-12 m). Prove with the
     same two poses at 30 fps on the laptop and again on the PC.
+    (12:45) Daniel: "LMB and RMB feel good now." RING SPEC: "it needs to be the colour YELLOW — not gold, not neon
+    yellow, not white — yellow; and the middle of the ring should be a more see-through yellow of the same yellow." →
+    M_TargetRing (decal): NO emissive glow (the glow + bloom is what reads white); base colour flat yellow sRGB ~(255, 225,
+    0); ring band ~12% of the radius at ~90% opacity; the disc inside the same yellow at ~25% opacity; a 1-px darker
+    edge for readability. Expose "Color" as a vector parameter so the con colours (grey/green/blue/yellow/orange/red/
+    purple, all in this flat cartoony style) can drive it from code. Same treatment for the kit's dark-green hover decal
+    (turn it off or restyle).
