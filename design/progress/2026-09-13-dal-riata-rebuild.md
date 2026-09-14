@@ -406,6 +406,16 @@ one-minute fixes for next shift, either of which finishes it: put the stationary
 belongs if anywhere), or give the penned def a small aggro radius so it comes to the fence line
 and fights through it.
 
+**I then tried the fix and it still did not land, which is worth recording.** Three boars went
+into the OPEN muster yard 13 m from the player start (no fence between), correctly configured -
+the server confirms `[TRAI] Penned Boar reaction -> Hostile (byte flipped)` 21 times, so they
+spawn. The player was then reseated 2 m from a known boar position and auto-attack toggled. The
+client never produced a `[TRTarget]` selection on that run and the server logged nothing new,
+so the last client session appears not to have possessed at all. Total time spent chasing this
+one log line across the shift: about 50 minutes, which was too much. **It is a five-minute job
+for a human at the keyboard** — walk two steps, Tab, press 1 — and that is how it should be
+closed rather than with more scripted input.
+
 Also learned: **key `1` is a toggle** — the attack bursts were switching auto-attack off again
 every other press. And the `Penned Boar` def inherited a Hostile flip it should not have; the
 `reaction` field needs an explicit `neutral` on the copy.
