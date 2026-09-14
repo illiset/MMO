@@ -280,3 +280,10 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     edge for readability. Expose "Color" as a vector parameter so the con colours (grey/green/blue/yellow/orange/red/
     purple, all in this flat cartoony style) can drive it from code. Same treatment for the kit's dark-green hover decal
     (turn it off or restyle).
+36. **Combat balance rule (12:48):** "auto-attacking the wolf should mean a level 1 dies — you must use skills to live
+    when fighting a yellow, or even a blue, unless extremely geared for a blue." → Tuning target for even-con mobs: a
+    player who ONLY auto-attacks LOSES to a yellow (and to a blue unless well geared); using the class skills (the two
+    starter attacks + defensive/utility) is what wins a 15-25 s fight at ~1/3 HP cost. Numbers: mob DPS against a naked
+    level 1 ≈ 1.2-1.5x the player's auto-attack DPS; skills add ~2x burst/mitigation so the skilled fight is won with
+    ~2/3 HP left. Recorded in design/hud-targeting-v1.md's combat-tuning rule; balance pass on the wildlife/bandit defs
+    once mobs actually deal damage (item 26).

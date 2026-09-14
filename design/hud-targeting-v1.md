@@ -16,6 +16,8 @@ The colour is the target's level relative to mine (the "con"):
 Rules
 - The ring is translucent (about 35% alpha), 1.2x the target's capsule radius, flat on the ground, always visible through
   grass; it fades with distance but never hides; friendly NPCs use the same colours (their con tells you their level).
+- Daniel 2026-09-14: "auto-attacking should mean a level 1 dies — you must use skills to live against a yellow, or even a
+  blue unless extremely geared." Auto-attack alone loses to an even con; skills win it at ~1/3 HP cost.
 - Combat tuning must MATCH the table: an even-level fight is 15–25 s and costs ~1/3 HP; orange should be a coin-flip at
   best; red a loss almost every time; purple a loss. Mob stats per level are tuned to make these outcomes true, not the
   colours to match the stats.
