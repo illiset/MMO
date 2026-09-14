@@ -1863,32 +1863,20 @@
           1225
         ],
         [
-          -1733,
-          1837
+          -1800,
+          700
         ],
         [
-          -2000,
-          1720
+          -2050,
+          350
         ],
         [
-          -2250,
-          1560
-        ],
-        [
-          -2345,
-          1278
-        ],
-        [
-          -2650,
-          900
-        ],
-        [
-          -2949,
-          565
+          -2212,
+          63
         ]
       ],
       "grade_max_deg": 12,
-      "why": "Daniel 2026-09-13: 'not straight over the mountain, around Shanderry'. Bohermara is a COAST road: from Rinnbeg it follows the shoreline 90 m inland, east along the north coast past Cuaseen, round under Grey Head, south down the east shore, then the east-shore terrace (400 m inland, seaward of Shanderry) to Cromcross, east of the lake, Whitemill, Dunadd. It never crosses the Bealanard Shoulder. Where the coast is cliff the terrain gets a SHORE TERRACE (raised beach, 40-80 m wide, z 15-40 m, smooth profile) carved under the road; the road grade comes from that profile, not from the flank above.",
+      "why": "Daniel 2026-09-13: 'not straight over the mountain, around Shanderry'. Bohermara is a COAST road: from Rinnbeg it follows the shoreline 90 m inland, east along the north coast past Cuaseen, round under Grey Head, south down the east shore, then the east-shore terrace (400 m inland, seaward of Shanderry) to Cromcross, then south-west past the lake's north side into Carrigrua - the v1 / original-map topology Daniel confirmed 2026-09-13 ('the v1 layout was closer to what I wanted'). Dunadd is reached from the castle by the spur. It never crosses the Bealanard Shoulder. Where the coast is cliff the terrain gets a SHORE TERRACE (raised beach, 40-80 m wide, z 15-40 m, smooth profile) carved under the road; the road grade comes from that profile, not from the flank above.",
       "path_v1_scaled": [
         [
           4394.0,
@@ -2327,7 +2315,7 @@
           1278
         ]
       ],
-      "why": "Village to mill, 0.9 km, the last leg of the Bohermara Road into Dunadd (mill at the lake outflow)."
+      "why": "Village to mill, 0.9 km east along the Owenfinn to the lake outflow (v1 topology: the mill hangs off Dunadd, not off the Bohermara)."
     },
     {
       "id": "tobarglas_spur",
