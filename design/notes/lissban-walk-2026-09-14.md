@@ -113,3 +113,14 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     Spruce (static Megascans) the moment Daniel adds it to the project — its forest-grown variants have the high crowns
     natively; (d) understory stays at ground level (ferns, bilberry, saplings) so the gap between floor and canopy reads
     as a hall, like the photos.
+18. **Rivers and streams** (aerial of the Owenfinn inside Shanderry, 10:35): "nice but need improved drastically with
+    detail and beauty, and to actually function and seem real and flow." What the shot shows: the river bed is a straight-
+    walled brown trench cut through the forest (item 10's carving), the water is patches of flat pale-blue polygons (a
+    stray rectangular water piece too), trees stand inside the channel. → Rivers are built as SPLINES with a continuous
+    water ribbon that follows the bed (UE Water plugin river bodies if they run on this project, otherwise a spline-mesh
+    water ribbon with our M_TR_Water), FLOW along the spline (panning normals + foam streaks in the flow direction, faster
+    at drops), depth colour from bank to centre; the bed carved as a gentle meandering channel (banks ≤ 30°, no vertical
+    walls, gravel bars on the inside of bends); trees cleared from the channel + 4 m of bank; banks dressed with mossy
+    boulders, reeds, alder/willow, ferns, fallen logs across narrow stretches; the waterfall with a mist emitter and a
+    plunge pool; forest streams the same at 1-3 m width; the river mouth at Portcorr widens into shingle. Prove with an
+    eye-level capture standing on a bank and a low aerial along a bend.
