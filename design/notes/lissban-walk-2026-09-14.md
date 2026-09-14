@@ -62,3 +62,7 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     contours). The coast terrace: blend its inner edge 60-120 m into the slope, break its line with noise. Re-run delta_z
     re-seating and the sightline audit after. Prove with the same god-cam poses (aerial over the ford-Lissban road; the
     trench pose).
+11. **Delete the seven standing stones outside Lissban** ("still wondering what this is", 10:10). Placeholder slabs, never
+    asked for; canon has no stone circle at Lissban (the only standing stone is the Cromcross waystone). Remove the
+    LB_*/DRV2_Lissban_Menhir actors and the menhir step from the Lissban scripts. A future stone circle, if Daniel wants
+    one, is a named landmark built from scanned boulders.
