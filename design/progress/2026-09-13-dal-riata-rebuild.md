@@ -490,3 +490,77 @@ per-zone.
 7. Real water surface (sea and lake), UDS weather, scree at cliff bases, the AnimBP
    locomotion-direction check, and the whole F list (sprint stamina, XP bar recolour,
    locomotion animations, compass/minimap).
+
+
+---
+
+# Addendum 18:16 – 19:10 — visible faults found in my own captures, fixed
+
+Five things were wrong in the shots above. All five are now fixed, and two of them were bugs I
+had been staring past for hours.
+
+## 1. THE SEA WAS A 200 METRE PUDDLE (the real bug behind hours of confusion)
+
+`/Engine/BasicShapes/Plane` is **100 unreal units** across — one metre. I had been scaling it as
+though 1 unit of scale were 100 m, so `scale 200` produced a **200 m** puddle sitting at the
+origin instead of a 20 km ocean. That is why no capture ever showed water, and it is also why
+deleting the sea earlier "did not change anything": the thing I deleted was never in frame. The
+pale sheet I chased through three wrong theories (fog banks, volumetric seam, sky atmosphere)
+was simply **the ocean seen from a low camera**, which is exactly what it looks like from
+Lissban — the hamlet sits on Blunt Head's 900 m neck with water on two sides.
+
+Fixed: sea at 20 × 14.5 km, z = −0.6 m; a lake surface in the basin at its plan level
+(57.7 m, 760 × 470 m). Material is Abandoned_Cathedral `MI_Water`, which has real wave, edge
+and depth-colour material functions — the UE Water plugin is **not enabled** in this project so
+it was not an option. Blocking collision stays on both.
+**Proof: `v2R3_coast_s.jpg`** (an ocean surface with ripples running to the horizon) and
+**`v2R3_lake_s.jpg`** (the lake reflecting sky in its basin, ringed by conifers).
+Remaining flaw: the lake is a rectangle, not clipped to the basin outline — its straight near
+edge shows.
+
+## 2. THE WHITE TREE WAS `SM_SilverFir`
+
+Not a missing material — every foliage material slot probed OK. The SilverFir **trunk** renders
+correctly while its **needle atlas** (`MI_SilverFir_Atlas_01`) comes out frosted white, in the
+forest interior and in the new shelter belts. Diagnosing a third-party foliage material was not
+a 40-minute job, so all **27,360 canopy instances and 76 shelter-belt trees were swapped to the
+Roman & Celtic pines**, which render correctly — with a per-component scale compensation
+(×0.76 to ×7.15) so every tree keeps the real-world height it was placed at.
+**Before: `v2R_forest_s.jpg` (white). After: `v2F_forest_s.jpg` (a green conifer forest).**
+`SM_SilverFir` should be treated as unusable until someone opens that material.
+
+## 3. RAY TRACING WAS ON
+
+"Ray Tracing PSO is not ready yet, using fallback" was burned into `v2_dunadd_market`. Ray
+tracing had only ever been disabled on the laptop **client command line**, so the editor still
+tried it. `Config/DefaultEngine.ini` now has `r.RayTracing=False`,
+`r.Lumen.HardwareRayTracing=False`, `r.RayTracing.Skylight=False`. It needs an editor restart to
+take effect, which was done. **Proof: `v2F_dunadd_s.jpg` — the text is gone.**
+
+## 4. THE STANDING STONES WERE LYING DOWN
+
+`SM_GN_Monolith` is a **lying slab**. My placement scaled it by (wanted height ÷ measured Z
+extent), which for a slab means "make the flat dimension 3 m" — so the seven Lissban menhirs
+were **18.35 m wide and 3.94 m tall**, which is the flat pale object in the capture. All seven
+were rolled upright and then **rescaled from the new measured height** to finish 2.75–3.52 m
+tall and 0.92–1.29 m wide, and re-seated 0.45 m into the ground.
+**Proof: `v2F_stones2_s.jpg`.**
+
+## 5. THE SETTLEMENTS SAT ON A BARE LAWN
+
+Both now have a worked ring, sized and oriented by the wind and the road rather than scattered:
+a **two-row shelter belt of conifers on the windward side** (WSW at Lissban, off the ocean; NW
+at Dunadd, down the valley), a **copse** of broadleaves, **three hedged fields** each with a
+crop (wheat, flax, wheat), a **worn path from the gate toward the road**, and woodpiles.
+Per settlement: 38 shelter trees, 16 copse trees, 84 hedge runs, 78 crop plants, 18 path
+pieces, 4 woodpiles.
+**Proof: `v2F_lissban_s.jpg` and `v2F_dunadd_s.jpg`** — Dunadd now reads as a village in worked
+country with the lake behind it and Benlea on the horizon.
+
+## Not done — handed to the night shift
+
+**The forest floor duff weightmap.** The floor is still grass under the canopy where the
+reference photos show needle duff, moss and fern. The route is
+`landscape_import_weightmap_from_render_target` driving a duff/dirt layer from the forest mask
+the generator already computes. There was not time to do it and verify it, and a half-painted
+landscape is worse than none. It stays the number-one visual gap.
