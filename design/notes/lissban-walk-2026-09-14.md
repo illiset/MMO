@@ -199,3 +199,10 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     when able, but always preserve 15% of stamina." → Double-tap Shift (≤ 0.3 s apart) toggles sprint during auto-run;
     holding Shift keeps working when driving manually; sprint cuts off at 15% stamina (not 0) and cannot restart until
     stamina is above ~25%; regen unchanged (12/s when not sprinting).
+26. **Wolf fight (11:45):** "the time it took for it to die was good but it did zero damage to me — maybe increase kill
+    time slightly but make it do damage to me too." → BUG: wolves (and probably every AnimalVarietyPack mob) deal 0 damage.
+    Likely cause: the kit applies mob melee damage from an animation notify that the animal montages do not carry (the
+    Rimethrall on a humanoid skeleton did hit in M3). Fix: server-side timer-based melee for mobs (damage applied on a
+    swing timer with range + facing checks, independent of notifies), then the animal attack anim just plays; verify with
+    the harness that player HP drops. Tuning: wolf HP +15-20% (kill time slightly longer), wolf damage per the def
+    (6-10) so a fight costs ~1/3 HP.
