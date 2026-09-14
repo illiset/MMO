@@ -96,3 +96,8 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     rims (the erosion pass's droplet craters) — reads as a moonscape, not meadow. → Smooth the lowland (< 90 m) with a
     wide low-pass that keeps the big rolls and removes the pits, keep the dirt-on-slope rule only for real slopes; the
     coast terrace line visible on the horizon is item 10's scar (blend it).
+    Daniel's refinement (10:27): "it should keep going out further to the left just more scattered, and end quickly
+    though — not such a stark or contrasted transition. Same with ground colour as the mountains begin." → Edge gradient:
+    trees continue ~100-150 m past the core, scattered (a few per 100 m²) then gone within another ~50 m; the duff-to-grass
+    and grass-to-heath/rock colour transitions are wide noise-broken blends (50-150 m), never a contrast line, including
+    where the meadow meets Benlea's lower slopes.
