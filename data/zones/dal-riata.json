@@ -1542,7 +1542,7 @@
         1278.2,
         88.0
       ],
-      "why": "A watermill needs fall and flow: the first place below Dunadd where the Owenfinn drops enough for a wheel. Canon puts it just east of Dunadd on the Moyree."
+      "why": "A watermill needs fall and flow: the first place below Dunadd where the Owenfinn drops enough for a wheel. Canon puts it just east of Dunadd on the Moyree. DECIDED 2026-09-13 (Claude's recommendation, Daniel asked): the lake-outflow site. A lake outflow gives a regulated, flood-buffered flow and a drop off the lake level - exactly what a wheel wants - and it is the first thing a traveller meets entering Dunadd on the Bohermara Road from the east."
     },
     {
       "id": "cromcross",
@@ -1647,84 +1647,184 @@
           -253
         ],
         [
-          4409,
-          72
+          4726,
+          -127
         ],
         [
-          4264,
-          325
+          4617,
+          15
         ],
         [
-          4192,
-          613
+          4578,
+          191
         ],
         [
-          4174,
-          938
+          4539,
+          367
         ],
         [
-          4372,
-          1227
+          4500,
+          543
         ],
         [
-          4499,
-          1516
+          4371,
+          644
         ],
         [
-          4427,
-          1769
+          4276,
+          763
         ],
         [
-          4228,
-          1949
+          4298,
+          926
         ],
         [
-          4011,
-          2130
+          4470,
+          980
         ],
         [
-          3759,
-          2274
+          4602,
+          954
         ],
         [
-          3506,
-          2354
+          4753,
+          1051
         ],
         [
-          3217,
-          2346
+          4904,
+          1149
         ],
         [
-          2965,
-          2238
+          5055,
+          1247
         ],
         [
-          2820,
-          2057
+          5175,
+          1379
         ],
         [
-          2676,
-          1805
+          5290,
+          1518
         ],
         [
-          2600,
-          1620
+          5382,
+          1667
         ],
         [
-          2300,
-          1700
+          5412,
+          1843
         ],
         [
-          1900,
-          1900
+          5357,
+          1869
         ],
         [
-          1500,
-          2100
+          5241,
+          2007
         ],
         [
-          1104,
-          2166
+          5108,
+          2123
+        ],
+        [
+          4947,
+          2203
+        ],
+        [
+          4785,
+          2283
+        ],
+        [
+          4611,
+          2320
+        ],
+        [
+          4433,
+          2344
+        ],
+        [
+          4266,
+          2411
+        ],
+        [
+          4098,
+          2477
+        ],
+        [
+          3931,
+          2544
+        ],
+        [
+          3764,
+          2611
+        ],
+        [
+          3597,
+          2678
+        ],
+        [
+          3428,
+          2739
+        ],
+        [
+          3250,
+          2767
+        ],
+        [
+          3073,
+          2794
+        ],
+        [
+          2893,
+          2806
+        ],
+        [
+          2713,
+          2809
+        ],
+        [
+          2533,
+          2812
+        ],
+        [
+          2353,
+          2815
+        ],
+        [
+          2173,
+          2818
+        ],
+        [
+          1993,
+          2821
+        ],
+        [
+          1813,
+          2823
+        ],
+        [
+          1634,
+          2819
+        ],
+        [
+          1459,
+          2778
+        ],
+        [
+          1284,
+          2737
+        ],
+        [
+          1108,
+          2697
+        ],
+        [
+          933,
+          2656
+        ],
+        [
+          895,
+          2647
         ],
         [
           372,
@@ -1776,7 +1876,7 @@
         ]
       ],
       "grade_max_deg": 12,
-      "why": "Daniel's red-line sketch, 2026-09-13 19:15: a COAST road. Rinnbeg east along the north shore past Cuaseen, round the north-east corner under Grey Head, then south down the east shore. It does NOT cross the Bealanard Shoulder. Tobarglas is reached by a diagonal climb off the shore from about x=3500 (grade <= 12 deg over ~1.2 km) and left by a diagonal descent back to the east-shore terrace by x=1100. Then the terrace to Cromcross, the dogleg east of the lake, Whitemill, Dunadd. Always seaward of Shanderry. Points read off Daniel's sketch (+-50 m); the painter must snap to grade.",
+      "why": "Daniel 2026-09-13: 'not straight over the mountain, around Shanderry'. Bohermara is a COAST road: from Rinnbeg it follows the shoreline 90 m inland, east along the north coast past Cuaseen, round under Grey Head, south down the east shore, then the east-shore terrace (400 m inland, seaward of Shanderry) to Cromcross, east of the lake, Whitemill, Dunadd. It never crosses the Bealanard Shoulder. Where the coast is cliff the terrain gets a SHORE TERRACE (raised beach, 40-80 m wide, z 15-40 m, smooth profile) carved under the road; the road grade comes from that profile, not from the flank above.",
       "path_v1_scaled": [
         [
           4394.0,
@@ -1930,7 +2030,142 @@
         ]
       ],
       "authored_by": "Daniel (sketch over the v2 labelled map), digitised by Claude",
-      "grade_note": "validate every segment <= grade_max_deg against the heightmap before painting; nudge inland/seaward, never cut a bench"
+      "grade_note": "validate every segment <= grade_max_deg against the heightmap before painting; nudge inland/seaward, never cut a bench",
+      "terrace_note": "Carve: shore terrace under every coastal point whose ground is above 40 m; blend 60-120 m into the slope; cliff face above it, rock platform / shingle below it. Re-run the sightline audit after.",
+      "path_daniel_sketch_digitised": [
+        [
+          4636,
+          -253
+        ],
+        [
+          4637,
+          92
+        ],
+        [
+          4604,
+          249
+        ],
+        [
+          4580,
+          329
+        ],
+        [
+          4546,
+          526
+        ],
+        [
+          4920,
+          1135
+        ],
+        [
+          4919,
+          1120
+        ],
+        [
+          4911,
+          1117
+        ],
+        [
+          4424,
+          2385
+        ],
+        [
+          3823,
+          2630
+        ],
+        [
+          3811,
+          2630
+        ],
+        [
+          3574,
+          2726
+        ],
+        [
+          3125,
+          2830
+        ],
+        [
+          2937,
+          2850
+        ],
+        [
+          2616,
+          2749
+        ],
+        [
+          2676,
+          1805
+        ],
+        [
+          2600,
+          1620
+        ],
+        [
+          2300,
+          1700
+        ],
+        [
+          1900,
+          1900
+        ],
+        [
+          1500,
+          2100
+        ],
+        [
+          996,
+          2714
+        ],
+        [
+          372,
+          2130
+        ],
+        [
+          -360,
+          2111
+        ],
+        [
+          -799,
+          2056
+        ],
+        [
+          -1092,
+          1873
+        ],
+        [
+          -1312,
+          1617
+        ],
+        [
+          -1499,
+          1225
+        ],
+        [
+          -1733,
+          1837
+        ],
+        [
+          -2000,
+          1720
+        ],
+        [
+          -2250,
+          1560
+        ],
+        [
+          -2345,
+          1278
+        ],
+        [
+          -2650,
+          900
+        ],
+        [
+          -2949,
+          565
+        ]
+      ]
     },
     {
       "id": "boherath",
@@ -2088,15 +2323,44 @@
           565
         ],
         [
-          -3150,
-          730
+          -2650,
+          900
         ],
         [
-          -3400,
-          900
+          -2345,
+          1278
         ]
       ],
-      "why": "Village to mill, 0.46 km along the Owenfinn's north bank."
+      "why": "Village to mill, 0.9 km, the last leg of the Bohermara Road into Dunadd (mill at the lake outflow)."
+    },
+    {
+      "id": "tobarglas_spur",
+      "name": "Bohermara Road (Tobarglas spur)",
+      "surface": "PAINTED worn dirt landscape layer, 3 m, benched into the slope",
+      "path": [
+        [
+          3428,
+          2739
+        ],
+        [
+          3150,
+          2450
+        ],
+        [
+          2950,
+          2150
+        ],
+        [
+          2780,
+          1900
+        ],
+        [
+          2600,
+          1620
+        ]
+      ],
+      "grade_max_deg": 12,
+      "why": "The coast road passes below Tobarglas's 212 m shelf. This spur climbs diagonally from the shore terrace to the Green Well, ~1.5 km for ~180 m (about 7 deg average); the painter benches it with cut-and-fill so no segment exceeds 12 deg."
     }
   ],
   "habitats": [
@@ -2272,7 +2536,6 @@
   "openItems": [
     "The lake is UNNAMED - needs a name from Daniel.",
     "dal-riata-vision.md says 'Dunadd village sits at [Carrigrua's] gate'; the walk-test sightline rule supersedes it. Dunadd is now a 20-minute walk and a wooded saddle from the castle.",
-    "NPC slots (Content/Data/npcs/dal-riata-npcs.json) must be re-derived from v2 settlement positions.",
-    "Whitemill position conflict: landmarks.whitemill = [-2345,1278] (lake outflow, NE of Dunadd) but roads.whitemill_lane ends at [-3400,900] (0.56 km W/NW of Dunadd on the Owenfinn). Daniel to pick; the mill needs falling water."
+    "NPC slots (Content/Data/npcs/dal-riata-npcs.json) must be re-derived from v2 settlement positions."
   ]
 }
