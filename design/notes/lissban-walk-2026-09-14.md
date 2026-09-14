@@ -42,3 +42,6 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
    needs to be all dirt — a more vivid difference. The colour of the dirt that is there is good, but the green remnants on
    the border aren't aesthetic." → Tilled mask covers the whole enclosure and overshoots the fence line by 0.5 m with a
    HARD edge (no blend); same for the pen. Keep the current dirt colour.
+8. **Same for the grain field** (top-down, 09:58): green inside the fence line must go — "only dirt for ground and then the
+   plants that are being farmed." **Farm tools** in and around the fields would be good: a plough, hoes/rakes leaning on the
+   fence, a hand cart, baskets, a hay pile — whatever the packs have (CelticHouse baskets, Medieval_Megapack tools/carts).
