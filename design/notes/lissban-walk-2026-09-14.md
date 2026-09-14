@@ -146,3 +146,15 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     rest**: flatten a widening about midway along the forest road — a clearing with a table/benches, a fire ring, a cart,
     a merchant or two (roster: travelling traders or a Dunadd merchant's stall), a signpost; this is also a glade for
     item 19. Same treatment for every long road: a rest every ~1.5-2 km (a shrine, a well, a herder's hut, a waystone).
+22. **Swimmable water, and a real underwater view** (lake shots, 10:55): "this does look kinda natural but my issue is the
+    underwater view — it looks like a mistake instead of intentional, and we need swimmable water, not just a surface
+    plane of flowing water." What the shots show: the lake plane runs out over the meadow/forest with trees standing in
+    the water (the plane is bigger than the carved basin); from below, the surface is a dark sky-like ceiling with the
+    world in full clarity. → (a) SWIMMING: water volumes (physics volumes with WaterVolume on) over the lake, the sea and
+    the deeper river reaches so CharacterMovement switches to swimming; a swim animation in the ABP (placeholder loop is
+    acceptable for now); this REPLACES the wading-floor idea — the far sea still needs a boundary (fatigue/kill after N
+    seconds beyond the shallows, or an invisible wall at the map edge); (b) UNDERWATER LOOK: a post-process volume inside
+    each water volume — blue-green tint, heavy fog (10-25 m visibility), slight blur, light shafts if cheap, muffled
+    ambient — and the water surface TWO-SIDED with a darker, wavy underside seen from below; the lake bed textured (silt,
+    stones, weeds); (c) the lake plane clipped to the basin contour with a 2 m margin, no foliage instances below water
+    level; (d) river reaches: the same, at their depth. Prove: a capture from 2 m under the lake surface and one swimming.
