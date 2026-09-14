@@ -50,3 +50,15 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
    polygon (inset 0.3 m) — the crop rows were laid on a rectangle that is bigger/rotated relative to the fenced quad. Also:
    the fence on the near (south) side has a gap in the middle; close it unless it is a deliberate 3 m gate opening, then
    put a gate there.
+
+## TERRAIN BUG found from god cam (10:05) — top of the night list
+10. **The roads were carved as canyons.** The Boherath between the ford and Lissban runs along the floor of a trench 20-40 m
+    deep with near-vertical rock walls; from the air the road corridor shows rectangular cut blocks / mini-mesas beside
+    it, and the coast terrace reads as a straight brown scar with hard edges. Daniel: "why such a valley for the road?"
+    Cause: night 3's road benching (grade ≤ 12°) and terrace carving cut into the heightfield with no depth limit and no
+    shoulder blend. FIX: restore the pre-cut heightmap in every road corridor and along the terrace, then re-bench with
+    limits — max cut/fill 2.5 m, shoulders ≥ 25 m each side blended with noise, side slopes ≤ 25°, no rectangular
+    footprints; where a road would need more than 2.5 m of cut, re-route the road around the rise instead (paths follow
+    contours). The coast terrace: blend its inner edge 60-120 m into the slope, break its line with noise. Re-run delta_z
+    re-seating and the sightline audit after. Prove with the same god-cam poses (aerial over the ford-Lissban road; the
+    trench pose).
