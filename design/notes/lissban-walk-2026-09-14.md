@@ -86,3 +86,13 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     baffle entrance — real Celtic forts did exactly this). Dress it: a low earth bank under the screen, a torch post or
     brazier at each end, a hurdle or two, the path splitting round it and rejoining at the gate; the dirt path continues
     east from it toward the ford road. Both gates F-operated with auto-close.
+15. **The forest edge is a ruler line** (god-cam shot along Shanderry's west edge, 10:25): the trees stop dead on the
+    polygon edge and the duff floor ends on the same straight line. → The polygon is a CORE, not a boundary: outside it a
+    150-300 m gradient of falling density with domain-warped noise on the edge, outlier trees, copses and hedgerow trees
+    running out into the meadow, saplings and bilberry under the outliers; the duff/moss mask feathered the same way so
+    the floor colour never shows a straight line. No straight edge anywhere on the island - same rule for fields (hard
+    fence edges are the exception, by design) and the coast terrace.
+16. **The lowland outside the forest looks pockmarked** in the same shot: hundreds of small pits and mounds with bare-dirt
+    rims (the erosion pass's droplet craters) — reads as a moonscape, not meadow. → Smooth the lowland (< 90 m) with a
+    wide low-pass that keeps the big rolls and removes the pits, keep the dirt-on-slope rule only for real slopes; the
+    coast terrace line visible on the horizon is item 10's scar (blend it).
