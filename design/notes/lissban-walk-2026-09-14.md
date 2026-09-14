@@ -206,3 +206,11 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     swing timer with range + facing checks, independent of notifies), then the animal attack anim just plays; verify with
     the harness that player HP drops. Tuning: wolf HP +15-20% (kill time slightly longer), wolf damage per the def
     (6-10) so a fight costs ~1/3 HP.
+27. **Deer walk animation "headbanging at a rock concert"** (11:52): "animations need to be so much better; it's
+    embarrassing if I showed anyone this." → The animal locomotion is still wrong in the way that matters: the wrong
+    clip or the wrong play rate for the speed (a walk clip played at run rate / a run clip at walk speed), and no blend.
+    Requirements: use the AnimalVarietyPack's OWN animation blueprint per species (they ship with locomotion blendspaces
+    walk/trot/run keyed to speed); mob speeds set to the clip's native speeds (deer walk ~1.2 m/s, trot ~3.5, run ~7);
+    play rate = speed / clip's authored speed (stride-matched, no foot sliding); blend 0.2-0.3 s between states;
+    idle/graze/look-around when stopped; turn-in-place below 30°/s. PROOF is a 10 s capture sequence (or short video) of
+    a deer walking and running judged by eye, not a log line. Until this passes, no animal placement is "done".
