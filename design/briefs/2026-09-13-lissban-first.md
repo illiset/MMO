@@ -38,3 +38,18 @@ Nothing else on the island is touched (no forest pass, no other village, no crea
 - Never run the editor and the play stack together on this laptop (23 GB RAM; that is what crashed the client at 17:13).
 - Do not touch the terrain outside Lissban's 300 m. Do not regenerate the heightmap.
 - Log lines or captures, or it did not happen. Check the clock with `date`; do not estimate elapsed time.
+
+## Collision (Daniel 2026-09-13 20:30: "people need to be able to walk inside the doors and go inside the huts")
+Collision is part of building a thing, not a later pass. Lissban is not done until all of this is true in a walk:
+- **Every hut can be entered through its door.** The Celtic House meshes must use per-poly (complex-as-simple) collision or a
+  custom simple collision with the doorway open; the floor inside must hold the player; no invisible box across the door.
+  Interiors get a hearth, a bed/bench and a few props so entering is worth it.
+- **The palisade blocks everywhere except the gate.** No gaps a player can slip through, no invisible walls beyond the posts,
+  the gate opening is at least 3 m wide and walkable.
+- **Fences/pens block** (as they do now), but the pen has a gate or a gap so the player can reach the animal.
+- **Trees: trunk collision on (capsule), foliage/branches off**, so you cannot walk through a trunk but never snag on leaves.
+  Small plants, grass, ferns: no collision.
+- **No floating props and nothing you can walk under that should be solid** (grounding audit ≤ 0.05 m).
+- **NavMesh** covers the village and the fields so NPCs and the pen animal path round the huts; bake at least the Lissban area.
+- Proof: an in-game walk capture entering the large hut and standing inside, plus a log/capture of walking the full fence
+  line from the inside without finding a hole.
