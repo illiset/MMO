@@ -122,22 +122,46 @@ the hinge edge. Currently `SM_Gate_SM_Door` scaled to a 1.60 m leaf, 2.60 m tall
   covering 80% of its height, set to `BlockAll` with shadows off. Canopy never blocks; trunk always does.
 - **Nothing floats:** grounding audit above.
 
-**What is NOT proven, and is the main open risk.** Whether a player can actually **walk inside a
-hut**. Three probes disagree and I ran out of shift before an in-game answer:
+**Hut entry — found broken in the walk, then fixed, then re-proved.**
 
-- A vertical section through each roundhouse finds **one surface per column — the roof.** There is
-  **no floor mesh** (the landscape is the floor, which is fine) and **no wall crossing** below the
-  eaves at 60/100/140/180 cm; the shell only closes at ~220 cm where the thatch comes down.
-- A horizontal ray scan at those heights reports 64–68 of 72 bearings **open**.
-- A player-sized **capsule** sweeping inward reports **0** of 72 bearings passable.
+`CTF_UseComplexAsSimple` on the Celtic House meshes was **not** enough, and the walk said so: at
+23:00 Celtictest walked straight at the chief's hall from the yard fire and **stopped dead at the
+wall** (`ingame_04_hall_BLOCKED_before_fix.jpg`). The probes had already predicted it and
+disagreed with each other in a way that turned out to be the diagnosis:
 
-The consistent reading is that these are **open-sided roundhouses on a post ring**: a thin ray slips
-between the posts, a 40 cm capsule never does. The yard capture supports it — the hut walls are
-visibly posts with dark gaps between them. If that is right, the huts are not enterable anywhere,
-including at the door, and the fix is per-mesh custom collision with the doorway cut out (or a
-different roundhouse asset). `CTF_UseComplexAsSimple` is applied and saved on all seven Celtic House
-meshes, which is strictly better than the shipped single convex hull that sealed them, but it is not
-sufficient on its own.
+- a vertical section finds **one surface per column — the roof**; no floor mesh (the landscape is
+  the floor, which is fine) and no wall crossing below the eaves;
+- a horizontal **ray** scan reports 64–68 of 72 bearings open;
+- a player-sized **capsule** reports **0** of 72 passable.
+
+Both are true: these are **open-sided roundhouses on a post ring**. A thin ray slips between the
+posts; a 40 cm capsule never does. Complex-as-simple faithfully reproduces a shell with no door.
+
+So the brief's other option was taken — *"a custom simple collision with the doorway open"*:
+collision is now **off** the seven roundhouse/granary meshes entirely, and each building is ringed
+by **97 hidden collider slabs** (2.4 m tall, `BlockAll`, no shadow) with a **3.4 m doorway gap
+facing the yard**. Nothing changes visually: the wall is a post ring with gaps all round, so the
+doorway reads as one of them.
+
+Re-proved by capsule sweep at 1° around all five buildings — each is open **only** on one arc, and
+that arc is its doorway:
+
+| building | doorway bearing | passable arc(s) |
+|---|---|---|
+| Hall | 230° | 221–245° |
+| HutA | 300° | 272–290°, 307–328° |
+| HutB | 355° | 340–359°, 0–20° |
+| HutC | 122° | 100–139° |
+| Barn | 165° | 132–184° |
+
+And re-proved in the walk at 23:07: the same approach now carries Celtictest **through the doorway
+and inside the hall** — thatch overhead, timber wall beside him
+(`ingame_05_hall_doorway.jpg`, `ingame_06_hall_inside_after_fix.jpg`).
+
+One honest caveat: that first sweep test reported "sealed" for every building even after the fix,
+because it swept to each hut's exact **centre** — where the hearth stands — and later because a
+long sweep referenced to the *start* point's ground height ploughs into rising terrain and reads as
+a wall. Both were test bugs, not world bugs, and are corrected in `lb_18b_doortest.py`.
 
 ## 6. People
 
@@ -169,12 +193,13 @@ stands in the right place with a readable name.
    bounds volume from night 1, so any bake is a >1M-tile job. Shrinking or removing that volume is a
    level-wide scope decision and I did not take it unasked. **Recommend:** restrict navigation to
    per-settlement volumes, or raise the RecastNavMesh tile size, then bake.
-4. **Hut interiors may be unreachable** (§5). The props are placed and grounded either way.
-5. **No well and no haystack** exist in any owned pack; the trough stands in for the well.
-6. **`f_house_07` is a material, not a mesh**, and **`f_house_granarie_02` is the *small* granary**
+4. **The gate leaves float** above the gateway (§9) — one Z offset, but it is visible in the walk.
+5. **The camera clips into the thatch** inside a hut (§9).
+6. **No well and no haystack** exist in any owned pack; the trough stands in for the well.
+7. **`f_house_07` is a material, not a mesh**, and **`f_house_granarie_02` is the *small* granary**
    (3.5 × 2.8 × 3.3 m) — both stated the other way round in the brief. Hall and barn use
    `f_house_071` and `f_house_granarie_01` accordingly.
-7. **`SM_SilverFir_*` renders as bare white trunks** (the known white-material bug, already on the
+8. **`SM_SilverFir_*` renders as bare white trunks** (the known white-material bug, already on the
    focus list). Trees were swapped to Abandoned_Cathedral birch + R&C highland pine to avoid it.
 
 ## 8. Evidence
@@ -198,7 +223,45 @@ Scripts and machine-readable reports: `Tools/dalriata/lissban/` in the game repo
 
 ## 9. In-game walk
 
-<!-- WALK RESULTS -->
+Play stack: `PlayMythicEarth.bat`'s own configuration (persistence → dedicated world server on
+`GN_DalRiata_v2` → windowed client, laptop GPU profile, ray tracing off). Editor closed throughout —
+the editor and the play stack were never up together.
+
+Celtictest seated on the cart track 9 m outside the gate at
+**(-350871.7, -108287.9, 3784.4) uu, yaw 67.5°** (facing the gate), written with
+`Tools/frostmarch/m3/set_spawn.py` while PersistenceServer was stopped. That is where he is left.
+
+| capture | what it shows |
+|---|---|
+| `ingame_01_track.jpg` | standing on the cart track outside the gate |
+| `ingame_02_gate_open.jpg` | walked up: the gate is open and he is in the gateway |
+| `ingame_03_yard.jpg` | inside the yard, huts and name plates around him |
+| `ingame_04_hall_BLOCKED_before_fix.jpg` | 23:00 — stopped dead at the hall wall |
+| `ingame_05_hall_doorway.jpg` | 23:07 — at the hall doorway after the collision fix |
+| `ingame_06_hall_inside_after_fix.jpg` | inside the hall: thatch overhead, wall beside him |
+| `ingame_07_fence_from_inside.jpg` | walking the fence line from inside; the palisade stops him |
+
+**The gate is proven by log, not just by eye.** The C++ actor writes its state changes, and the
+server log has exactly the pair you want:
+
+```
+[2026.09.14-05.56.58:492][707]LogTemp: [TRGate] TRGateActor_0 -> OPEN
+[2026.09.14-05.57.14:084][ 35]LogTemp: [TRGate] TRGateActor_0 -> SHUT
+```
+
+— open when the pawn entered the trigger, shut 15.6 s later once he had gone. The player walked
+through the opening; the palisade stopped him everywhere else.
+
+**Two defects the walk found that are not fixed:**
+
+1. **The gate leaves hang in the air.** In `ingame_02_gate_open.jpg` the two door panels are
+   floating several metres above the gateway. `SM_Gate_SM_Door` is a 6.9 m castle door whose pivot
+   is not at its foot, so scaling it to a 2.6 m leaf left the geometry high. The actor's
+   `LeafMeshOffset` exists precisely for this and needs a Z term measured off the mesh bounds.
+   Function is right, placement of the visual is wrong.
+2. **The third-person camera clips into the thatch** once you are inside a hut, so the interior
+   shots are mostly roof underside. Interiors need camera collision handling (a spring-arm probe,
+   or roof fade) before they are worth furnishing further.
 
 ## 10. Verdict against the spec
 
@@ -208,7 +271,19 @@ enclosures with hedges and a crop flanking a cart track out of the gate, the sta
 standing, the roster placed and rewritten, trees at real scale, a working swinging gate, and both
 audits clean (0 floating, 0 real overlaps).
 
-Short of spec: the worn-dirt ground layer is absent, the NavMesh is unbaked, and hut enterability —
-the thing Daniel explicitly added to the brief at 20:30 — is **unresolved**, with strong evidence
-that the pack's roundhouses have no walkable doorway at all. That last one should be the first item
-of the next shift, and it may be an asset decision rather than a collision setting.
+Hut enterability — the thing Daniel explicitly added to the brief at 20:30 — was **broken, then
+fixed, then proved twice**: the pack's roundhouses genuinely have no walkable doorway, and Lissban
+now has one per building via custom collider rings, confirmed by capsule sweep and by walking
+Celtictest into the hall.
+
+Short of spec: the **worn-dirt ground layer is absent** (the yard, paths and track are still plain
+grass — the decal route rendered as white sheets and was pulled), the **NavMesh is unbaked** because
+the level's island-wide nav volume makes any bake a >1M-tile job, the **gate leaves float** above
+the opening, and the **camera clips into the thatch** indoors. None of those is a layout problem;
+the composition itself — enclosure, single WSW gate, hall + three huts + barn round a yard with a
+fire, one pen with a gap, four hedged fields flanking a cart track — is built and standing.
+
+Suggested order for the next shift: gate-leaf Z offset (minutes), the dirt layer done properly as a
+landscape layer edit (the biggest visual gain left), nav volume policy + bake, then camera collision
+indoors. Then the walk with Daniel that decides whether this pattern gets copied to the other four
+villages.
