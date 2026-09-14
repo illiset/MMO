@@ -38,3 +38,7 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
   visioned."
 - "Dál Riata is almost all overcast except some coastal areas; some coastal areas are still overcast. Seasons later."
 - God mode: F8 free camera, F9/F10 named places, F7 back over the character (built 2026-09-14 09:45).
+7. **Field floors: all dirt, right to the fence.** (Top-down of the cabbage field, 09:55) "This is good, but the inside of it
+   needs to be all dirt — a more vivid difference. The colour of the dirt that is there is good, but the green remnants on
+   the border aren't aesthetic." → Tilled mask covers the whole enclosure and overshoots the fence line by 0.5 m with a
+   HARD edge (no blend); same for the pen. Keep the current dirt colour.
