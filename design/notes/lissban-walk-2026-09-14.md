@@ -177,3 +177,9 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
   merchants) at their posts; town sounds. Outside the gate the road returns to dirt and the wild resumes within 50 m.
 - Site: Kingshill's shoulder at the v1 spot (data/zones/dal-riata.json settlements.carrigrua); the sketch's water on the
   left is the sea seen from above — keep the sightline audit passing when the keep's height is added.
+- (11:20) ROAD CARVING, corrected by Daniel: "for the forest road I actually like the carved-out earth for it, just not for
+  Lissban to Portcorr and Lissban to Kingshill or anywhere else unless I say." → Item 10 applies to every road EXCEPT the
+  forest road: the hollow-way (sunken, carved) profile stays on the Bohermara/Boherath stretch INSIDE Shanderry only;
+  everywhere else (Lissban–ford–Kingshill/Carrigrua, Lissban–Dromcairn–Portcorr, Dunadd spur, the coast road, the
+  mountain bench) the road sits on the ground with the 2.5 m cut/fill limit and wide shoulders. No other road gets the
+  carved profile unless Daniel names it.
