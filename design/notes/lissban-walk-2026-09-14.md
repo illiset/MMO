@@ -299,3 +299,8 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     Boherath road bends round its foot (no cutting through); the ford stays where it is; sightline audit extended with a
     "landform visible" check (Kingshill's crown ray from Lissban eye height must be blocked, not just the castle point).
     This is the Durotar rule made concrete: terrain that frames and hides, not open plain.
+    (13:05, sketch over the god-cam view from above Lissban looking NE) Daniel drew the hill: a broad rounded hill
+    directly NE of the village beyond the tree belt (starting ~150 m out, ~300-400 m wide), its crest planted with THICK
+    conifers (tall pines drawn along the top) and a big BOULDER outcrop on the crest; the Boherath (the road NE to the
+    ford) runs along the hill's EAST foot, not over it. "Boulder and some thick trees." Trees on the crest + gorse on
+    the flanks; the hill's far side hides Kingshill; from the village the skyline is that wooded crest.
