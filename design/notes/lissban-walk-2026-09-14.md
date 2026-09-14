@@ -220,3 +220,8 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     take-over time: find any component on the pawn whose class name contains "PointNClick" and destroy/disable it (no
     Blueprint edit needed), so LMB is camera-orbit only. Build with items 25 (double-tap sprint, 15% floor) and the F
     gates. Prove with the harness: LMB press while auto-running leaves the heading unchanged and no [click-to-move] log.
+    (11:57) Clarified: "right now LMB does nothing with the view." → LMB orbit was never actually implemented in our
+    code; the kit only mouse-looks on RMB. Implement in TickMovementPass: while LMB is held (and RMB is not), apply the
+    raw mouse delta to the control rotation (yaw + pitch, clamped) — camera only, body untouched; on release the
+    camera-follow-behind eases back if moving. Prove: LMB drag changes the camera yaw in the log while heading and body
+    yaw stay constant.
