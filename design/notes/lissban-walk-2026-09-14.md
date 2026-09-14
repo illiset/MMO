@@ -306,3 +306,13 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     the flanks; the hill's far side hides Kingshill; from the village the skyline is that wooded crest.
 - (13:40) Daniel: "camera feels good now" (kit WoW camera + LMB-release glide). Next tasks in order: animals (locomotion +
   attack), the con ring, then mouse sensitivity/invert in the ESC settings (not done yet).
+39. **The forest floor / meadow transition (14:40, shot of the brown duff sheet over rolling dunes with no trees):** "the
+    fading... this isn't it. The forest floor itself looks like a plaid pattern, and this transition just doesn't make
+    much sense." → Two faults: (a) the duff floor is a flat texture tiling visibly (plaid) at eye level and the mask is
+    coarse (4096 px over 14 km ≈ 3.4 m per pixel); (b) the sheet extends over bare rolling ground with no canopy, so the
+    "transition" is a blur between two flat textures with nothing causing it. FIX: the floor is a MATERIAL BLEND, not one
+    texture — needle litter + moss patches + dark soil + roots/twigs detail, two scales of variation and a macro breakup so
+    no tiling reads at any distance; the duff mask comes from ACTUAL tree instances (canopy density) at ≥ 1 m resolution
+    near settlements, feathered 20–40 m; the transition is a MIX (litter thinning into grass tufts, moss patches, the odd
+    fern) under the outermost trees, never a gradient between two flat sheets; nothing brown where there are no trees.
+    The pockmarked dunes in the same shot are item 16/22.
