@@ -287,3 +287,8 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     level 1 ≈ 1.2-1.5x the player's auto-attack DPS; skills add ~2x burst/mitigation so the skilled fight is won with
     ~2/3 HP left. Recorded in design/hud-targeting-v1.md's combat-tuning rule; balance pass on the wildlife/bandit defs
     once mobs actually deal damage (item 26).
+37. **The ground and mountain reference (12:55, two screenshots from a UE5 MMO):** "See how it's not just a flat thing or
+    dirt with green marks, but actual diverse grass life? See how the mountains aren't just copies of each other?" →
+    THE BAR for ground: dense varied grass life everywhere (tufts, wildflowers, clover, dry stalks) at every step; a
+    cobbled/worn road with grass creeping in; granite boulders of many sizes with lichen and moss; mountains rocky and
+    different from one another; pines varied in age. Daniel: please save the two images into design/reference/examples/.
