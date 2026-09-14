@@ -263,3 +263,13 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     it should hit back (item 26). Animal leg animations: "so hot garbage" — item 27 is a MUST tonight; the code cause is
     in TRUIWorldSubsystem (single-node loops at FIXED WalkRate/RunRate, two states, no blend): play rate must be
     speed / clip speed, with walk/trot/run thresholds and 0.25 s blends, or use the pack's own animation blueprints.
+35. **CRITICAL — visible polygons on the terrain silhouettes** (12:30, two shots with red-marked ridgelines): "must be
+    fixed early on or explained; a complete no-go for my MMORPG; I shouldn't see the polygons, it's 2026." CAUSE: (a)
+    the landscape is 4 m per vertex (the 2 m generation was skipped on the laptop); (b) the laptop play profile forces
+    aggressive landscape LOD (ViewDistance quality 1) so ridges a few hundred metres away render at 8-16 m per vertex and
+    every crest becomes a straight segment; (c) erosion arêtes are knife-sharp, which a coarse mesh cannot round. FIX
+    (tonight + PC): (1) Nanite landscape ON (UE 5.8 supports it: dense geometry at any distance, no LOD popping), (2)
+    regenerate at 2 m/quad (the generator's 2 m pass: run it tonight in the background or on the 5090), (3) play
+    profile: r.LandscapeLODDistributionScale 2.5 / r.LandscapeLOD0DistributionScale 3 (added to PlayMythicEarth.bat
+    now), full LOD on the PC, (4) a ridge-crest smoothing pass in the generator (round arêtes over 8-12 m). Prove with the
+    same two poses at 30 fps on the laptop and again on the PC.
