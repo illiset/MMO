@@ -509,7 +509,7 @@
         "name": "Grey Head",
         "kind": "cliff-headland",
         "pos": [
-          4726.5,
+          4726.6,
           2466.7,
           86.7
         ],
@@ -534,7 +534,7 @@
         "kind": "bay",
         "pos": [
           556.2,
-          -1336.5,
+          -1336.4,
           -2.3
         ],
         "why": "The west coast's deep indent under Shanderry. Its SOUTH horn holds the dungeon."
@@ -936,6 +936,53 @@
         "name": "Owenfinn River",
         "path": [
           [
+            -773.5,
+            327.4
+          ],
+          [
+            -1317.4,
+            89.7
+          ],
+          [
+            -1897.8,
+            -517.6
+          ],
+          [
+            -2502.3,
+            -633.7
+          ],
+          [
+            -2949.4,
+            -528.3
+          ],
+          [
+            -3239.4,
+            -174.4
+          ],
+          [
+            -3674.6,
+            63.3
+          ],
+          [
+            -3989.1,
+            538.7
+          ],
+          [
+            -4218.6,
+            1172.4
+          ],
+          [
+            -4430.4,
+            1806.5
+          ],
+          [
+            -4581.4,
+            2493.1
+          ]
+        ],
+        "why": "Canon: forest -> past Carrigrua -> sea at Portcorr. Rises in Shanderry's springs, falls out of the forest, runs the gorge under Carrigrua's crag, is forded at Athgorm, swings east across the Moyree past Whitemill and drowns its mouth at Portcorr.",
+        "path_v2_shift": [
+          [
             900,
             -350
           ],
@@ -1011,19 +1058,22 @@
             -4430,
             2467
           ]
-        ],
-        "why": "Canon: forest -> past Carrigrua -> sea at Portcorr. Rises in Shanderry's springs, falls out of the forest, runs the gorge under Carrigrua's crag, is forded at Athgorm, swings east across the Moyree past Whitemill and drowns its mouth at Portcorr."
+        ]
       }
     ],
     "waterfall": {
       "id": "owenfinn_fall",
       "pos": [
-        -1150,
-        -1250
+        -1897.8,
+        -517.6
       ],
       "drop_m": 26,
       "width_m": 14,
-      "why": "Daniel's PNW note: a waterfall where the Owenfinn leaves the forest, onto a harder rock step. Mist at the foot; audible from Boherath Road."
+      "why": "Daniel's PNW note: a waterfall where the Owenfinn leaves the forest, onto a harder rock step. Mist at the foot; audible from Boherath Road.",
+      "pos_v2_shift": [
+        -1150,
+        -1250
+      ]
     },
     "streams": [
       {
@@ -1122,8 +1172,8 @@
       "name": null,
       "name_note": "UNNAMED. Canon names 20 features and a dungeon; the lake is not among them. Needs a name from Daniel in the Gaelic-specific + English-generic convention. Never invent one.",
       "pos": [
-        -2050,
-        1250
+        -1824.9,
+        1608.2
       ],
       "size_m": [
         760,
@@ -1133,7 +1183,11 @@
       "max_depth_m": 6,
       "inland_m": 1580,
       "shore": "natural shallow basin: gentle banks, a wide reed margin north and east, shingle on the wind-blown west, NO crater wall",
-      "why": "FINDING: v1 has no lake in its data or its build scripts, so 'keep the placement' could not be honoured literally. v2 authors one to Daniel's spec in the lowland east of Kingshill and north of Dunadd - inland (1.58 km from the sea), a real shallow basin, with the feeder stream and the outflow he asked for."
+      "why": "FINDING: v1 has no lake in its data or its build scripts, so 'keep the placement' could not be honoured literally. v2 authors one to Daniel's spec in the lowland east of Kingshill and north of Dunadd - inland (1.58 km from the sea), a real shallow basin, with the feeder stream and the outflow he asked for. Moved 2026-09-13 so the mill sits ~250 m below its south-west outflow instead of inside the basin (v1 layout restored).",
+      "pos_v2_shift": [
+        -2050,
+        1250
+      ]
     },
     "sea": {
       "tech": "UE Water plugin ocean body if it can be enabled headlessly; otherwise material-driven. Log which shipped.",
@@ -1282,8 +1336,8 @@
       "role": "Frontline start",
       "archetype": "frontline",
       "pos": [
-        -3493.0,
-        -1046.0,
+        -3493.4,
+        -1045.9,
         30.0
       ],
       "facing_deg": 35,
@@ -1318,6 +1372,12 @@
         "quartermaster",
         "weaponmaster",
         "start-guide"
+      ],
+      "size": "small village",
+      "layout_rule": "Daniel 2026-09-13 20:05: 'everything goes back to the v1 layout, just scaled up with the added mountains.' Position = v1 x 3.8309/3.3478.",
+      "contents": [
+        "class trainers for the frontline archetype",
+        "small village: houses round a yard, a fire, pens, woodpiles, palisade with one gate"
       ]
     },
     {
@@ -1326,8 +1386,8 @@
       "role": "Damage start",
       "archetype": "dps",
       "pos": [
-        4636.0,
-        -253.0,
+        4635.8,
+        -253.4,
         38.0
       ],
       "facing_deg": 300,
@@ -1360,6 +1420,12 @@
         "hunt-master",
         "fletcher",
         "start-guide"
+      ],
+      "size": "small village",
+      "layout_rule": "Daniel 2026-09-13 20:05: 'everything goes back to the v1 layout, just scaled up with the added mountains.' Position = v1 x 3.8309/3.3478.",
+      "contents": [
+        "class trainers for the dps archetype",
+        "small village: houses round a yard, a fire, pens, woodpiles, palisade with one gate"
       ]
     },
     {
@@ -1368,8 +1434,8 @@
       "role": "Healer start",
       "archetype": "healers",
       "pos": [
-        2600.0,
-        1620.0,
+        2852.9,
+        1964.8,
         212.0
       ],
       "facing_deg": 95,
@@ -1402,6 +1468,12 @@
         "truthspeaker",
         "herbalist",
         "start-guide"
+      ],
+      "size": "small village",
+      "layout_rule": "Daniel 2026-09-13 20:05: 'everything goes back to the v1 layout, just scaled up with the added mountains.' Position = v1 x 3.8309/3.3478.",
+      "contents": [
+        "class trainers for the healers archetype",
+        "small village: houses round a yard, a fire, pens, woodpiles, palisade with one gate"
       ]
     },
     {
@@ -1410,8 +1482,8 @@
       "role": "Support start",
       "archetype": "support",
       "pos": [
-        -4249.0,
-        1754.0,
+        -4248.9,
+        1753.6,
         14.0
       ],
       "facing_deg": 70,
@@ -1444,6 +1516,12 @@
         "bard",
         "ferryman",
         "start-guide"
+      ],
+      "size": "small village",
+      "layout_rule": "Daniel 2026-09-13 20:05: 'everything goes back to the v1 layout, just scaled up with the added mountains.' Position = v1 x 3.8309/3.3478.",
+      "contents": [
+        "class trainers for the support archetype",
+        "small village: houses round a yard, a fire, pens, woodpiles, palisade with one gate"
       ]
     },
     {
@@ -1487,6 +1565,14 @@
         "class-trainer-healer",
         "class-trainer-support",
         "quest-giver-ladder-1-9"
+      ],
+      "size": "medium village (the island's market and royal seat)",
+      "layout_rule": "Daniel 2026-09-13 20:05: 'everything goes back to the v1 layout, just scaled up with the added mountains.' Position = v1 x 3.8309/3.3478.",
+      "contents": [
+        "market (medium village)",
+        "inn",
+        "stores",
+        "no class trainers"
       ]
     },
     {
@@ -1496,7 +1582,7 @@
       "archetype": null,
       "pos": [
         -2212.0,
-        63.0,
+        63.3,
         96.0
       ],
       "facing_deg": 200,
@@ -1542,7 +1628,17 @@
         "lissban": 26.5,
         "dromcairn": 7.6,
         "portcorr": 16.4
-      }
+      },
+      "size": "stone castle (curtain wall, towers, gatehouse, keep)",
+      "layout_rule": "Daniel 2026-09-13 20:05: 'everything goes back to the v1 layout, just scaled up with the added mountains.' Position = v1 x 3.8309/3.3478.",
+      "contents": [
+        "courtyard inside the stone curtain wall",
+        "keep inside the wall",
+        "tavern",
+        "inn",
+        "stores (merchants)",
+        "NO class trainers - those live at the starting villages"
+      ]
     }
   ],
   "landmarks": [
@@ -1581,7 +1677,7 @@
       "name": "The Bealanard Shoulder",
       "pos": [
         3124.9,
-        1489.5,
+        1489.4,
         552.8
       ],
       "why": "The only crossing of Benlea under 400 m, so the road goes over it and Tobarglas sits at its foot."
@@ -1655,228 +1751,80 @@
       "surface": "PAINTED worn dirt landscape layer, 4 m carriageway, broken worn edges + verge wear",
       "path": [
         [
-          4636,
-          -253
+          4394.0,
+          -253.4
         ],
         [
-          4726,
-          -127
+          4273.0,
+          274.5
         ],
         [
-          4617,
-          15
+          4212.8,
+          908.6
         ],
         [
-          4578,
-          191
+          4230.8,
+          1542.3
         ],
         [
-          4539,
-          367
+          4031.3,
+          2070.6
         ],
         [
-          4500,
-          543
+          3578.1,
+          2345.1
         ],
         [
-          4371,
-          644
+          3094.6,
+          2360.9
         ],
         [
-          4276,
-          763
+          2780.1,
+          2123.2
         ],
         [
-          4298,
-          926
+          2248.4,
+          2149.6
         ],
         [
-          4470,
-          980
+          1523.2,
+          2202.5
         ],
         [
-          4602,
-          954
+          798.0,
+          2123.2
         ],
         [
-          4753,
-          1051
+          72.4,
+          1964.8
         ],
         [
-          4904,
-          1149
+          -773.5,
+          1700.7
         ],
         [
-          5055,
-          1247
+          -1317.4,
+          1384.0
         ],
         [
-          5175,
-          1379
+          -1499.0,
+          1225.3
         ],
         [
-          5290,
-          1518
+          -1861.4,
+          908.6
         ],
         [
-          5382,
-          1667
+          -2405.4,
+          723.8
         ],
         [
-          5412,
-          1843
-        ],
-        [
-          5357,
-          1869
-        ],
-        [
-          5241,
-          2007
-        ],
-        [
-          5108,
-          2123
-        ],
-        [
-          4947,
-          2203
-        ],
-        [
-          4785,
-          2283
-        ],
-        [
-          4611,
-          2320
-        ],
-        [
-          4433,
-          2344
-        ],
-        [
-          4266,
-          2411
-        ],
-        [
-          4098,
-          2477
-        ],
-        [
-          3931,
-          2544
-        ],
-        [
-          3764,
-          2611
-        ],
-        [
-          3597,
-          2678
-        ],
-        [
-          3428,
-          2739
-        ],
-        [
-          3250,
-          2767
-        ],
-        [
-          3073,
-          2794
-        ],
-        [
-          2893,
-          2806
-        ],
-        [
-          2713,
-          2809
-        ],
-        [
-          2533,
-          2812
-        ],
-        [
-          2353,
-          2815
-        ],
-        [
-          2173,
-          2818
-        ],
-        [
-          1993,
-          2821
-        ],
-        [
-          1813,
-          2823
-        ],
-        [
-          1634,
-          2819
-        ],
-        [
-          1459,
-          2778
-        ],
-        [
-          1284,
-          2737
-        ],
-        [
-          1108,
-          2697
-        ],
-        [
-          933,
-          2656
-        ],
-        [
-          895,
-          2647
-        ],
-        [
-          372,
-          2130
-        ],
-        [
-          -360,
-          2111
-        ],
-        [
-          -799,
-          2056
-        ],
-        [
-          -1092,
-          1873
-        ],
-        [
-          -1312,
-          1617
-        ],
-        [
-          -1499,
-          1225
-        ],
-        [
-          -1800,
-          700
-        ],
-        [
-          -2050,
-          350
-        ],
-        [
-          -2212,
-          63
+          -2858.6,
+          591.6
         ]
       ],
       "grade_max_deg": 12,
-      "why": "Daniel 2026-09-13: 'not straight over the mountain, around Shanderry'. Bohermara is a COAST road: from Rinnbeg it follows the shoreline 90 m inland, east along the north coast past Cuaseen, round under Grey Head, south down the east shore, then the east-shore terrace (400 m inland, seaward of Shanderry) to Cromcross, then south-west past the lake's north side into Carrigrua - the v1 / original-map topology Daniel confirmed 2026-09-13 ('the v1 layout was closer to what I wanted'). Dunadd is reached from the castle by the spur. It never crosses the Bealanard Shoulder. Where the coast is cliff the terrain gets a SHORE TERRACE (raised beach, 40-80 m wide, z 15-40 m, smooth profile) carved under the road; the road grade comes from that profile, not from the flank above.",
+      "why": "v1 / original-map topology scaled x3.8309/3.3478 (Daniel 2026-09-13: 'everything goes back to this layout'). Daniel 2026-09-13: 'not straight over the mountain, around Shanderry'. Bohermara is a COAST road: from Rinnbeg it follows the shoreline 90 m inland, east along the north coast past Cuaseen, round unde",
       "path_v1_scaled": [
         [
           4394.0,
@@ -2165,6 +2113,228 @@
           -2949,
           565
         ]
+      ],
+      "path_v2_shift": [
+        [
+          4636,
+          -253
+        ],
+        [
+          4726,
+          -127
+        ],
+        [
+          4617,
+          15
+        ],
+        [
+          4578,
+          191
+        ],
+        [
+          4539,
+          367
+        ],
+        [
+          4500,
+          543
+        ],
+        [
+          4371,
+          644
+        ],
+        [
+          4276,
+          763
+        ],
+        [
+          4298,
+          926
+        ],
+        [
+          4470,
+          980
+        ],
+        [
+          4602,
+          954
+        ],
+        [
+          4753,
+          1051
+        ],
+        [
+          4904,
+          1149
+        ],
+        [
+          5055,
+          1247
+        ],
+        [
+          5175,
+          1379
+        ],
+        [
+          5290,
+          1518
+        ],
+        [
+          5382,
+          1667
+        ],
+        [
+          5412,
+          1843
+        ],
+        [
+          5357,
+          1869
+        ],
+        [
+          5241,
+          2007
+        ],
+        [
+          5108,
+          2123
+        ],
+        [
+          4947,
+          2203
+        ],
+        [
+          4785,
+          2283
+        ],
+        [
+          4611,
+          2320
+        ],
+        [
+          4433,
+          2344
+        ],
+        [
+          4266,
+          2411
+        ],
+        [
+          4098,
+          2477
+        ],
+        [
+          3931,
+          2544
+        ],
+        [
+          3764,
+          2611
+        ],
+        [
+          3597,
+          2678
+        ],
+        [
+          3428,
+          2739
+        ],
+        [
+          3250,
+          2767
+        ],
+        [
+          3073,
+          2794
+        ],
+        [
+          2893,
+          2806
+        ],
+        [
+          2713,
+          2809
+        ],
+        [
+          2533,
+          2812
+        ],
+        [
+          2353,
+          2815
+        ],
+        [
+          2173,
+          2818
+        ],
+        [
+          1993,
+          2821
+        ],
+        [
+          1813,
+          2823
+        ],
+        [
+          1634,
+          2819
+        ],
+        [
+          1459,
+          2778
+        ],
+        [
+          1284,
+          2737
+        ],
+        [
+          1108,
+          2697
+        ],
+        [
+          933,
+          2656
+        ],
+        [
+          895,
+          2647
+        ],
+        [
+          372,
+          2130
+        ],
+        [
+          -360,
+          2111
+        ],
+        [
+          -799,
+          2056
+        ],
+        [
+          -1092,
+          1873
+        ],
+        [
+          -1312,
+          1617
+        ],
+        [
+          -1499,
+          1225
+        ],
+        [
+          -1800,
+          700
+        ],
+        [
+          -2050,
+          350
+        ],
+        [
+          -2212,
+          63
+        ]
       ]
     },
     {
@@ -2173,60 +2343,28 @@
       "surface": "PAINTED worn dirt landscape layer, 4 m carriageway, broken worn edges",
       "path": [
         [
-          -2212,
-          63
+          -2284.7,
+          74.0
         ],
         [
-          -2550,
-          -60
+          -2707.7,
+          -42.2
         ],
         [
-          -2900,
-          -150
+          -3239.4,
+          -174.4
         ],
         [
-          -3239,
-          -174
+          -3445.1,
+          -517.6
         ],
         [
-          -3350,
-          -600
-        ],
-        [
-          -3493,
-          -1046
-        ],
-        [
-          -3800,
-          -700
-        ],
-        [
-          -4050,
-          -200
-        ],
-        [
-          -4300,
-          400
-        ],
-        [
-          -4450,
-          1000
-        ],
-        [
-          -4400,
-          1500
-        ],
-        [
-          -4249,
-          1754
-        ],
-        [
-          -4430,
-          2467
+          -3505.7,
+          -1045.9
         ]
       ],
       "grade_max_deg": 12,
-      "why": "Canon: Carrigrua -> ford -> Lissban -> Portcorr. From the castle west along the Owenfinn's north side to the only ford, dogleg south-west to Lissban on Blunt Head's neck, then the south coast round to Dromcairn and the harbour. Re-routed 2026-09-13 for Carrigrua's restored position.",
+      "why": "v1 topology scaled: Carrigrua over Athgorm Ford to Lissban. v1 note: ",
       "path_v1_scaled": [
         [
           -2284.7,
@@ -2248,6 +2386,28 @@
           -3505.6,
           -1045.9
         ]
+      ],
+      "path_v2_shift": [
+        [
+          -2284.7,
+          74.0
+        ],
+        [
+          -2707.7,
+          -42.2
+        ],
+        [
+          -3239.4,
+          -174.4
+        ],
+        [
+          -3445.1,
+          -517.6
+        ],
+        [
+          -3505.7,
+          -1045.9
+        ]
       ]
     },
     {
@@ -2256,24 +2416,28 @@
       "surface": "PAINTED worn dirt",
       "path": [
         [
-          -2949,
-          565
+          -2333.0,
+          105.8
         ],
         [
-          -2750,
-          330
+          -2647.2,
+          380.3
         ],
         [
-          -2500,
-          180
+          -2949.4,
+          565.1
         ],
         [
-          -2212,
-          63
+          -3312.2,
+          486.1
+        ],
+        [
+          -3553.9,
+          327.4
         ]
       ],
       "grade_max_deg": 12,
-      "why": "The castle road: Dunadd up the Kingshill shoulder to Carrigrua, 0.9 km, ~4 deg. Kingshill's crown stands between the castle and Lissban.",
+      "why": "v1 / original-map topology scaled x3.8309/3.3478 (Daniel 2026-09-13: 'everything goes back to this layout'). The castle road: Dunadd up the Kingshill shoulder to Carrigrua, 0.9 km, ~4 deg. Kingshill's crown stands between the castle and Lissban.",
       "path_v1_scaled": [
         [
           -2333.0,
@@ -2294,6 +2458,24 @@
         [
           -3553.9,
           327.4
+        ]
+      ],
+      "path_v2_shift": [
+        [
+          -2949,
+          565
+        ],
+        [
+          -2750,
+          330
+        ],
+        [
+          -2500,
+          180
+        ],
+        [
+          -2212,
+          63
         ]
       ]
     },
@@ -2318,33 +2500,49 @@
       "why": "Village to mill, 0.9 km east along the Owenfinn to the lake outflow (v1 topology: the mill hangs off Dunadd, not off the Bohermara)."
     },
     {
-      "id": "tobarglas_spur",
-      "name": "Bohermara Road (Tobarglas spur)",
-      "surface": "PAINTED worn dirt landscape layer, 3 m, benched into the slope",
+      "id": "boherath_coast",
+      "name": "Boherath Road (coast leg)",
+      "surface": "PAINTED worn dirt landscape layer, 4 m carriageway, broken worn edges",
       "path": [
         [
-          3428,
-          2739
+          -3505.7,
+          -1045.9
         ],
         [
-          3150,
-          2450
+          -3553.9,
+          -517.6
         ],
         [
-          2950,
-          2150
+          -3541.7,
+          63.3
         ],
         [
-          2780,
-          1900
+          -3602.2,
+          591.6
         ],
         [
-          2600,
-          1620
+          -3735.1,
+          1172.4
+        ],
+        [
+          -4158.4,
+          1647.8
+        ],
+        [
+          -4248.9,
+          1753.6
+        ],
+        [
+          -4387.9,
+          2281.9
+        ],
+        [
+          -4418.2,
+          2440.2
         ]
       ],
       "grade_max_deg": 12,
-      "why": "The coast road passes below Tobarglas's 212 m shelf. This spur climbs diagonally from the shore terrace to the Green Well, ~1.5 km for ~180 m (about 7 deg average); the painter benches it with cut-and-fill so no segment exceeds 12 deg."
+      "why": "v1 topology scaled: Lissban along the south shore to Dromcairn and Portcorr. v1 note: "
     }
   ],
   "habitats": [
@@ -2521,5 +2719,17 @@
     "The lake is UNNAMED - needs a name from Daniel.",
     "dal-riata-vision.md says 'Dunadd village sits at [Carrigrua's] gate'; the walk-test sightline rule supersedes it. Dunadd is now a 20-minute walk and a wooded saddle from the castle.",
     "NPC slots (Content/Data/npcs/dal-riata-npcs.json) must be re-derived from v2 settlement positions."
-  ]
+  ],
+  "layout": {
+    "source": "v1 / Daniel's original Inkarnate map, scaled",
+    "rule": "Daniel 2026-09-13 20:05: everything goes back to the v1 layout, scaled up with the added mountains; label all GN place names v1.",
+    "sizes": {
+      "dunadd": "medium village (the island's market and royal seat)",
+      "lissban": "small village",
+      "rinnbeg": "small village",
+      "tobarglas": "small village",
+      "dromcairn": "small village",
+      "carrigrua": "stone castle (curtain wall, towers, gatehouse, keep)"
+    }
+  }
 }
