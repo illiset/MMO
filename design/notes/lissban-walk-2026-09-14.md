@@ -137,3 +137,12 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     downhill fill edge with a few boulders as kerb, along-grade ≤ 12°; the bench follows the painted line; foliage/rocks
     cleared from the carriageway; the look of the rock face stays. This is the correct form of item 10's benching: a
     shelf across the slope, never a trench into it.
+21. **The forest road** (Bohermara/Boherath corridor through Shanderry, 10:50): "love this forest path" — KEEP the corridor
+    feel (a wide dirt hollow-way with trees pressing in on both sides), but: (a) the road surface "looks too flannel /
+    patterned" — the dirt layer tiles visibly; break it with a second dirt/gravel texture at a different scale, wheel-rut
+    and puddle detail down the middle, stones and leaf litter at the edges, so the road reads as a defined worn track,
+    not a flat patterned sheet; (b) transitions again: "remember transitions in terrain type need to ease into each
+    other — not plains with shrubs and grass then one step later dense forest — unless it's man-made"; (c) **a halfway
+    rest**: flatten a widening about midway along the forest road — a clearing with a table/benches, a fire ring, a cart,
+    a merchant or two (roster: travelling traders or a Dunadd merchant's stall), a signpost; this is also a glade for
+    item 19. Same treatment for every long road: a rest every ~1.5-2 km (a shrine, a well, a herder's hut, a waystone).
