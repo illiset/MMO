@@ -158,3 +158,5 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     ambient — and the water surface TWO-SIDED with a darker, wavy underside seen from below; the lake bed textured (silt,
     stones, weeds); (c) the lake plane clipped to the basin contour with a 2 m margin, no foliage instances below water
     level; (d) river reaches: the same, at their depth. Prove: a capture from 2 m under the lake surface and one swimming.
+- (11:05) Daniel, flying over Kingshill: "you've got a great start on Kingshill." Keep the hill's form and the gorge; the
+  castle is rebuilt on its shoulder (v1 spot) after the Lissban sign-off.
