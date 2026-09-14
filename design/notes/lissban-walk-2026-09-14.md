@@ -131,3 +131,9 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     connected by game trails; the mob camps and gathering spots sit in the openings; density falls to ~40% within 20 m of
     each glade edge; ferns/bilberry thicken in the light. Glades are placed on the map (named where canon allows) — not
     random holes.
+20. **The mountain road is paint on a 45° rock face** (Bohermara across Benlea's flank, 10:42): "love it, needs to be flat
+    on the pathway though so people don't just slide down." → Every road on a slope gets a BENCH: a 3.5-4 m carriageway
+    cut level ACROSS the slope (small outward camber), an uphill cut face ≤ 2.5 m high that reads as rock/scree, a
+    downhill fill edge with a few boulders as kerb, along-grade ≤ 12°; the bench follows the painted line; foliage/rocks
+    cleared from the carriageway; the look of the rock face stays. This is the correct form of item 10's benching: a
+    shelf across the slope, never a trench into it.
