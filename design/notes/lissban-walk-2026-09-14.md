@@ -79,3 +79,10 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     barn; the two gates are on the EAST and WEST sides (the current gate = west); the huts, barn, pen, fire sit on the pad
     with wooden floors inside the huts. Paths continue outside each gate: west to the fields and the track, east toward the
     Boherath / the ford.
+14. **East entrance with a baffle** (aerial with red marks on the south-east of the ring, 10:20): "make an east entrance and
+    then a little fence so to get in you have to walk left or right around it — get creative but immersive and realistic."
+    → A second gate on the east/south-east side where he marked, with a SCREEN: a free-standing palisade section 7-9 m
+    long standing 3-4 m outside the gate, so the way in is a dogleg left or right around it (the Iron Age hornwork /
+    baffle entrance — real Celtic forts did exactly this). Dress it: a low earth bank under the screen, a torch post or
+    brazier at each end, a hurdle or two, the path splitting round it and rejoining at the gate; the dirt path continues
+    east from it toward the ford road. Both gates F-operated with auto-close.
