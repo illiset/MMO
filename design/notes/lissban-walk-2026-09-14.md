@@ -71,3 +71,11 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     grass tufts, wildflowers, nettle, bilberry, gorse/heather patches, ferns at the forest edge, rocks — clustered in
     drifts (Poisson with clumping), thinning into the fields and the yard, so no open lawn is visible at eye level.
     Density target: ground cover in every 3 x 3 m of meadow, taller drifts along fences, hedges and the forest edge.
+13. **Flatten the whole inside of the palisade** (aerial with the red ring, 10:15): "we just flatten out the inside of the
+    gates/fence of the town, and make it a small grass [space] with pathways going into the E and W entrances, should make
+    the design easier. I want it to feel immersive." → ONE level pad for the entire enclosure (cut/fill to the mean height,
+    blended 15 m outside the fence); the interior ground is short trodden grass, not a dirt sheet, with worn DIRT PATHS:
+    a main path from the EAST gate to the WEST gate through the yard, forks to every hut door, the fire, the pen and the
+    barn; the two gates are on the EAST and WEST sides (the current gate = west); the huts, barn, pen, fire sit on the pad
+    with wooden floors inside the huts. Paths continue outside each gate: west to the fields and the track, east toward the
+    Boherath / the ford.
