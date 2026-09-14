@@ -249,3 +249,17 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     strands of sand, dune/machair grass, low grassy banks; the shoreline itself, the terrace edge and every cliff top
     broken with domain-warped noise at several scales (50 m, 200 m, 800 m) so no line is straight; wave-cut notches and
     coves; the sea bed sloping unevenly. Judged from the god cam along the whole coast before the report.
+32. **The yellow blob under the wolf** (12:20): our target-ring decal projected on a slope from the capsule centre reads
+    as a smeared yellow "face". → Attach the ring at the traced ground point under the target, aligned to the ground
+    normal, with a deeper projection box, and re-align while the target moves; the ring becomes the CON RING
+    (design/hud-targeting-v1.md) with Daniel's colours in a cartoony, solid, saturated style (clear flat colour ring, thin
+    dark outline, ~60% alpha), not a gold glow.
+33. **XP bar reference** — design/reference/ui/experience-bar.png (11:36): a long bronze-bound bar with Celtic-knot end caps;
+    the filled part is warm gold/amber with tick marks in ten segments and finer sub-ticks, the empty part dark charcoal
+    with bronze dividers; a small bronze plaque hangs under the middle reading "28 / 60". Build the HUD XP bar from this
+    image (transparent PNG: use it as the frame + a masked gold fill that grows left to right; the plaque text = current /
+    next). Replace the current plain bronze bar.
+34. **Wolf still dies too fast to a level 1 with two attacks + auto-attack** (12:22): wolf HP raised 40% (160 → ~225) and
+    it should hit back (item 26). Animal leg animations: "so hot garbage" — item 27 is a MUST tonight; the code cause is
+    in TRUIWorldSubsystem (single-node loops at FIXED WalkRate/RunRate, two states, no blend): play rate must be
+    speed / clip speed, with walk/trot/run thresholds and 0.25 s blends, or use the pack's own animation blueprints.
