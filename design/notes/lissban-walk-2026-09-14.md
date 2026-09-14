@@ -232,3 +232,13 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     rotation AND the body yaw in the same tick (no kit look), with the body interpolated at ~720°/s so it never pops;
     frame-rate-independent (delta-time scaled); mouse smoothing off; expose sensitivity (item on ESC settings). Prove at
     the 30 fps cap with a capture sequence during a 180° RMB drag while auto-running.
+30. **FOREST TONIGHT — the standing order (12:05):** "the canopy of the forest MUST be better by the end of tonight. I want
+    the forest to look more diverse and not just exactly the same everything — not every single tree the same exact
+    copy, shrubs everywhere, and some slightly less dense areas where in-game activities are done, like a grinding spot
+    or two. The dense forest should be RARER and just slightly more open should be the NORM, with some areas that are
+    more defined and obvious areas of interest." → This REPLACES the closed-canopy-everywhere baseline of items 2/19:
+    norm = moderately open woodland (~150-250 stems/ha, canopy gaps, light on the floor, shrubs/ferns/bilberry everywhere,
+    fallen logs, rocks); dense pockets (400+/ha, dark, mossy) as the exception, placed deliberately; clearings/glades as
+    obvious points of interest (grind camps with mob packs, a ruin, a pond, the waystone, the bandit camp), each with its
+    own dressing so they are recognisable; canopy character per item 17 (giants 1-in-5, bare trunks, high crowns, no
+    clones: 3-4 variants x scale x tint). Judged by god-cam flyover AND eye-level captures before the report.
