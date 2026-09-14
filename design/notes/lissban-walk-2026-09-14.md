@@ -163,3 +163,17 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
 - (11:08) DUNGEONS, Daniel: Uaimh na Scáth is confirmed the LOOT 5-MAN (9-15). "The other 5-man on Dál Riata will be
   something I establish in a bit" — a second 5-man (plus the grind dungeon and, later, a raid site) is his to name and
   site; nothing is built or named for them until he does.
+
+## CARRIGRUA concept (Daniel's sketch over the god-cam top-down, 11:15) — for the castle pass after the Lissban sign-off
+- "Concept for Carrigrua layout with road additions; should feel like you're not in the wild anymore while inside these walls."
+- Sketch, north up: a road comes in from the NORTH (a spur off the Bohermara/Cromcross line) and curves into a GATE on the
+  north side of the enclosure. Inside, the NORTH half is the COURTYARD ringed by small buildings (tavern, inn, stores drawn
+  as small rectangles on its west and north sides, a long building on its south edge). The SOUTH half is the KEEP: one big
+  rectangular block inside its own inner wall. The curtain wall runs round everything, labelled "castle walls" down the
+  east side, and continues south past the keep with the wall line turning west at the bottom (room for a second gate on
+  the south/west, toward Dunadd's castle road). Towers at the corners and the gate.
+- Inside-the-walls rules: flagstone/cobble ground, no grass, no wild plants; buildings close-set with lanes; torches/
+  braziers, market stalls, barrels, carts, a well; the roster's Carrigrua people (Muirenn the ruler, Ollamh Aneirin, guards,
+  merchants) at their posts; town sounds. Outside the gate the road returns to dirt and the wild resumes within 50 m.
+- Site: Kingshill's shoulder at the v1 spot (data/zones/dal-riata.json settlements.carrigrua); the sketch's water on the
+  left is the sea seen from above — keep the sightline audit passing when the keep's height is added.
