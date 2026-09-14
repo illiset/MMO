@@ -292,3 +292,10 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     THE BAR for ground: dense varied grass life everywhere (tufts, wildflowers, clover, dry stalks) at every step; a
     cobbled/worn road with grass creeping in; granite boulders of many sizes with lichen and moss; mountains rocky and
     different from one another; pines varied in age. Daniel: please save the two images into design/reference/examples/.
+38. **A hill between Lissban and Kingshill** (13:00): "make a hill here so you can't see Kingshill from Lissban." → Raise
+    a natural hill/ridge NE of Lissban (between the village and Kingshill, roughly 400-700 m out on the Lissban side of
+    the Athgorm Ford), 40-70 m high with a rounded eroded crest, a wooded top (a copse/shelter wood) and gorse on the
+    flanks, so that from anywhere inside Lissban's palisade neither Kingshill's crown nor the castle is visible; the
+    Boherath road bends round its foot (no cutting through); the ford stays where it is; sightline audit extended with a
+    "landform visible" check (Kingshill's crown ray from Lissban eye height must be blocked, not just the castle point).
+    This is the Durotar rule made concrete: terrain that frames and hides, not open plain.
