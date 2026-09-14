@@ -272,7 +272,34 @@ a real rath. **Honest gaps:** the palisade ring is a perfect circle (real raths 
 one Celtic-house slot (`f_house_07`) is a MaterialInstance not a mesh so only 4 of 5 house
 variants placed, and house scales are inconsistent between variants.
 
-**Not done in D:** Carrigrua's castle, Dunadd, Rinnbeg, Tobarglas, Dromcairn, the cave mouth
+### Carrigrua — the castle on the crag (`v2_14_carrigrua.py`)
+
+Daniel's vision doc asks for a real castle, not a fort: a large keep, an outer ward, curtain
+walls all the way round, one way in. Built from the Medieval_Megapack modular castle kit that
+was already in the project.
+
+**The wall is not a circle stamped on the ground.** Every segment is tested against the terrain
+first: the script samples the ground 12 m further out and, if it has already dropped more than
+9 m, the rock is the defence and no wall is built there. That is the plan's own rule — *"you
+can only wall what the rock does not already defend, and there is one way up."*
+
+Placed: **49 curtain-wall segments with crenellations, 5 three-piece towers, one gatehouse with
+portcullis and flanking walls on the single approach, a 9-piece cobbled approach road up from
+the saddle, and a keep**. The keep is not dropped in the middle of the ring — the script
+searches the ward for the **highest walkable ground** and builds there, which is where a keep
+actually goes; it landed at (−1904, −1514) at 157.9 m. **Grounding audit on ground-seated
+pieces: 67 actors, worst gap 0.000 m.**
+
+Captures: `v2_carrigrua_3q_s.jpg` (it reads as a real castle on a rocky knoll, with the crag's
+broken rock and scree around it), `v2_carrigrua_approach_s.jpg`, `v2_carrigrua_gorge_s.jpg`.
+
+**Honest gaps:** the wall ring is still circular rather than following an irregular crag edge;
+the cliff test found **0** cliff-defended segments, which means the crag is currently a knoll,
+not the cliffed crag the plan describes — the terrain generator needs to cut it properly; and
+the keep is a massing of tower pieces, not a designed building. The outer ward has walls but no
+merchants, livestock or inn yet.
+
+**Not done in D:** Dunadd, Rinnbeg, Tobarglas, Dromcairn, the cave mouth
 and Fomorian camp, the Roman & Celtic rock purge. (The stray Training Dummy is a v1 actor;
 v2 is a new level and has none.)
 
@@ -423,7 +450,7 @@ per-zone.
 2. **The XP-on-kill line is still unproven** — not for want of a target: the penned boar is
    stationary, but the pen fence blocks the player from reaching it (the pen works too well).
    Put a dummy in the open muster yard, or give the penned def an aggro radius. One minute.
-3. **D is one sixth done** — Carrigrua's castle, Dunadd, the other three starts, the cave mouth
+3. **D is a third done** (Lissban and Carrigrua) — Carrigrua's castle, Dunadd, the other three starts, the cave mouth
    and Fomorian camp.
 4. **First-entry placement matches the v1 rules file** on the v2 level.
 5. Recast nav bake; World Partition conversion; 2 m/quad regeneration on the gaming PC.
