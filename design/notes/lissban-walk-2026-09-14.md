@@ -124,3 +124,10 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     boulders, reeds, alder/willow, ferns, fallen logs across narrow stretches; the waterfall with a mist emitter and a
     plunge pool; forest streams the same at 1-3 m width; the river mouth at Portcorr widens into shingle. Prove with an
     eye-level capture standing on a bank and a low aerial along a bend.
+19. **Shanderry is uniformly dense** (10:38): "a little too dense — it should be that dense, but there should be areas where
+    you go to do things that open up slightly too." → Keep the closed-canopy density as the baseline but compose the forest
+    with GLADES and CLEARINGS: 20-30 openings of 30-80 m (wind-throw gaps with fallen giants and light, mossy boulder
+    fields, a bog/pond, the bandit camp clearings, the stream-side meadows, the Cromcross waystone in its own glade),
+    connected by game trails; the mob camps and gathering spots sit in the openings; density falls to ~40% within 20 m of
+    each glade edge; ferns/bilberry thicken in the light. Glades are placed on the map (named where canon allows) — not
+    random holes.
