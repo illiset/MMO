@@ -225,3 +225,10 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     raw mouse delta to the control rotation (yaw + pitch, clamped) — camera only, body untouched; on release the
     camera-follow-behind eases back if moving. Prove: LMB drag changes the camera yaw in the log while heading and body
     yaw stay constant.
+29. **RMB look is "skippy"** while walking (auto-run or not) (12:00): "something's off, it's not a smooth view change."
+    → Likely the hard snap of the body yaw to the control yaw each tick (our RMB rule) running a frame behind the kit's
+    mouse-look, at the 30 fps cap: the camera moves this frame, the body next frame, so the view stutters relative to the
+    body. Fix: drive BOTH from one place — while RMB is held read the raw mouse delta ourselves, apply it to the control
+    rotation AND the body yaw in the same tick (no kit look), with the body interpolated at ~720°/s so it never pops;
+    frame-rate-independent (delta-time scaled); mouse smoothing off; expose sensitivity (item on ESC settings). Prove at
+    the 30 fps cap with a capture sequence during a 180° RMB drag while auto-running.
