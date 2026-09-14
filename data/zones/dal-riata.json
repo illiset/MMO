@@ -1647,72 +1647,128 @@
           -253
         ],
         [
-          4400,
-          150
+          4409,
+          72
         ],
         [
-          4050,
-          600
+          4264,
+          325
         ],
         [
-          3700,
-          950
+          4192,
+          613
         ],
         [
-          3400,
-          1150
+          4174,
+          938
         ],
         [
-          3125,
-          1400
+          4372,
+          1227
         ],
         [
-          2850,
-          1560
+          4499,
+          1516
+        ],
+        [
+          4427,
+          1769
+        ],
+        [
+          4228,
+          1949
+        ],
+        [
+          4011,
+          2130
+        ],
+        [
+          3759,
+          2274
+        ],
+        [
+          3506,
+          2354
+        ],
+        [
+          3217,
+          2346
+        ],
+        [
+          2965,
+          2238
+        ],
+        [
+          2820,
+          2057
+        ],
+        [
+          2676,
+          1805
         ],
         [
           2600,
-          1680
+          1620
         ],
         [
           2300,
-          1850
+          1700
         ],
         [
-          1800,
-          2000
+          1900,
+          1900
         ],
         [
-          1200,
+          1500,
           2100
         ],
         [
-          500,
-          2150
+          1104,
+          2166
         ],
         [
-          -200,
-          2120
+          372,
+          2130
         ],
         [
-          -900,
-          2020
+          -360,
+          2111
+        ],
+        [
+          -799,
+          2056
+        ],
+        [
+          -1092,
+          1873
+        ],
+        [
+          -1312,
+          1617
         ],
         [
           -1499,
           1225
         ],
         [
-          -1700,
-          1850
+          -1733,
+          1837
         ],
         [
-          -2200,
-          1600
+          -2000,
+          1720
+        ],
+        [
+          -2250,
+          1560
+        ],
+        [
+          -2345,
+          1278
         ],
         [
           -2650,
-          1150
+          900
         ],
         [
           -2949,
@@ -1720,7 +1776,7 @@
         ]
       ],
       "grade_max_deg": 12,
-      "why": "Canon: Rinnbeg down the east shore to Cromcross. The only pass over Benlea under 400 m is the Bealanard Shoulder, so it climbs there, drops past Tobarglas, then follows the east-shore terrace - always on the SEAWARD side of Shanderry, so a level-1 character never has to enter the forest.",
+      "why": "Daniel's red-line sketch, 2026-09-13 19:15: a COAST road. Rinnbeg east along the north shore past Cuaseen, round the north-east corner under Grey Head, then south down the east shore. It does NOT cross the Bealanard Shoulder. Tobarglas is reached by a diagonal climb off the shore from about x=3500 (grade <= 12 deg over ~1.2 km) and left by a diagonal descent back to the east-shore terrace by x=1100. Then the terrace to Cromcross, the dogleg east of the lake, Whitemill, Dunadd. Always seaward of Shanderry. Points read off Daniel's sketch (+-50 m); the painter must snap to grade.",
       "path_v1_scaled": [
         [
           4394.0,
@@ -1794,7 +1850,87 @@
           -2858.6,
           591.6
         ]
-      ]
+      ],
+      "path_v2_shoulder": [
+        [
+          4636,
+          -253
+        ],
+        [
+          4400,
+          150
+        ],
+        [
+          4050,
+          600
+        ],
+        [
+          3700,
+          950
+        ],
+        [
+          3400,
+          1150
+        ],
+        [
+          3125,
+          1400
+        ],
+        [
+          2850,
+          1560
+        ],
+        [
+          2600,
+          1680
+        ],
+        [
+          2300,
+          1850
+        ],
+        [
+          1800,
+          2000
+        ],
+        [
+          1200,
+          2100
+        ],
+        [
+          500,
+          2150
+        ],
+        [
+          -200,
+          2120
+        ],
+        [
+          -900,
+          2020
+        ],
+        [
+          -1499,
+          1225
+        ],
+        [
+          -1700,
+          1850
+        ],
+        [
+          -2200,
+          1600
+        ],
+        [
+          -2650,
+          1150
+        ],
+        [
+          -2949,
+          565
+        ]
+      ],
+      "authored_by": "Daniel (sketch over the v2 labelled map), digitised by Claude",
+      "grade_note": "validate every segment <= grade_max_deg against the heightmap before painting; nudge inland/seaward, never cut a bench"
     },
     {
       "id": "boherath",
@@ -1863,7 +1999,7 @@
         ]
       ],
       "grade_max_deg": 12,
-      "why": "Canon: Carrigrua -> ford -> Lissban -> Portcorr. Off the castle saddle, down the Owenfinn's north side to the only ford, dogleg south-west to Lissban on Blunt Head's neck, then the south coast round to Dromcairn and the harbour.",
+      "why": "Canon: Carrigrua -> ford -> Lissban -> Portcorr. Off the castle saddle, down the Owenfinn's north side to the only ford, dogleg south-west to Lissban on Blunt Head's neck, then the south coast round to Dromcairn and the harbour. Daniel's 2026-09-13 sketch retraces this route unchanged (Carrigrua -> ford -> Lissban -> south coast -> Dromcairn -> Portcorr).",
       "path_v1_scaled": [
         [
           -2284.7,
@@ -2136,6 +2272,7 @@
   "openItems": [
     "The lake is UNNAMED - needs a name from Daniel.",
     "dal-riata-vision.md says 'Dunadd village sits at [Carrigrua's] gate'; the walk-test sightline rule supersedes it. Dunadd is now a 20-minute walk and a wooded saddle from the castle.",
-    "NPC slots (Content/Data/npcs/dal-riata-npcs.json) must be re-derived from v2 settlement positions."
+    "NPC slots (Content/Data/npcs/dal-riata-npcs.json) must be re-derived from v2 settlement positions.",
+    "Whitemill position conflict: landmarks.whitemill = [-2345,1278] (lake outflow, NE of Dunadd) but roads.whitemill_lane ends at [-3400,900] (0.56 km W/NW of Dunadd on the Owenfinn). Daniel to pick; the mill needs falling water."
   ]
 }
