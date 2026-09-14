@@ -242,3 +242,10 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     obvious points of interest (grind camps with mob packs, a ruin, a pond, the waystone, the bandit camp), each with its
     own dressing so they are recognisable; canopy character per item 17 (giants 1-in-5, bare trunks, high crowns, no
     clones: 3-4 variants x scale x tint). Judged by god-cam flyover AND eye-level captures before the report.
+31. **The coast (12:10):** "not every single part of the coast needs to be like the cliffs of Dover; also it's too
+    perfectly straight lines, not natural looking at all — fix it tonight." → The coast terrace and the cliff bands were
+    cut on straight lines. Coast recipe per stretch (from the plan): cliffs only at the headlands (Blunt Head, Grey Head)
+    and Benlea's north/west faces; everywhere else a mix of shingle and boulder shores, low rocky platforms, pocket
+    strands of sand, dune/machair grass, low grassy banks; the shoreline itself, the terrace edge and every cliff top
+    broken with domain-warped noise at several scales (50 m, 200 m, 800 m) so no line is straight; wave-cut notches and
+    coves; the sea bed sloping unevenly. Judged from the god cam along the whole coast before the report.
