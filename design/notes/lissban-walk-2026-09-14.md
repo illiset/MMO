@@ -214,3 +214,9 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     play rate = speed / clip's authored speed (stride-matched, no foot sliding); blend 0.2-0.3 s between states;
     idle/graze/look-around when stopped; turn-in-place below 30°/s. PROOF is a 10 s capture sequence (or short video) of
     a deer walking and running judged by eye, not a log line. Until this passes, no animal placement is "done".
+28. **LMB changes the walking direction** (11:55): "LMB should change view but not the direction the character's walking
+    in; right now it does not." → Same root as item 24: the kit's BP_PointNClickCameraComponent implements CLICK-TO-MOVE —
+    an LMB press sends the character toward the clicked ground point (and draws the blue line to it). Fix in C++ at
+    take-over time: find any component on the pawn whose class name contains "PointNClick" and destroy/disable it (no
+    Blueprint edit needed), so LMB is camera-orbit only. Build with items 25 (double-tap sprint, 15% floor) and the F
+    gates. Prove with the harness: LMB press while auto-running leaves the heading unchanged and no [click-to-move] log.
