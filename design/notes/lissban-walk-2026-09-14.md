@@ -101,3 +101,15 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     trees continue ~100-150 m past the core, scattered (a few per 100 m²) then gone within another ~50 m; the duff-to-grass
     and grass-to-heath/rock colour transitions are wide noise-broken blends (50-150 m), never a contrast line, including
     where the meadow meets Benlea's lower slopes.
+17. **The forest trees are clones with low branches** (10:30): "1 out of every 4-6 should be about twice the diameter re.
+    trunk size; I don't want the branches to begin so low; thicker branches and leaves/fur, but the canopy should begin
+    quite a bit higher — maybe 4 times higher before the ceiling of the forest begins if you were standing on the ground
+    looking up." → Targets: lowest branches on canopy trees ≥ 15-20 m (now ~6 m median), forest ceiling 25-40 m; giants
+    1-in-5 at ~2x trunk diameter (scale 1.6-2.0 of the tallest asset, taller and thicker, crowns above the rest); the
+    other 4-in-5 vary scale 0.8-1.3, random yaw, 3-4 mesh variants, per-instance colour/tint variation (PerInstanceRandom
+    in the bark and needle materials) so no two neighbours match; thicker branch/needle density in the canopy. HOW: (a)
+    object-space height mask on the needle/branch material that hides branch geometry below a per-instance threshold
+    (bare trunk to 2/3 height, per the reference photos) — cheap, instant, per-instance; (b) giants by scale; (c) Norway
+    Spruce (static Megascans) the moment Daniel adds it to the project — its forest-grown variants have the high crowns
+    natively; (d) understory stays at ground level (ferns, bilberry, saplings) so the gap between floor and canopy reads
+    as a hall, like the photos.
