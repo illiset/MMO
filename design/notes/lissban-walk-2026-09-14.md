@@ -188,3 +188,6 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     the forest-floor (duff) mask painted far beyond where trees stand — the duff mask must be derived from the ACTUAL tree
     instances (canopy coverage), not the biome polygon, and must fade out with the edge gradient (item 15); no bare brown
     where there is no canopy; (c) the road through it is item 10's trench.
+- (11:30) Daniel: "sprinting and turning are good." **Mouse sensitivity options must be in the ESC settings menu** (camera
+  look sensitivity X/Y, invert Y, and the god-cam look speed while we have it), saved per account. Add to the HUD/settings
+  backlog as a MUST before any wider playtest.
