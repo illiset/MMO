@@ -14,7 +14,8 @@ terrain and natural vegetation were the criterion, ahead of placement and creatu
 PASSES all 18 pairs; the WoW control spec is implemented, built AND proved live on the new
 level; v2 is WALKABLE at 22–30 fps; Lissban is composed to the §0b standard with a clean
 grounding audit; 159 k ecological foliage instances and 178 habitat-validated wildlife
-spawners are placed. Wildlife does not yet SPAWN (kit limitation, diagnosed below).**
+spawners are placed AND LIVE — 1,486 wander events, all six species named, wolves hostile.
+The one thing still unproven is the XP-on-kill log line.**
 
 ---
 
@@ -303,16 +304,67 @@ prevented at placement time). Stats written to all 178 via `TRMythicToolset.SetM
 (reached from Python through `CDO.call_method`, since the UFUNCTION is `AICallable`, not
 BlueprintCallable — **new gotcha worth keeping**).
 
-**BLOCKED: nothing spawns.** `[TRAI]` count is 0 on a live server and only one `BP_Minion`
-reference appears in the log. A property dump of a placed `BP_MobSpawner` shows **only the 30
-base AActor properties — no `MobClass`, no stats**. My earlier "MobClass accepted the value"
-was a false positive from `set_editor_property` on a name that does not exist. This confirms
-the night-2 kit fact exactly: the kit spawner's configuration lives in Blueprint-internal
-variables invisible to Python reflection, and **the only proven route is duplicating an
-already-configured spawner** (v1's level has 45). That is the first job of the creature lane.
-No XP-on-kill line was produced, because there is nothing to kill.
+**UNBLOCKED, LATE IN THE SHIFT: the wildlife is alive.** The first diagnosis was wrong in an
+instructive way. A Python property dump showed only 30 base AActor properties, so I concluded
+`MobClass` was unreachable. It is unreachable *from Python* — but not from C++. I added two
+reflection tools to `TRMythicToolset` (`ListActorProperties`, `SetActorObjectProperty`) and the
+C++ dump showed the truth:
 
----
+- `MobClass` was **already correctly set** to `BP_Minion` — the mobs had been spawning all along.
+- `Stats` was **empty** `()`. The stats pass had reported `OK=178` while the editor was sitting
+  on a different level, so it wrote nothing. The mobs were spawning **nameless**, so no def
+  matched, no wander ran and nothing could be looted or credited.
+
+Re-running the stats pass with the level explicitly loaded fixed it. **Live on the server:**
+
+```
+[TRAI] Grey Wolf found; home=(-345491,118481,4616) range 175 aggro 1500 leash 3200 interval 2.1
+[TRAI] Grey Wolf reaction -> Hostile (byte flipped)
+[TRAI][WANDER] Red Stag     -> (-307962, -137898) leg 811 uu, 1321 uu from home (radius 40000)
+[TRAI][WANDER] Wild Pig     -> (7324, 56331)      leg 748 uu,  538 uu from home (radius 22000)
+[TRAI][WANDER] Carrion Crow -> (-50540, 59978)    leg 346 uu,  408 uu from home (radius 50000)
+```
+
+**1,486 wander events in 30 seconds**, all six species named, and the home radii are exactly the
+habitat numbers from the defs (stag 400 m, pig 220 m, crow 500 m) — the habitat rule is being
+honoured at runtime, not just at placement. The wolf's `aggro 1500` (15 m) is live and the
+Hostile byte flip fires, which is the other half of *"the one he met did NOT attack"*.
+Name counts in one run: crow 450, pig 385, stag 247, doe 167, wolf 138, fox 80.
+Targeting works: `[TRTarget] info cache: name='Red Stag' … Selected BP_Minion_C_2 by Tab`.
+
+**Still missing: the XP-on-kill line — and I know exactly why now.** Everything up to the swing
+is proven. The server loads the weapon and states the rule:
+
+```
+[TRAuto] weapon data loaded: Bastard Sword NWD=18.0 interval=2.40s reach=260uu (2.6m x 100uu/m)
+[TRAuto] paused: out of range (771 > 260) - toggle stays on, resumes in range
+[TRSkill] Shield Bash refused: out of range (513 > 350)
+```
+
+Three approaches were tried. Blind `W` bursts walked the distance the WRONG way (771 -> 858 ->
+1479 uu) because the character was not facing the target. A homing loop that reads the target's
+logged screen position and steers with A/D got it down to 423 uu but oscillated, because
+re-pressing Tab each step kept switching between the four animals. Locking the target with a
+single Tab then closing produced the answer: **the distance froze at exactly 630 uu and stopped
+changing.** The character was walking into the pen fence. The boar is properly *enclosed* — the
+pen has collision and does its job — which is correct behaviour and unfortunately makes the
+animal unreachable from outside.
+
+So the payout path is **unproven**, while the table itself is proven live
+(`[TRProg] loaded: 49 XP rows (L1 60 ...)`, and the XP bar reads `0 / 60` in game). Two
+one-minute fixes for next shift, either of which finishes it: put the stationary target
+**outside** a fence (a practice dummy in the muster yard, which is where §0b says a dummy
+belongs if anywhere), or give the penned def a small aggro radius so it comes to the fence line
+and fights through it.
+
+Also learned: **key `1` is a toggle** — the attack bursts were switching auto-attack off again
+every other press. And the `Penned Boar` def inherited a Hostile flip it should not have; the
+`reaction` field needs an explicit `neutral` on the copy.
+
+**New gotcha worth keeping:** `TRMythicToolset`'s UFUNCTIONs are `meta=(AICallable)`, not
+`BlueprintCallable`, so Python gets no generated binding. Reach them with
+`cls.get_default_object().call_method("SetMobSpawnerStats", (label, json))`. That is how all 178
+spawners were configured.
 
 ## Captures
 
@@ -368,8 +420,9 @@ per-zone.
 
 1. **Forest floor** — duff/moss/fern under canopy instead of grass. Needs a painted landscape
    weightmap; this is the biggest remaining gap to the reference photos.
-2. **Wildlife does not spawn** — duplicate a configured `BP_MobSpawner` from v1 (the only
-   proven route); then the XP-on-kill proof.
+2. **The XP-on-kill line is still unproven** — not for want of a target: the penned boar is
+   stationary, but the pen fence blocks the player from reaching it (the pen works too well).
+   Put a dummy in the open muster yard, or give the penned def an aggro radius. One minute.
 3. **D is one sixth done** — Carrigrua's castle, Dunadd, the other three starts, the cave mouth
    and Fomorian camp.
 4. **First-entry placement matches the v1 rules file** on the v2 level.
