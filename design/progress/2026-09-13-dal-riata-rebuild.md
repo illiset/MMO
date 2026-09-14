@@ -299,7 +299,29 @@ not the cliffed crag the plan describes — the terrain generator needs to cut i
 the keep is a massing of tower pieces, not a designed building. The outer ward has walls but no
 merchants, livestock or inn yet.
 
-**Not done in D:** Dunadd, Rinnbeg, Tobarglas, Dromcairn, the cave mouth
+### Dunadd — the market village (`v2_15_dunadd.py`)
+
+The plan's recipe, followed literally, and deliberately the OPPOSITE of Lissban: **no palisade**
+(Dunadd lives under the castle's protection) — hedged plots and a river-side stock fence
+instead, and **no watchtower**, because it has no gate to guard.
+
+The layout is built around the reason the village exists: **two lanes, one running to Athgorm
+Ford and one to Whitemill**, meeting at a market space. The script derives those bearings from
+the canon landmark positions rather than inventing them (ford −111°, mill +50°). Placed:
+28 paving pieces along the two lanes, a cross-slab and fire at the market with 9 pieces of
+market clutter, **20 houses** (roundhouses plus two rectangular halls) with doors facing the
+lane and a hedged plot behind each, a smithy with a real forge and anvil, 3 granaries including
+a stilt store, and a 16-piece river fence. **Grounding audit: 141 actors, worst gap 0.044 m.**
+
+Captures: `v2_dunadd_3q_s.jpg`, `v2_dunadd_market_s.jpg`, `v2_dunadd_lane_s.jpg`. Carrigrua is
+faintly visible on the horizon in the raised shot — that is a 95 m camera; the sightline audit
+blocks it by 45 m at 1.7 m eye height, which is the height that matters.
+
+**Honest gaps:** at a distance the two lanes do not read as lanes — the paving is too subtle and
+the houses too loosely spaced, so it looks like a cluster rather than a street plan; and there
+are no carts, animals or smoke yet.
+
+**Not done in D:** Rinnbeg, Tobarglas, Dromcairn, the cave mouth
 and Fomorian camp, the Roman & Celtic rock purge. (The stray Training Dummy is a v1 actor;
 v2 is a new level and has none.)
 
@@ -450,7 +472,7 @@ per-zone.
 2. **The XP-on-kill line is still unproven** — not for want of a target: the penned boar is
    stationary, but the pen fence blocks the player from reaching it (the pen works too well).
    Put a dummy in the open muster yard, or give the penned def an aggro radius. One minute.
-3. **D is a third done** (Lissban and Carrigrua) — Carrigrua's castle, Dunadd, the other three starts, the cave mouth
+3. **D is half done** (Lissban, Carrigrua, Dunadd) — Carrigrua's castle, Dunadd, the other three starts, the cave mouth
    and Fomorian camp.
 4. **First-entry placement matches the v1 rules file** on the v2 level.
 5. Recast nav bake; World Partition conversion; 2 m/quad regeneration on the gaming PC.
