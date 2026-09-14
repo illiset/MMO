@@ -13,7 +13,11 @@ Nothing else on the island is touched (no forest pass, no other village, no crea
 - **Wooden fence (palisade) around the village**, a non-perfect circle: wobbly radius 26–34 m, continuous, ONE gate. The gate
   faces west/south-west, toward the farms. Palisade pieces from the Celtic House pack (or Medieval_Megapack wooden wall
   pieces if they look better up close), slope-following, no gaps, no floating posts, no doubled runs.
-- **Inside the fence:** 1 large hut (the hall, the biggest Celtic roundhouse) + 3 small huts, all doors toward a common yard
+- **Inside the fence:** 1 large hut (the chief's hall, the biggest Celtic roundhouse: f_house_07 or the largest that reads
+  as a hall) + 3 small huts that are NOT the pack's tiniest: use the mid-size roundhouses (f_house_02 / f_house_05) at scale
+  1.15-1.25 so a family house is ~8-9 m across (Daniel: 'a little bit bigger than just a little bit'), + **a barn**: the
+  pack's large granary f_house_granarie_02 (a raised Celtic storehouse) with hay, baskets and a cart beside it - no owned pack
+  has a rectangular barn and Iron Age farms used granaries and byres, so the granary IS the barn; all doors toward a common yard
   with a fire pit; a woodpile; ONE animal pen (the current three overlapping circular pens are deleted); a water trough or
   well if the pack has one. Worn dirt on the yard and the paths (landscape dirt layer), grass gone inside the fence.
 - **Farms outside, right outside the gate, to the west and south-west:** 3–4 field enclosures of 40–70 m, irregular
@@ -26,6 +30,12 @@ Nothing else on the island is touched (no forest pass, no other village, no crea
 - **Class trainers** live at the starting villages (Lissban = Frontline trainers); placeholder NPC bodies are fine, the
   names come from Content/Data/npcs/dal-riata-npcs.json. Not required for sign-off, but place the trainer + a merchant if the
   roster has them.
+
+## People
+- **The chief lives in the big hut.** Roster entry added: Hywel Fawr, *Pennaeth of Lissban* (Welsh-ish SW; pennaeth = chief),
+  Content/Data/npcs/dal-riata-npcs.json role=chieftain, quarter=big_hut. Stand him at the hall door or the yard fire.
+- Existing Lissban roster: Gwilym Penlan (start guide), Bedwyr ap Rhys (Frontline trainer), Angharad Wen (merchant), Meirion
+  the Thatcher, Nest Goch (byre/cattle -> the barn), Cadog Hir (boy). Placeholder bodies are fine; names must show.
 
 ## Proof required
 - Fixed-pose captures, gizmos hidden: (1) from the south-west field looking at the gate, (2) inside the yard, (3) a high
