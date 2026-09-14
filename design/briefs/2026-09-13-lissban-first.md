@@ -63,3 +63,5 @@ Collision is part of building a thing, not a later pass. Lissban is not done unt
 - **NavMesh** covers the village and the fields so NPCs and the pen animal path round the huts; bake at least the Lissban area.
 - Proof: an in-game walk capture entering the large hut and standing inside, plus a log/capture of walking the full fence
   line from the inside without finding a hole.
+- **Roster positions are v1-scale.** Every `position_m` / `position_uu` in dal-riata-npcs.json was computed on the 3 km island.
+  Place Lissban's people from `anchor` + `offset_m` relative to the v2 Lissban (-3493.4, -1045.9) and rewrite the positions.
