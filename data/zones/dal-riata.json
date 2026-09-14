@@ -1436,7 +1436,7 @@
       "pos": [
         2852.9,
         1964.8,
-        212.0
+        299.2
       ],
       "facing_deg": 95,
       "v1_pos_scaled": [
@@ -1474,7 +1474,8 @@
       "contents": [
         "class trainers for the healers archetype",
         "small village: houses round a yard, a fire, pens, woodpiles, palisade with one gate"
-      ]
+      ],
+      "z_source": "TRACED 2026-09-14 (night 3b): ground on the BUILT night-3 terrain at this XY is 299.24 m - the Green Well shelf that night 3 carved 20 m below local ground (319.4 m). The old value 212.0 was a v1-scale carry-over, 87 m below the built shelf and 109 m below local ground; cutting that deep is the artificial cliff terrace Daniel rejected. Terrain is the truth; the datum now matches it."
     },
     {
       "id": "dromcairn",
