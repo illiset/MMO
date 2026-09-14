@@ -330,14 +330,14 @@ facial-type range means fewer head presets needed than Celtic.
 
 ### Aethiopes — Crucivallum
 
+> **Renamed from Severus, 2026-09-13 (Daniel).** The Aethiopes are the Empire's Black Africans — *Aethiopes* is the Greek and Roman name for the peoples south of Egypt. They are the Empire-born diaspora of the Crusader realm; their home kingdoms (Kush, Aksum, Mali, the Bantu) sit in the Mystic Lands' Alkebulan. The name is the Empire's word for them: a people named by the state they serve.
+
 **Silhouette and height.** Male 171–183 cm, female 159–171 cm — lean and upright, matching
 detail+2/calmness+1 against strength−1/conditioning−1. Drilled posture, straight spine, minimal
 wasted motion — the Empire's administrative-military core. At 50 m: the only human silhouette that
 reads "at attention" even at rest.
 
-**Palette.** Skin Mediterranean/Anatolian olive `#C9A17A`. Hair dark brown to black, greying early
-on veterans. Eyes brown `#4A3320`, hazel. Institutional dye, not folk: iron-grey and dark maroon-red
-from Empire workshops, undyed black leather — restrained next to Romance's ochre and Armenian's
+**Palette.** Skin deep brown to near-black, the range of the Nile Valley and the Sahel inside the Roman world: `#6B4226` through `#3B2314` to `#221410`; no olive end. Hair black `#120C0A`, tight-curled, worn close-cropped in the drilled style (veterans grey early; age-appropriate, not universal). Eyes dark brown `#2E1B10`. This is the one Crusader culture whose dye is institutional rather than folk — iron-grey and dark maroon-red from the Empire's own workshops, not household dyeing, plus undyed black leather; gold and copper are the only ornament (a single earring, a torque of rank). Deliberately restrained next to Romance's ochre and Armenian's
 scarlet.
 
 **Features.** Angular, disciplined faces. Men close-cropped or shaved-side hair, clean-shaven or a

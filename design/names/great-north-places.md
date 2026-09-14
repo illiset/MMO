@@ -204,6 +204,9 @@ Vukoves carries Damage, the dedicated Support Start at Studenbrod carries Suppor
 
 ## 8. Aethiopes — the Crusader Empire
 
+> **Renamed from Severus, 2026-09-13 (Daniel).** The Aethiopes are the Empire's Black Africans — *Aethiopes* is the Greek and Roman name for the peoples south of Egypt. They are the Empire-born diaspora of the Crusader realm; their home kingdoms (Kush, Aksum, Mali, the Bantu) sit in the Mystic Lands' Alkebulan. The name is the Empire's word for them: a people named by the state they serve.
+
+
 Crusader Latin.
 
 **Settlement: Crucivallum** (kroo-kee-VAL-um) — "The Rampart of the Cross." The
