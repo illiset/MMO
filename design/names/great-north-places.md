@@ -26,7 +26,7 @@ markers depending on which archetypes its races can actually roll:
 | 3, one combined | Sidhe, Germanic, Alfar, Baltic, Slavic, Romance, Armenian |
 | 2, both combined | Fae |
 | 2 | Woodling |
-| 1 | Hillback, Severus, Mythic, Gobbledrift, Centaur |
+| 1 | Hillback, Aethiopes, Mythic, Gobbledrift, Centaur |
 
 Every territory covers every archetype its races can actually roll — confirmed
 against `data/factions/great-north.json` and with Daniel on 2026-09-12. The
@@ -37,7 +37,7 @@ apparent gaps are all real class gaps, not missing markers:
 - **Gobbledrift's single start** is Support + DPS, the only two archetypes it rolls.
 - **Fae's two markers each carry two archetypes** — Healer rides with Frontline,
   Damage rides with Support.
-- **Mythic, Hillback and Severus** roll all four and funnel them through one gate.
+- **Mythic, Hillback and Aethiopes** roll all four and funnel them through one gate.
 
 Naming conventions used throughout: real linguistic morphology, invented
 compounds. No lifted modern town names; no DAoC, WoW or Warhammer places. Every
@@ -202,7 +202,7 @@ the white church, the largest settled place on the eastern plain.
 *All four archetypes covered (Daniel, 2026-09-12): the "Damage Support" marker at
 Vukoves carries Damage, the dedicated Support Start at Studenbrod carries Support.*
 
-## 8. Severus — the Crusader Empire
+## 8. Aethiopes — the Crusader Empire
 
 Crusader Latin.
 

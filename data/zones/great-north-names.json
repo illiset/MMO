@@ -514,8 +514,8 @@
       "note": "Daniel 2026-09-12: confirmed all four archetypes are covered here. The 'Damage Support' marker at Vukoves carries Damage; the dedicated 'Support Start' at Studenbrod carries Support, which is how byArchetype resolves them."
     },
 
-    "severus": {
-      "race": "Severus",
+    "aethiopes": {
+      "race": "Aethiopes",
       "cultureGroup": "crusaders",
       "territoryLabel": "Crusader Empire",
       "settlement": {
@@ -532,7 +532,7 @@
           "meaning": "the Recruit Camp",
           "say": "TEE-ro-CAS-tra",
           "archetypes": ["frontline", "healers", "support", "dps"],
-          "mapLabel": "Severus Start",
+          "mapLabel": "Aethiopes Start",
           "where": "inside the western wall, the tent lines and round drill-ring",
           "flavour": "Everyone the Empire will ever use passes through it."
         }

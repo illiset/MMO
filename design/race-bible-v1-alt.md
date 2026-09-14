@@ -29,7 +29,7 @@ under.
 
 **Data check.** `data/factions/great-north.json` confirms the 4 culture groups and 16 races exactly
 as briefed — no disagreement: **Crusaders** (8: Celtic, Germanic, Romance, Hellenic, Slavic, Baltic,
-Armenian, Severus), **Elves** (3: Mythic, Sidhe, Alfar), **Hillback Empire** (1: Hillback Dwarves),
+Armenian, Aethiopes), **Elves** (3: Mythic, Sidhe, Alfar), **Hillback Empire** (1: Hillback Dwarves),
 **Dew Hollow** (4: Woodling, Gobbledrift, Fae, Centaur). Matches `progression-v1.md` §3a exactly.
 Per `vision.md`, Great North is the European-mythic faction, which is why every human culture below
 is grounded in a real regional variation (Caucasus for Armenian) rather than a generic default.
@@ -49,7 +49,7 @@ and the description was built to fit it.
 > | **Slavic** | constitution +2, conditioning +1, finesse −1, logic −1, elements −1 | constitution, conditioning, survival | finesse, logic, elements |
 > | **Baltic** | awareness +2, survival +1, strength −1, knowledge −1, discipline −1 | awareness, survival, finesse | strength, knowledge, discipline |
 > | **Armenian** | spirit +2, discipline +1, athleticism −1, impulse −1, awareness −1 | spirit, discipline, wisdom | athleticism, impulse, awareness |
-> | **Severus** | detail +2, calmness +1, strength −1, conditioning −1, spirit −1 | detail, calmness, knowledge | strength, conditioning, spirit |
+> | **Aethiopes** | detail +2, calmness +1, strength −1, conditioning −1, spirit −1 | detail, calmness, knowledge | strength, conditioning, spirit |
 > | **Mythic** | elements +3, wisdom +1, strength −1, conditioning −1, constitution −2 | elements, wisdom, logic | strength, conditioning, constitution |
 > | **Sidhe** | finesse +2, awareness +2, strength −1, conditioning −1, constitution −2 | finesse, awareness, impulse | strength, conditioning, constitution |
 > | **Alfar** | survival +2, impulse +1, spirit +1, knowledge −1, calmness −1, conditioning −2 | survival, impulse, spirit | knowledge, calmness, conditioning |
@@ -77,7 +77,7 @@ proposed tech.
 | Slavic | Crusaders | 176–190 cm | 164–177 cm | broad, sturdy | Broad and grounded, low centre of gravity |
 | Baltic | Crusaders | 174–187 cm | 162–175 cm | tall, wiry | Tall, rangy, watchful stillness |
 | Armenian | Crusaders | 169–182 cm | 157–169 cm | stocky, compact | Compact, upright, monastic stillness |
-| Severus | Crusaders | 171–183 cm | 159–171 cm | lean, drilled | Parade-ground spine, at-attention even at rest |
+| Aethiopes | Crusaders | 171–183 cm | 159–171 cm | lean, drilled | Parade-ground spine, at-attention even at rest |
 | Mythic | Elves | 185–199 cm | 174–187 cm | willowy, attenuated | Very tall, attenuated, floats rather than walks |
 | Sidhe | Elves | 180–193 cm | 169–182 cm | lithe, agile | Tall and coiled, fox-quick |
 | Alfar | Elves | 182–195 cm | 171–184 cm | lean, hardy | Tall, weather-hardened hunter-elf |
@@ -328,7 +328,7 @@ no jewellery, no retouching.
 **Build note.** MetaHuman-feasible — compact/stocky sits inside default sliders. The tight
 facial-type range means fewer head presets needed than Celtic.
 
-### Severus — Crucivallum
+### Aethiopes — Crucivallum
 
 **Silhouette and height.** Male 171–183 cm, female 159–171 cm — lean and upright, matching
 detail+2/calmness+1 against strength−1/conditioning−1. Drilled posture, straight spine, minimal

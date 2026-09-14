@@ -34,7 +34,7 @@ of.
 **Data check, done before writing a word of this.** `data/factions/great-north.json`
 confirms the 4 culture groups and 16 races exactly as briefed, no disagreement:
 
-- **Crusaders** (8): Celtic, Germanic, Romance, Hellenic, Slavic, Baltic, Armenian, Severus
+- **Crusaders** (8): Celtic, Germanic, Romance, Hellenic, Slavic, Baltic, Armenian, Aethiopes
 - **Elves** (3): Mythic, Sidhe, Alfar
 - **Hillback Empire** (1): Hillback Dwarves
 - **Dew Hollow** (4): Woodling, Gobbledrift, Fae, Centaur
@@ -62,7 +62,7 @@ physical description was adjusted to fit, not the reverse.
 > | **Slavic** | constitution +2, conditioning +1, finesse −1, logic −1, elements −1 | constitution, conditioning, survival | finesse, logic, elements |
 > | **Baltic** | awareness +2, survival +1, strength −1, knowledge −1, discipline −1 | awareness, survival, finesse | strength, knowledge, discipline |
 > | **Armenian** | spirit +2, discipline +1, athleticism −1, impulse −1, awareness −1 | spirit, discipline, wisdom | athleticism, impulse, awareness |
-> | **Severus** | detail +2, calmness +1, strength −1, conditioning −1, spirit −1 | detail, calmness, knowledge | strength, conditioning, spirit |
+> | **Aethiopes** | detail +2, calmness +1, strength −1, conditioning −1, spirit −1 | detail, calmness, knowledge | strength, conditioning, spirit |
 > | **Mythic** | elements +3, wisdom +1, strength −1, conditioning −1, constitution −2 | elements, wisdom, logic | strength, conditioning, constitution |
 > | **Sidhe** | finesse +2, awareness +2, strength −1, conditioning −1, constitution −2 | finesse, awareness, impulse | strength, conditioning, constitution |
 > | **Alfar** | survival +2, impulse +1, spirit +1, knowledge −1, calmness −1, conditioning −2 | survival, impulse, spirit | knowledge, calmness, conditioning |
@@ -91,7 +91,7 @@ what is hard for the proposed tech.
 | Slavic | Crusaders | 176–190 cm | 164–177 cm | broad, sturdy | Broad and grounded, low centre of gravity |
 | Baltic | Crusaders | 174–187 cm | 162–175 cm | tall, wiry | Tall and rangy, watchful stillness |
 | Armenian | Crusaders | 169–182 cm | 157–169 cm | stocky, compact | Compact, upright, monastic stillness |
-| Severus | Crusaders | 171–183 cm | 159–171 cm | lean, drilled | Lean, drilled posture, parade-ground spine |
+| Aethiopes | Crusaders | 171–183 cm | 159–171 cm | lean, drilled | Lean, drilled posture, parade-ground spine |
 | Mythic | Elves | 185–199 cm | 174–187 cm | willowy, attenuated | Very tall, attenuated, floats rather than walks |
 | Sidhe | Elves | 180–193 cm | 169–182 cm | lithe, agile | Tall, coiled, fox-quick |
 | Alfar | Elves | 182–195 cm | 171–184 cm | lean, hardy | Tall, rangy, weather-hardened elf |
@@ -219,7 +219,7 @@ slider covers this without much fuss; the only extra care is the beard groom
 and leanest human culture, matching knowledge+2/logic+1 against strength−1.
 Build is slim, upright, unhurried; this reads as a mercantile and scholarly
 culture rather than a martial one. Posture is composed rather than stiff —
-courtly ease, not parade discipline (that's Severus). At 50 m: the person who
+courtly ease, not parade discipline (that's Aethiopes). At 50 m: the person who
 looks like they arrived by carriage, not on foot.
 
 **Palette.** Skin olive `#D9B48F`. Hair dark brown `#3C2A1E` to black `#1A1410`,
@@ -460,7 +460,7 @@ realistic skin texture, no armor, no jewellery, no idealized retouching.
 sliders; the tight facial-type range (deliberately less varied) means fewer
 head presets are needed per sex than for Celtic, which is a net time saver.
 
-### Severus — Crucivallum
+### Aethiopes — Crucivallum
 
 **Silhouette and height.** Male 171–183 cm, female 159–171 cm — lean and
 upright, matching detail+2/calmness+1 against strength−1/conditioning−1.
@@ -511,7 +511,7 @@ realistic skin texture, no armor, no jewellery, no idealized retouching.
 **Build note.** MetaHuman-feasible. Lean/upright is a stock preset;
 close-cropped hair and any rank-mark tattoo are texture tasks. The main
 risk is genericness — without the grey/maroon institutional palette and
-drilled posture, Severus can read as a re-skinned Romance or Hellenic.
+drilled posture, Aethiopes can read as a re-skinned Romance or Hellenic.
 
 ---
 

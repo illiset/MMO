@@ -516,8 +516,8 @@
           ]
         },
         {
-          "id": "severus",
-          "name": "Severus",
+          "id": "aethiopes",
+          "name": "Aethiopes",
           "allowedClasses": [
             "knight",
             "wizard",

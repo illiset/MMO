@@ -90,7 +90,7 @@ next Inkarnate canvas northward, not a rework of this one.
 > - **Baltic + Slavic** start: also the top-right region.
 > - **Germanic + Alfar** (Alfar = snow elves): the snowy mid-north.
 > - **Mythic elves = high elves**: start near the **Hellenic** culture.
-> - Remaining allocations (Romance, Armenian, Severus, Hillback, Dew
+> - Remaining allocations (Romance, Armenian, Aethiopes, Hillback, Dew
 >   Hollow races) still being placed on the map.
 > - This allocation is VITAL input for in-game terrain/world building —
 >   transcribe into `data/zones/` once the annotated map is exported.
@@ -100,7 +100,7 @@ next Inkarnate canvas northward, not a rework of this one.
 `great-north.json` defines exactly four culture groups → four starts:
 
 - **Crusaders** (Celtic, Germanic, Romance, Hellenic, Slavic, Baltic,
-  Armenian, Severus) → **The Moathold.** Eight human cultures inside one
+  Armenian, Aethiopes) → **The Moathold.** Eight human cultures inside one
   walled province = eight villages already drawn inside the pentagon; each
   village can flavor one culture (Celtic village = the reference start,
   matching Celtictest + the Knight/4-class slice picks). Church = shared
