@@ -21,10 +21,15 @@ saved level and a log line; steps 11–12 are the proof. Daniel's hand-placed ac
    3.5 m palisade), posts and rails from the Celtic/Medieval kit pieces, walkable (collision on the deck), a quiver/bow
    prop on each; **ladders the player climbs with F** (an interactable ladder actor: F at the foot teleports/animates the
    character to the deck, F at the top brings him down — same F-interaction code as the gates).
-4. **Buildings.** Hall (bigger), three family huts, barn (large granary): re-seated on the pad by their bounds (the meshes'
-   pivots are 20–30 m off), doors checked for a 2.1 m × 0.9 m clearance (scale up or swap the variant), collider rings
-   rebuilt from the REAL walls with the gap on the REAL door (found by probing the post ring), wooden floors at pad height,
-   interiors furnished (hearth, bench, bed, baskets, tools).
+4. **Buildings.** Daniel (14:25): "the huts are too small." → Family huts at ~10–11 m across (f_house_02 scale ~1.2, or
+   f_house_05), the hall ~16–18 m (f_house_071 at ~0.65), barn to match; re-seated on the pad by their bounds (the meshes'
+   pivots are 20–30 m off), doors checked for a 2.1 m × 0.9 m clearance, collider rings rebuilt from the REAL walls with the
+   gap on the REAL door (found by probing the post ring), wooden plank floors at pad height. **Interiors with real detail**
+   ("we need more detail inside the huts"): central hearth with fire + smoke, sleeping platforms with furs, benches, a loom
+   or quern, hanging herbs/meat, baskets, pots, tools, a chest, a lamp; the hall gets a long table, the chief's seat, shields
+   on the posts. **Interior camera** ("the camera view should change when you go inside so you see mostly inside that
+   room"): on entering a hut (door trigger) the camera arm shortens to ~2.5 m and the roof/upper walls fade or hide for
+   the local player (cutaway), restored on exit; the spring arm's collision probe keeps the camera inside the walls.
 5. **The yard.** Fire pit with logs, woodpile by the hall, ONE pen (fence closed except its 3 m gap) with the boar, trough
    dug up and re-seated, a cart by the barn, tools leaning by doors, a well or water trough.
 6. **Ground.** Inside the pad: trodden dirt everywhere (step 2), with the main east–west line and the forks to every door,
@@ -33,8 +38,13 @@ saved level and a log line; steps 11–12 are the proof. Daniel's hand-placed ac
    The world-space mask is regenerated for all of it; the pen floor is dirt.
 7. **Fields.** The four enclosures W/SW: soil to the fence with a hard edge overshooting 0.5 m; crops clipped inside the
    polygon (the wheat rows that spill east go); the south fence gap closed or made a gate; farm tools, a hay pile, a plough.
-8. **Surroundings.** The shelter belt as an irregular 2–3-row stand of mixed heights, the copse kept, hedgerow lines along
-   the track, dense meadow ground cover within 300 m (tufts, wildflowers, nettle, bilberry, rocks) thick along fences.
+8. **Surroundings — detail everywhere.** Daniel (14:26): "the Lissban and around-Lissban area I want increased detail big
+   time to make it feel real; I almost never want to see just plain flat smooth earth floor." → No bare smooth ground
+   anywhere within 300 m: every square metre of meadow has tufts, wildflowers, nettle, bilberry, clover, dry stalks, small
+   stones; every dirt surface (yard, paths, tracks, fields' margins) has pebbles, ruts, hoof/foot prints, puddle stains,
+   straw and leaf litter, a dropped basket or tool; rocks and boulders of many sizes with moss; the shelter belt as an
+   irregular 2–3-row stand of mixed heights, the copse kept, hedgerow lines along the track, log piles, a midden, a
+   drying rack, chickens' scratch marks (no chickens yet), wheel ruts on the track. Judged at eye level from ten spots.
 9. **The hill.** A broad rounded hill NE of the village past the tree belt: thick pines on the crest, a big boulder outcrop,
    gorse flanks; the ford road bends round its east foot; from inside the palisade Kingshill and the castle are hidden
    (a landform sightline check, not just the castle point).
