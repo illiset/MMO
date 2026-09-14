@@ -183,3 +183,8 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
   everywhere else (Lissban–ford–Kingshill/Carrigrua, Lissban–Dromcairn–Portcorr, Dunadd spur, the coast road, the
   mountain bench) the road sits on the ground with the 2.5 m cut/fill limit and wide shoulders. No other road gets the
   carved profile unless Daniel names it.
+23. **Aerial of the lake (11:22, no words needed):** (a) the lake is a perfect ELLIPSE of flat turquoise — it must take the
+    basin's own contour (irregular, with a reed margin and a shingle bay), item 22c; (b) a huge brown sheet to its west:
+    the forest-floor (duff) mask painted far beyond where trees stand — the duff mask must be derived from the ACTUAL tree
+    instances (canopy coverage), not the biome polygon, and must fade out with the edge gradient (item 15); no bare brown
+    where there is no canopy; (c) the road through it is item 10's trench.
