@@ -191,3 +191,11 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
 - (11:30) Daniel: "sprinting and turning are good." **Mouse sensitivity options must be in the ESC settings menu** (camera
   look sensitivity X/Y, invert Y, and the god-cam look speed while we have it), saved per account. Add to the HUD/settings
   backlog as a MUST before any wider playtest.
+24. **A blue debug line runs from the character while moving** (11:35): drawn by the kit's
+    Content/MMOKit/MMO_Logic/Blueprints/Camera/BP_PointNClickCameraComponent (a DrawDebugLine node for click-to-move).
+    We use WoW controls, not click-to-move: disable that component on BP_PlayerCharacter (or delete the debug-draw nodes
+    in the BP) so nothing debug is ever visible in game.
+25. **Sprint on auto-run** (11:36): "while Num Lock/auto-run is on, double-tapping Shift should make the character sprint
+    when able, but always preserve 15% of stamina." → Double-tap Shift (≤ 0.3 s apart) toggles sprint during auto-run;
+    holding Shift keeps working when driving manually; sprint cuts off at 15% stamina (not 0) and cannot restart until
+    stamina is above ~25%; regen unchanged (12/s when not sprinting).
