@@ -160,3 +160,6 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     level; (d) river reaches: the same, at their depth. Prove: a capture from 2 m under the lake surface and one swimming.
 - (11:05) Daniel, flying over Kingshill: "you've got a great start on Kingshill." Keep the hill's form and the gorge; the
   castle is rebuilt on its shoulder (v1 spot) after the Lissban sign-off.
+- (11:08) DUNGEONS, Daniel: Uaimh na Scáth is confirmed the LOOT 5-MAN (9-15). "The other 5-man on Dál Riata will be
+  something I establish in a bit" — a second 5-man (plus the grind dungeon and, later, a raid site) is his to name and
+  site; nothing is built or named for them until he does.
