@@ -1495,9 +1495,9 @@
       "role": "the castle of Dál Riata, on Kingshill",
       "archetype": null,
       "pos": [
-        -1900.0,
-        -1500.0,
-        158.0
+        -2212.0,
+        63.0,
+        96.0
       ],
       "facing_deg": 200,
       "v1_pos_scaled": [
@@ -1530,7 +1530,19 @@
         "guard",
         "guard",
         "quest-giver-level-10-class"
-      ]
+      ],
+      "pos_afternoon_shift_crag": [
+        -1900.0,
+        -1500.0,
+        158.0
+      ],
+      "why": "Daniel 2026-09-13 19:50: 'why did Carrigrua move further west than Lissban? that's not how my original map had it.' Restored to the original-map position (v1 fortress -577.4,18.9 scaled): the north-east shoulder of Kingshill, 0.9 km north of Dunadd. The sightline audit PASSES here on the current terrain (blocked by +10.5 m to Dunadd, +26.5 Lissban, +7.6 Dromcairn, +16.4 Portcorr at 1.7 m eye height), so the afternoon shift's 2.4 km move to a crag west of Lissban was never needed. The castle kit (v2_14_carrigrua.py) must be rebuilt on this spot; re-audit with the keep height.",
+      "sightline_margins_m": {
+        "dunadd": 10.5,
+        "lissban": 26.5,
+        "dromcairn": 7.6,
+        "portcorr": 16.4
+      }
     }
   ],
   "landmarks": [
@@ -2173,24 +2185,16 @@
       "surface": "PAINTED worn dirt landscape layer, 4 m carriageway, broken worn edges",
       "path": [
         [
-          -1900,
-          -1500
+          -2212,
+          63
         ],
         [
-          -2050,
-          -1250
+          -2550,
+          -60
         ],
         [
-          -2400,
-          -1150
-        ],
-        [
-          -2800,
-          -1020
-        ],
-        [
-          -3100,
-          -900
+          -2900,
+          -150
         ],
         [
           -3239,
@@ -2234,7 +2238,7 @@
         ]
       ],
       "grade_max_deg": 12,
-      "why": "Canon: Carrigrua -> ford -> Lissban -> Portcorr. Off the castle saddle, down the Owenfinn's north side to the only ford, dogleg south-west to Lissban on Blunt Head's neck, then the south coast round to Dromcairn and the harbour. Daniel's 2026-09-13 sketch retraces this route unchanged (Carrigrua -> ford -> Lissban -> south coast -> Dromcairn -> Portcorr).",
+      "why": "Canon: Carrigrua -> ford -> Lissban -> Portcorr. From the castle west along the Owenfinn's north side to the only ford, dogleg south-west to Lissban on Blunt Head's neck, then the south coast round to Dromcairn and the harbour. Re-routed 2026-09-13 for Carrigrua's restored position.",
       "path_v1_scaled": [
         [
           -2284.7,
@@ -2268,28 +2272,20 @@
           565
         ],
         [
-          -2850,
-          100
+          -2750,
+          330
         ],
         [
-          -2650,
-          -400
+          -2500,
+          180
         ],
         [
-          -2400,
-          -850
-        ],
-        [
-          -2150,
-          -1120
-        ],
-        [
-          -2050,
-          -1250
+          -2212,
+          63
         ]
       ],
       "grade_max_deg": 12,
-      "why": "The castle road. It has to climb the Kingshill saddle - and that climb IS the sightline block between Dunadd and Carrigrua.",
+      "why": "The castle road: Dunadd up the Kingshill shoulder to Carrigrua, 0.9 km, ~4 deg. Kingshill's crown stands between the castle and Lissban.",
       "path_v1_scaled": [
         [
           -2333.0,
