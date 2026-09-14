@@ -304,3 +304,5 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     conifers (tall pines drawn along the top) and a big BOULDER outcrop on the crest; the Boherath (the road NE to the
     ford) runs along the hill's EAST foot, not over it. "Boulder and some thick trees." Trees on the crest + gorse on
     the flanks; the hill's far side hides Kingshill; from the village the skyline is that wooded crest.
+- (13:40) Daniel: "camera feels good now" (kit WoW camera + LMB-release glide). Next tasks in order: animals (locomotion +
+  attack), the con ring, then mouse sensitivity/invert in the ESC settings (not done yet).
