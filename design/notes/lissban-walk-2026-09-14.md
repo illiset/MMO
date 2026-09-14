@@ -66,3 +66,8 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     asked for; canon has no stone circle at Lissban (the only standing stone is the Cromcross waystone). Remove the
     LB_*/DRV2_Lissban_Menhir actors and the menhir step from the Lissban scripts. A future stone circle, if Daniel wants
     one, is a named landmark built from scanned boulders.
+12. **"Way more of this please"** (10:12, the meadow clumps outside Lissban: tall grass tufts, white wildflower heads, blue
+    lupin-like spikes, low herbs). The lowland meadows need dense ground cover everywhere, not a few clumps on a lawn:
+    grass tufts, wildflowers, nettle, bilberry, gorse/heather patches, ferns at the forest edge, rocks — clustered in
+    drifts (Poisson with clumping), thinning into the fields and the yard, so no open lawn is visible at eye level.
+    Density target: ground cover in every 3 x 3 m of meadow, taller drifts along fences, hedges and the forest edge.
