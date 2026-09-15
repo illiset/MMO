@@ -316,3 +316,9 @@ the huts are not. Every item below is a MUST for the next Lissban pass, in this 
     near settlements, feathered 20–40 m; the transition is a MIX (litter thinning into grass tufts, moss patches, the odd
     fern) under the outermost trees, never a gradient between two flat sheets; nothing brown where there are no trees.
     The pockmarked dunes in the same shot are item 16/22.
+40. **The "cut tree trunk" cone (15:10):** a flat-topped, steep-sided cone of rock texture standing alone in the meadow with
+    boulders round it — the artificial pad the afternoon shift raised for the castle at the WRONG site (the crag over the
+    Owenfinn gorge). The castle was removed; its mound was not. → Restore the natural ground there (blend the pre-stamp
+    heightfield back in over the cone's footprint + 60 m), remove the boulders placed on it, re-seat/purge foliage; general
+    rule: no stamped landforms with flat tops and constant slopes anywhere — every pad (village, castle) is a flattened
+    natural rise blended over 10–30 m. Same treatment for any other leftover stamp (check the Tobarglas shelf's edges).
