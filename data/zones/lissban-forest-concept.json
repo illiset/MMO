@@ -203,20 +203,32 @@
  ],
  "trail_to_cave_A": [
   [
-   -3620,
-   -1320
-  ],
-  [
-   -3500,
-   -1560
+   -3250,
+   -1900
   ],
   [
    -3380,
    -1760
   ],
   [
-   -3250,
-   -1900
+   -3500,
+   -1560
+  ],
+  [
+   -3620,
+   -1320
+  ],
+  [
+   -3560,
+   -1230
+  ],
+  [
+   -3470,
+   -1180
+  ],
+  [
+   -3500,
+   -1085
   ]
  ],
  "rules": [
@@ -225,5 +237,6 @@
   "cave A non-instanced levelling cave 4-7 with a TRAIL (not a road) from the fields' south-west corner; cave B no trail",
   "clearings = low-level levelling 2-5",
   "name by Daniel: Lissban Forest"
- ]
+ ],
+ "trail_rule": "Daniel 2026-09-15: a TRAIL (1.2 m worn footpath, trodden grass, stepping stones at wet spots) running all the way from cave A to Lissban's WEST gate, round the north side of the fields. Never a road."
 }
