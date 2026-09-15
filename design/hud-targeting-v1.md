@@ -24,3 +24,10 @@ Rules
 - XP multiplier by con lives in Content/Data/progression.json `con.bands` (updated to these offsets the same day). Purple
   pays 0 XP by the anti-towing rule (a level 5 towed through a level 40 zone earns nothing); Daniel may revisit.
 - Same colours on the target frame's name text and level number.
+
+## Interaction indicator (Daniel, 2026-09-15 — supersedes the bottom-centre "(F) Open" prompt)
+- A RING with an "F" inside. Ring and letter both white/grey, with a black outline. Nothing else: no verb,
+  no "Open"/"Climb"/"Talk" text anywhere on screen.
+- Screen position: to the RIGHT of the character, about chest height (not at the interactable, not at the
+  bottom of the screen). Appears only while an interactable is in reach; vanishes immediately when it is not.
+- The old bottom-centre prompt widget is removed when this lands.
