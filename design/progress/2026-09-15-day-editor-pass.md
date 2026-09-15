@@ -175,7 +175,9 @@ the water pass owns that.
   came out, the plot's 2,320 went in).
 - New actors: `DRV2_CanopyPlot`, `DRV2_Boulders_RC`, `DRV2_LakeSurfacePoly`, `PLOT_Stump_*`.
   Gone: `DRV2_GroundPatches`, the six `DRV2_FogPool_*`.
-- Level saved, editor closed, play stack back up.
+- Level saved, editor closed, **play stack back up** — PersistenceServer, ME-WorldServer and the
+  client, Celtictest left where the DB has him, outside Lissban's west gate at full HP.
+  `client_final_s.jpg` is that frame, shot from the live client at 14:11 with no input touched.
 
 ## Not done, and why
 
