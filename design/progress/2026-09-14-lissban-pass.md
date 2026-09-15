@@ -72,7 +72,8 @@ on distance-from-village to keep it off the huts. The mask sheared 46 m of hill 
 built a **cliff with a flat top**: the three-quarter capture showed a rocky mesa. Moving the hill
 out until its own profile does the work, and demoting the mask to a safety net, fixed it. Judge it
 from `AFTER_lb_hill_from_yard_s.jpg` — a broad wooded crest behind the village, which is the shot
-Daniel sketched.
+Daniel sketched. Do NOT judge it from the three-quarter aerial: the hill's foliage culls at 340 m
+and that camera is ~600 m out, so the aerial shows the bare landform. See not-done item 3.
 
 The Boherath is **not** buried: the road corridor is masked out of the hill over 40 m untouched
 blending to 110 m, and the measured **maximum rise inside the road corridor is 0.00 m**.
@@ -217,13 +218,26 @@ floor rising ~5 m is part of what the pair shows).
    written while PersistenceServer was stopped.
 2. **The west gate leaks.** Two of 360 bearings let a player capsule through at the west gate while
    it is shut. The east gate does not. Likely the leaf mesh scale not quite closing a 3.2 m gap.
-3. **The wrong-site castle mound is still there** and it is the ugliest thing in
-   `AFTER_lb_threequarter_s.jpg` — the dark, flat-topped, bare-rock cone NW of the village. It is
-   **pre-existing**, not this pass's hill; the hill was moved 65 m and re-cut and the mound did not
-   budge, which is how it was identified. Removing it (blend the natural ground back over its
-   footprint + 60 m, drop its boulders) was the brief's optional step 13 and was **not started** —
-   the gate for it was "step 12 finished", and step 12 was not.
-4. **The lake was not clipped to its basin contour** (the other optional step).
+3. **The bare cone in the aerial is THIS PASS'S HILL with its trees culled — not a castle mound.**
+   I got this wrong twice before measuring it, and the wrong version nearly got acted on, so the
+   correction is worth spelling out. In `AFTER_lb_threequarter_s.jpg` the hill reads as a dark,
+   flat-topped, bare-rock mesa. My first reading was that it must be the pre-existing wrong-site
+   castle mound, because it appeared not to move when the hill was shifted 65 m. It did not appear
+   to move because the shift was almost exactly along the line of sight from that camera: the hill
+   centre's bearing from the three-quarter pose went from 55.7° to 54.0°, i.e. nowhere on screen.
+
+   The heightmap settles it. Within 700 m of Lissban there is **exactly one** landform of any
+   prominence: **27.3 m at (−3252, −816), 333 m from the village, raised 57.8 m by this pass**. The
+   next two candidates are **8.0 m and 7.4 m** bumps that this pass **did not touch at all** (0.0 m
+   of edit). There is no castle mound near Lissban to remove.
+
+   It looks bare from the air because `LB_Hill_Veg`'s HISMs cull at **340 m** (pines) and 130 m
+   (gorse) while the three-quarter camera is ~600 m away at 136 m altitude — the same limitation
+   the forest-edge pass recorded about god-cam shots. **Judge the hill from
+   `AFTER_lb_hill_from_yard_s.jpg`**, where the wooded crest is exactly what Daniel sketched.
+   **Owed:** raise `LB_Hill_Veg`'s cull distances so aerials of Lissban are honest. That is a
+   one-line editor change and it did not fit the window — the editor was already shut.
+4. **The lake was not clipped to its basin contour** (the brief's other optional step).
 5. **The hut doorway gap is on the yard side, not provably on the mesh's real door.** The plan
    wanted the gap found by probing the post ring. That probe was written and it **failed**: with
    collision removed from the meshes it reported 324° of 360 open on every building, i.e. it was
