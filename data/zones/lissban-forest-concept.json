@@ -1,6 +1,6 @@
 {
  "frame": "metres, x north, y east",
- "version": 2,
+ "version": 3,
  "forest_polygon": [
   [
    -3380,
@@ -201,36 +201,6 @@
    -2050
   ]
  ],
- "trail_to_cave_A": [
-  [
-   -3250,
-   -1900
-  ],
-  [
-   -3380,
-   -1760
-  ],
-  [
-   -3500,
-   -1560
-  ],
-  [
-   -3620,
-   -1320
-  ],
-  [
-   -3560,
-   -1230
-  ],
-  [
-   -3470,
-   -1180
-  ],
-  [
-   -3500,
-   -1085
-  ]
- ],
  "rules": [
   "open pine woodland with boulders like the NE hill, not Shanderry's dark hall",
   "ridge skirts runnable, crests steep enough to be impassable: containing; roads pass through gaps",
@@ -238,5 +208,78 @@
   "clearings = low-level levelling 2-5",
   "name by Daniel: Lissban Forest"
  ],
- "trail_rule": "Daniel 2026-09-15: a TRAIL (1.2 m worn footpath, trodden grass, stepping stones at wet spots) running all the way from cave A to Lissban's WEST gate, round the north side of the fields. Never a road."
+ "trail_rule": "Daniel 2026-09-15: a TRAIL (1.2 m worn footpath, trodden grass, stepping stones at wet spots) running all the way from cave A to Lissban's WEST gate, round the north side of the fields. Never a road.",
+ "trail": {
+  "trunk_gate_to_fork": [
+   [
+    -3486,
+    -1086
+   ],
+   [
+    -3534,
+    -1345
+   ],
+   [
+    -3510,
+    -1534
+   ],
+   [
+    -3697,
+    -1672
+   ],
+   [
+    -3799,
+    -1828
+   ]
+  ],
+  "branch_to_cave_A": [
+   [
+    -3799,
+    -1828
+   ],
+   [
+    -3748,
+    -1966
+   ],
+   [
+    -3629,
+    -2017
+   ],
+   [
+    -3425,
+    -1966
+   ],
+   [
+    -3250,
+    -1900
+   ]
+  ],
+  "branch_south": [
+   [
+    -3799,
+    -1828
+   ],
+   [
+    -3935,
+    -1862
+   ],
+   [
+    -4071,
+    -1862
+   ],
+   [
+    -4207,
+    -1803
+   ],
+   [
+    -4293,
+    -1724
+   ],
+   [
+    -4378,
+    -1655
+   ]
+  ],
+  "note": "digitised from Daniel's drawing on the v2 map; south arm ends 150 m east of cave B - asked whether it stops short or reaches the cave"
+ }
 }
